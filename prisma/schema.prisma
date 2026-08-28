@@ -1,0 +1,380 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ============ AUTH & USER ============
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  password      String?
+  image         String?
+  role          String    @default("traveller") // traveller, admin
+  emailVerified DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts      Account[]
+  sessions      Session[]
+  profile       TravellerProfile?
+  trips         Trip[]
+  favourites    Favourite[]
+  reviews       Review[]
+  expenses      Expense[]
+  diaryEntries  DiaryEntry[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+// ============ TRAVELLER PROFILE ============
+
+model TravellerProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  country         String?
+  language        String   @default("en")
+  currency        String   @default("BDT")
+  travelStyle     String?  // solo, couple, family, group
+  interests       String   @default("[]") // JSON array
+  dietaryPrefs    String?
+  mobilityNeeds   String?
+  emergencyContact String?
+  passportNumber  String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ============ TRIP ============
+
+model Trip {
+  id              String   @id @default(cuid())
+  userId          String
+  title           String
+  description     String?
+  status          String   @default("planning") // planning, active, completed, cancelled
+  startDate       DateTime?
+  endDate         DateTime?
+  arrivalAirport  String?
+  departureAirport String?
+  totalBudget     Float?
+  currency        String   @default("BDT")
+  travellers      Int      @default(1)
+  interests       String   @default("[]") // JSON array
+  travelStyle     String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  user     User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  days     TripDay[]
+  expenses Expense[]
+  diary    DiaryEntry[]
+}
+
+model TripDay {
+  id          String   @id @default(cuid())
+  tripId      String
+  dayNumber   Int
+  date        DateTime?
+  location    String?
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  trip       Trip        @relation(fields: [tripId], references: [id], onDelete: Cascade)
+  activities Activity[]
+
+  @@unique([tripId, dayNumber])
+}
+
+model Activity {
+  id          String   @id @default(cuid())
+  tripDayId   String
+  title       String
+  description String?
+  type        String   // transport, hotel, food, attraction, other
+  startTime   String?
+  endTime     String?
+  cost        Float?
+  location    String?
+  latitude    Float?
+  longitude   Float?
+  notes       String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tripDay TripDay @relation(fields: [tripDayId], references: [id], onDelete: Cascade)
+}
+
+// ============ DESTINATIONS & ATTRACTIONS ============
+
+model Destination {
+  id              String   @id @default(cuid())
+  name            String
+  slug            String   @unique
+  division        String   // Dhaka, Chattogram, Sylhet, etc.
+  district        String?
+  description     String
+  shortDesc       String?
+  imageUrl        String?
+  latitude        Float
+  longitude       Float
+  category        String   // beach, mountain, heritage, city, nature, religious
+  bestTimeToVisit String?
+  estimatedCost   Float?   // per day average
+  stayDuration    String?  // recommended days
+  safetyRating    Float?   // 1-5
+  isHiddenGem     Boolean  @default(false)
+  isActive        Boolean  @default(true)
+  tags            String   @default("[]") // JSON array
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  attractions Attraction[]
+  hotels      Hotel[]
+  restaurants Restaurant[]
+  transportFrom TransportRoute[] @relation("FromDestination")
+  transportTo   TransportRoute[] @relation("ToDestination")
+}
+
+model Attraction {
+  id           String   @id @default(cuid())
+  destinationId String
+  name         String
+  description  String?
+  imageUrl     String?
+  type         String   // historical, natural, cultural, religious, adventure
+  entryFee     Float?
+  openingHours String?
+  latitude     Float?
+  longitude    Float?
+  rating       Float?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  destination Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+}
+
+// ============ TRANSPORT ============
+
+model TransportRoute {
+  id              String   @id @default(cuid())
+  fromId          String
+  toId            String
+  mode            String   // bus, train, flight, launch, rickshaw, car
+  operator        String?
+  departurePoint  String?
+  arrivalPoint    String?
+  duration        String?
+  durationMinutes Int?
+  distanceKm      Float?
+  fareMin         Float?
+  fareMax         Float?
+  fareEconomy     Float?
+  fareBusiness    Float?
+  schedule        String?
+  frequency       String?
+  isDirect        Boolean  @default(true)
+  comfort         String?  // budget, standard, premium
+  notes           String?
+  lastUpdated     DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  fromDestination Destination @relation("FromDestination", fields: [fromId], references: [id], onDelete: Cascade)
+  toDestination   Destination @relation("ToDestination", fields: [toId], references: [id], onDelete: Cascade)
+}
+
+// ============ HOTELS ============
+
+model Hotel {
+  id           String   @id @default(cuid())
+  destinationId String
+  name         String
+  description  String?
+  imageUrl     String?
+  address      String?
+  latitude     Float?
+  longitude    Float?
+  starRating   Float?
+  priceMin     Float?
+  priceMax     Float?
+  priceEconomy Float?
+  amenities    String   @default("[]") // JSON array
+  contactPhone String?
+  contactEmail String?
+  website      String?
+  bookingUrl   String?
+  rating       Float?
+  reviewCount  Int?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  destination Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+}
+
+// ============ RESTAURANTS & FOOD ============
+
+model Restaurant {
+  id           String   @id @default(cuid())
+  destinationId String
+  name         String
+  description  String?
+  imageUrl     String?
+  address      String?
+  latitude     Float?
+  longitude    Float?
+  cuisine      String?
+  priceRange   String?  // budget, moderate, expensive
+  specialties  String   @default("[]") // JSON array
+  rating       Float?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  destination Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+}
+
+// ============ EMERGENCY & SAFETY ============
+
+model EmergencyService {
+  id          String   @id @default(cuid())
+  name        String
+  type        String   // hospital, police, fire, embassy, ambulance
+  address     String?
+  phone       String
+  alternatePhone String?
+  latitude    Float?
+  longitude   Float?
+  district    String?
+  division    String?
+  is24Hours   Boolean  @default(false)
+  notes       String?
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model TravelAlert {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  type        String   // weather, safety, transport, health, general
+  severity    String   // low, medium, high, critical
+  region      String?
+  isActive    Boolean  @default(true)
+  startDate   DateTime?
+  endDate     DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ============ BUDGET & EXPENSES ============
+
+model Expense {
+  id          String   @id @default(cuid())
+  userId      String
+  tripId      String
+  title       String
+  amount      Float
+  currency    String   @default("BDT")
+  category    String   // transport, food, accommodation, shopping, activity, other
+  date        DateTime @default(now())
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  trip Trip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+}
+
+// ============ FAVOURITES & REVIEWS ============
+
+model Favourite {
+  id           String   @id @default(cuid())
+  userId       String
+  itemType     String   // destination, hotel, restaurant, attraction
+  itemId       String
+  createdAt    DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, itemType, itemId])
+}
+
+model Review {
+  id           String   @id @default(cuid())
+  userId       String
+  itemType     String   // destination, hotel, restaurant, attraction
+  itemId       String
+  rating       Int
+  comment      String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, itemType, itemId])
+}
+
+// ============ TRAVEL DIARY ============
+
+model DiaryEntry {
+  id        String   @id @default(cuid())
+  userId    String
+  tripId    String
+  title     String
+  content   String
+  date      DateTime @default(now())
+  location  String?
+  mood      String?
+  imageUrl  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  trip Trip @relation(fields: [tripId], references: [id], onDelete: Cascade)
+}
