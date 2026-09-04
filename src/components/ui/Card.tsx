@@ -106,13 +106,14 @@ interface SkeletonProps {
 }
 
 export function Skeleton({ className, lines = 1 }: SkeletonProps) {
+  const widths = [90, 70, 85, 60, 95, 75];
   return (
     <div className="animate-pulse space-y-3">
       {Array.from({ length: lines }).map((_, i) => (
         <div
           key={i}
           className={cn("bg-gray-200 rounded h-4", className)}
-          style={{ width: `${100 - Math.random() * 30}%` }}
+          style={{ width: `${widths[i % widths.length]}%` }}
         />
       ))}
     </div>

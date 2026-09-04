@@ -49,7 +49,7 @@ export default function BudgetPage() {
       const response = await fetch("/api/budget");
       if (response.ok) {
         const data = await response.json();
-        setExpenses(data.expenses.map((e: any) => ({ ...e, note: e.notes || "" })));
+        setExpenses(data.expenses.map((e: Expense & { notes?: string }) => ({ ...e, note: e.notes || "" })));
       }
     } catch (error) {
       console.error("Failed to fetch expenses:", error);

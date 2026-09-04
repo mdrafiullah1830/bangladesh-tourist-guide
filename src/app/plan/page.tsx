@@ -374,7 +374,7 @@ export default function PlanTripPage() {
                     travellers: data.travellers,
                     interests: data.interests,
                     travelStyle: data.travelStyle,
-                    days: plan.days.map((day: any) => ({
+                    days: plan.days.map((day: { dayNumber: number; activities: { title: string; type: string; cost?: number; time?: string }[] }) => ({
                       dayNumber: day.dayNumber,
                       activities: day.activities,
                     })),

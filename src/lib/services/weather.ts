@@ -81,6 +81,13 @@ function getWeatherIcon(code: number): string {
 }
 
 function getMockWeather(locationName: string): WeatherInfo {
+  // Generate dates relative to today so they never go stale
+  const today = new Date();
+  const makeDate = (offset: number) => {
+    const d = new Date(today);
+    d.setDate(d.getDate() + offset);
+    return d.toISOString().slice(0, 10);
+  };
   return {
     location: locationName,
     temperature: 30,
@@ -90,13 +97,13 @@ function getMockWeather(locationName: string): WeatherInfo {
     icon: "⛅",
     windSpeed: 12,
     forecast: [
-      { date: "2026-04-09", tempMax: 32, tempMin: 26, description: "Partly cloudy", icon: "⛅", precipitation: 2 },
-      { date: "2026-04-10", tempMax: 31, tempMin: 25, description: "Rain showers", icon: "🌦️", precipitation: 8 },
-      { date: "2026-04-11", tempMax: 30, tempMin: 25, description: "Thunderstorm", icon: "⛈️", precipitation: 15 },
-      { date: "2026-04-12", tempMax: 29, tempMin: 24, description: "Moderate rain", icon: "🌧️", precipitation: 12 },
-      { date: "2026-04-13", tempMax: 31, tempMin: 25, description: "Partly cloudy", icon: "⛅", precipitation: 3 },
-      { date: "2026-04-14", tempMax: 32, tempMin: 26, description: "Mainly clear", icon: "☀️", precipitation: 0 },
-      { date: "2026-04-15", tempMax: 33, tempMin: 26, description: "Clear sky", icon: "☀️", precipitation: 0 },
+      { date: makeDate(0), tempMax: 32, tempMin: 26, description: "Partly cloudy", icon: "⛅", precipitation: 2 },
+      { date: makeDate(1), tempMax: 31, tempMin: 25, description: "Rain showers", icon: "🌦️", precipitation: 8 },
+      { date: makeDate(2), tempMax: 30, tempMin: 25, description: "Thunderstorm", icon: "⛈️", precipitation: 15 },
+      { date: makeDate(3), tempMax: 29, tempMin: 24, description: "Moderate rain", icon: "🌧️", precipitation: 12 },
+      { date: makeDate(4), tempMax: 31, tempMin: 25, description: "Partly cloudy", icon: "⛅", precipitation: 3 },
+      { date: makeDate(5), tempMax: 32, tempMin: 26, description: "Mainly clear", icon: "☀️", precipitation: 0 },
+      { date: makeDate(6), tempMax: 33, tempMin: 26, description: "Clear sky", icon: "☀️", precipitation: 0 },
     ],
     dataStatus: "ESTIMATED",
   };

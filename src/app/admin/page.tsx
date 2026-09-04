@@ -19,12 +19,39 @@ interface DestinationForm {
   bestTimeToVisit: string;
 }
 
+interface AdminDestination {
+  slug: string;
+  name: string;
+  division: string;
+  category: string;
+  latitude?: number;
+  longitude?: number;
+  description?: string;
+  estimatedCost?: number;
+  bestTimeToVisit?: string;
+  stayDuration?: string;
+  safetyRating?: number;
+  isHiddenGem?: boolean;
+  tags?: string[];
+}
+
+interface AdminUser {
+  name: string;
+  email: string;
+  role: string;
+  joined: string;
+}
+
 export default function AdminPage() {
   const [section, setSection] = useState<AdminSection>("overview");
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
-  const [destinations, setDestinations] = useState<any[]>([]);
-  const [users, setUsers] = useState<any[]>([]);
+  const [destinations, setDestinations] = useState<AdminDestination[]>([]);
+  const [users, setUsers] = useState<AdminUser[]>([
+    { name: "John Smith", email: "john@example.com", role: "traveller", joined: "2026-08-15" },
+    { name: "Sarah Johnson", email: "sarah@example.com", role: "traveller", joined: "2026-08-20" },
+    { name: "Admin User", email: "admin@bdguide.com", role: "admin", joined: "2026-01-01" },
+  ]);
   const [feedback, setFeedback] = useState("");
   const [destinationForm, setDestinationForm] = useState<DestinationForm>({
     name: "",
@@ -439,12 +466,8 @@ export default function AdminPage() {
           <h2 className="text-xl font-bold text-gray-900">User Management</h2>
           <Card>
             <div className="space-y-3">
-              {[
-                { name: "John Smith", email: "john@example.com", role: "traveller", joined: "2026-08-15" },
-                { name: "Sarah Johnson", email: "sarah@example.com", role: "traveller", joined: "2026-08-20" },
-                { name: "Admin User", email: "admin@bdguide.com", role: "admin", joined: "2026-01-01" },
-              ].map((user, idx) => (
-                <div key={idx} className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
+              {users.map((user) => (
+                <div key={user.email} className="flex items-center justify-between p-3 rounded-lg bg-gray-50">
                   <div>
                     <div className="font-medium text-sm">{user.name}</div>
                     <div className="text-xs text-gray-500">{user.email}</div>

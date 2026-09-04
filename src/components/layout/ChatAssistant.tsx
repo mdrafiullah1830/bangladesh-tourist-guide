@@ -26,8 +26,9 @@ export function ChatAssistant() {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
+    const msgId = `${Date.now()}-${crypto.randomUUID()}`;
     const userMessage: ChatMessage = {
-      id: Date.now().toString(),
+      id: msgId,
       role: "user",
       content: input,
       timestamp: new Date(),
@@ -41,7 +42,7 @@ export function ChatAssistant() {
     setTimeout(() => {
       const response = generateResponse(input.toLowerCase());
       const assistantMessage: ChatMessage = {
-        id: (Date.now() + 1).toString(),
+        id: `${Date.now()}-${crypto.randomUUID()}`,
         role: "assistant",
         content: response,
         timestamp: new Date(),
