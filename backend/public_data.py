@@ -20,7 +20,7 @@ USER_AGENT = "BangladeshTouristGuide/1.0 (public-data pipeline)"
 OVERPASS = "https://overpass-api.de/api/interpreter"
 WIKIDATA = "https://query.wikidata.org/sparql"
 OPEN_METEO = "https://archive-api.open-meteo.com/v1/archive"
-BBOX = "20.5,88.0,26.7,92.8"
+COUNTRY_AREA = 'area["ISO3166-1"="BD"][admin_level=2]->.searchArea;'
 
 OSM_FILTERS = {
     "tourism": ['["tourism"~"attraction|museum|viewpoint|hotel|guest_house|hostel|motel|resort|camp_site|information|picnic_site"]'],
@@ -77,9 +77,9 @@ def classify(tags: dict) -> str:
 def osm() -> tuple[list[dict], list[dict]]:
     records, manifests = [], []
     for group, filters in OSM_FILTERS.items():
-        unions = "".join(f"nwr{part}({BBOX});" for part in filters)
-        query = f"[out:json][timeout:180];({unions});out center tags;"
-        raw_path = RAW / f"osm-{group}-v2.json"
+        unions = "".join(f"nwr{part}(area.searchArea);" for part in filters)
+        query = f"[out:json][timeout:180];{COUNTRY_AREA}({unions});out center tags;"
+        raw_path = RAW / f"osm-{group}-v3.json"
         raw_path.parent.mkdir(parents=True, exist_ok=True)
         payload = raw_path.read_bytes() if raw_path.exists() else fetch(OVERPASS, urlencode({"data": query}).encode())
         if not raw_path.exists():
@@ -90,7 +90,7 @@ def osm() -> tuple[list[dict], list[dict]]:
             lat = item.get("lat", item.get("center", {}).get("lat"))
             lon = item.get("lon", item.get("center", {}).get("lon"))
             name = tags.get("name:en") or tags.get("name") or tags.get("name:bn")
-            if lat is None or lon is None or not name:
+            if lat is None or lon is None or not name or not any(character.isalpha() for character in name):
                 continue
             records.append({
                 "id": f"osm:{item['type']}:{item['id']}", "name": name,
@@ -180,7 +180,7 @@ def main() -> None:
     write_csv("historical-weather.csv", climate)
     manifest = {
         "retrieved_at": retrieved,
-        "coverage_note": "Public records available through the selected APIs; not an exhaustive registry.",
+        "coverage_note": "Public records within the OpenStreetMap Bangladesh administrative boundary available through the selected APIs; not an exhaustive registry.",
         "datasets": osm_manifest + [wiki_manifest] + weather_manifest,
         "outputs": {
             "bangladesh-pois": {"rows": len(pois), "categories": dict(Counter(x["category"] for x in pois))},

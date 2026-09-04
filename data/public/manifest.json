@@ -1,31 +1,31 @@
 {
-  "retrieved_at": "2026-09-04T20:39:13.259778+00:00",
-  "coverage_note": "Public records available through the selected APIs; not an exhaustive registry.",
+  "retrieved_at": "2026-09-04T20:57:13.649372+00:00",
+  "coverage_note": "Public records within the OpenStreetMap Bangladesh administrative boundary available through the selected APIs; not an exhaustive registry.",
   "datasets": [
     {
       "dataset": "osm-tourism",
-      "rows_raw": 3594,
-      "sha256": "a266828a4190e79174b372c8334d8398d79bf8d9ae4949bb3775089ad6a120cc"
+      "rows_raw": 2320,
+      "sha256": "63dc7e17b25ec5b35139d05a7a94c9d2c56daf79f7c64814f51b36f72528ff28"
     },
     {
       "dataset": "osm-heritage_nature",
-      "rows_raw": 5107,
-      "sha256": "536a122205fe0b657a92bcb6c2a77585aa4f4d2acc1dae24917428a740eb28d6"
+      "rows_raw": 3135,
+      "sha256": "9a12947dff4ae9513e9f3b35d269c1d8b4024448ba6c225ca346d82deacf85b5"
     },
     {
       "dataset": "osm-food",
-      "rows_raw": 8429,
-      "sha256": "2b475ee18cb178a54c328a767d6064d0a40c51cda6a297090de50caaa6fbd7fd"
+      "rows_raw": 6298,
+      "sha256": "ad3f2c3602d40fd6b1343143c79586151ccecdd20363f4f6195fe0fd0f219c60"
     },
     {
       "dataset": "osm-emergency",
-      "rows_raw": 6218,
-      "sha256": "1182d40e0daa3940dbed4a7da7b30728122762dd134a27f6895936401fe0df79"
+      "rows_raw": 3963,
+      "sha256": "7b301dc81af5854c6071d2322f28d1a173ebb3b76100fd696c32c62911f3112e"
     },
     {
       "dataset": "osm-transport",
-      "rows_raw": 2972,
-      "sha256": "ab1bde4e2dbeec4a076beb9df6d4589cc5b68047948134dce1647f3156a22751"
+      "rows_raw": 1872,
+      "sha256": "fe05d20b6c31aea2a9caf98890a4338043d4ddde0bf01d6c3aa71f0b0f6b98b3"
     },
     {
       "dataset": "wikidata-tourism",
@@ -95,13 +95,13 @@
   ],
   "outputs": {
     "bangladesh-pois": {
-      "rows": 20506,
+      "rows": 14052,
       "categories": {
-        "accommodation": 2512,
-        "attraction": 1946,
-        "emergency": 5964,
-        "food": 7646,
-        "transport": 2438
+        "accommodation": 1670,
+        "attraction": 1402,
+        "emergency": 3791,
+        "food": 5746,
+        "transport": 1443
       }
     },
     "wikidata-tourism": {

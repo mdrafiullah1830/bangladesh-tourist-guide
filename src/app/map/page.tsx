@@ -37,11 +37,36 @@ export default function MapPage() {
   const [selectedType, setSelectedType] = useState("all");
   const [selectedDistrict, setSelectedDistrict] = useState<string | null>(null);
   const [points, setPoints] = useState<MapPoint[]>([]);
+  const [totalPoints, setTotalPoints] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  const [usingFallback, setUsingFallback] = useState(false);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [mapCenter, setMapCenter] = useState<[number, number]>([23.685, 90.3563]);
 
   useEffect(() => {
-    setPoints(getMapPoints(selectedType === "all" ? undefined : selectedType));
+    const controller = new AbortController();
+    setIsLoading(true);
+    fetch(`/api/places?type=${encodeURIComponent(selectedType)}&limit=500`, { signal: controller.signal })
+      .then(async (response) => {
+        if (!response.ok) throw new Error("Public places unavailable");
+        return response.json() as Promise<{ points: MapPoint[]; total: number }>;
+      })
+      .then((result) => {
+        setPoints(result.points);
+        setTotalPoints(result.total);
+        setUsingFallback(false);
+      })
+      .catch((error) => {
+        if (error instanceof DOMException && error.name === "AbortError") return;
+        const fallback = getMapPoints(selectedType === "all" ? undefined : selectedType);
+        setPoints(fallback);
+        setTotalPoints(fallback.length);
+        setUsingFallback(true);
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) setIsLoading(false);
+      });
+    return () => controller.abort();
   }, [selectedType]);
 
   useEffect(() => {
@@ -75,7 +100,7 @@ export default function MapPage() {
           <h1 className="text-3xl font-bold text-gray-900">Interactive Map</h1>
           <p className="text-gray-500 mt-1">Explore Bangladesh&apos;s points of interest</p>
         </div>
-        <DataStatusBadge status="ESTIMATED" />
+        <DataStatusBadge status={usingFallback ? "ESTIMATED" : "VERIFIED"} />
       </div>
 
       <div className="grid md:grid-cols-4 gap-6">
@@ -134,8 +159,13 @@ export default function MapPage() {
           </button>
 
           <Card className="text-sm text-gray-600">
-            <p><strong>{points.length}</strong> points visible</p>
+            <p>
+              {isLoading
+                ? "Loading public data…"
+                : <><strong>{points.length}</strong> shown from <strong>{totalPoints.toLocaleString()}</strong> matches</>}
+            </p>
             {selectedDistrict && <p className="capitalize">District: {selectedDistrict}</p>}
+            {!usingFallback && <p className="mt-1 text-xs">Source: © OpenStreetMap contributors</p>}
           </Card>
         </div>
 

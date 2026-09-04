@@ -10,6 +10,8 @@
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
+    "data:public": "python backend/public_data.py",
+    "data:import": "tsx scripts/import-public-data.ts",
     "db:studio": "prisma studio",
     "postinstall": "prisma generate",
     "test": "vitest run",
