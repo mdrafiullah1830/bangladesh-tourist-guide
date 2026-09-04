@@ -1,0 +1,131 @@
+{
+  "retrieved_at": "2026-09-04T20:39:13.259778+00:00",
+  "coverage_note": "Public records available through the selected APIs; not an exhaustive registry.",
+  "datasets": [
+    {
+      "dataset": "osm-tourism",
+      "rows_raw": 3594,
+      "sha256": "a266828a4190e79174b372c8334d8398d79bf8d9ae4949bb3775089ad6a120cc"
+    },
+    {
+      "dataset": "osm-heritage_nature",
+      "rows_raw": 5107,
+      "sha256": "536a122205fe0b657a92bcb6c2a77585aa4f4d2acc1dae24917428a740eb28d6"
+    },
+    {
+      "dataset": "osm-food",
+      "rows_raw": 8429,
+      "sha256": "2b475ee18cb178a54c328a767d6064d0a40c51cda6a297090de50caaa6fbd7fd"
+    },
+    {
+      "dataset": "osm-emergency",
+      "rows_raw": 6218,
+      "sha256": "1182d40e0daa3940dbed4a7da7b30728122762dd134a27f6895936401fe0df79"
+    },
+    {
+      "dataset": "osm-transport",
+      "rows_raw": 2972,
+      "sha256": "ab1bde4e2dbeec4a076beb9df6d4589cc5b68047948134dce1647f3156a22751"
+    },
+    {
+      "dataset": "wikidata-tourism",
+      "rows": 149,
+      "sha256": "1cf0512401e00afd1356a1bc9d5e5af7c3a1ab3daa8f2aa027540243062d3c29"
+    },
+    {
+      "dataset": "weather-dhaka",
+      "rows": 1461,
+      "sha256": "e6d5b50f0ad52f88275df0fcef44f6b0eb9824a64ed10621a84ec01a3bcb5799"
+    },
+    {
+      "dataset": "weather-chattogram",
+      "rows": 1461,
+      "sha256": "4373bb8db4429a0f6f50949136d607ca41e8e35b3a542e19f41efbfae0f2b55d"
+    },
+    {
+      "dataset": "weather-coxs-bazar",
+      "rows": 1461,
+      "sha256": "bf89b53bc6adad45f203d95a1770acafa76c6cec0f7990103cb7782da144b15b"
+    },
+    {
+      "dataset": "weather-sylhet",
+      "rows": 1461,
+      "sha256": "b7af1569df94c274585a6f658c233422f49e86a098f6833eb255e757c38d657c"
+    },
+    {
+      "dataset": "weather-sundarbans",
+      "rows": 1461,
+      "sha256": "1278eb57ab0f51496c32cc4a4fc09399aab1cc4f34ea2df382bf38aa1d6e1cca"
+    },
+    {
+      "dataset": "weather-bandarban",
+      "rows": 1461,
+      "sha256": "80922d91c1c41b48115b9bfcd372a4c17886b61887ffc51b91f10cf800ce8de1"
+    },
+    {
+      "dataset": "weather-rangamati",
+      "rows": 1461,
+      "sha256": "cb8c7c908e32c8321b73c9f17e81918832e2d8a25c20923a2035028cab4b68ad"
+    },
+    {
+      "dataset": "weather-khulna",
+      "rows": 1461,
+      "sha256": "7fbe31099cc7a45392483e44849a04cd1d9000755b0384e0ad66515a445e03c1"
+    },
+    {
+      "dataset": "weather-rajshahi",
+      "rows": 1461,
+      "sha256": "df5b571d384e02508f6a2e87c06ef916e9a4ee44e0852d264632247d23ef34bf"
+    },
+    {
+      "dataset": "weather-barishal",
+      "rows": 1461,
+      "sha256": "e775b1a20a549924fe5d75fa89f39b02c18e56b137f241ecf7ce1a1febc6de49"
+    },
+    {
+      "dataset": "weather-mymensingh",
+      "rows": 1461,
+      "sha256": "fda5ff0be96da4fc6f6873223d341ab12d89537fe40ce9862553c71e89e43763"
+    },
+    {
+      "dataset": "weather-kuakata",
+      "rows": 1461,
+      "sha256": "1d6cc69bb3838ae997d6005798d20b0744f4dd635d61a46cb376aa7eca302bb9"
+    }
+  ],
+  "outputs": {
+    "bangladesh-pois": {
+      "rows": 20506,
+      "categories": {
+        "accommodation": 2512,
+        "attraction": 1946,
+        "emergency": 5964,
+        "food": 7646,
+        "transport": 2438
+      }
+    },
+    "wikidata-tourism": {
+      "rows": 149
+    },
+    "historical-weather": {
+      "rows": 17532
+    }
+  },
+  "sources": [
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+      "license": "CC0 1.0"
+    },
+    {
+      "name": "Open-Meteo",
+      "url": "https://open-meteo.com/en/terms",
+      "license": "CC BY 4.0"
+    }
+  ]
+}
