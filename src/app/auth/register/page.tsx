@@ -32,6 +32,12 @@ export default function RegisterPage() {
       return;
     }
 
+    if (formData.password.length < 8 || !/[a-zA-Z]/.test(formData.password) || !/[0-9]/.test(formData.password)) {
+      setError("Password must be at least 8 characters and contain both letters and numbers");
+      setIsLoading(false);
+      return;
+    }
+
     try {
       const response = await fetch('/api/auth/register', {
         method: 'POST',

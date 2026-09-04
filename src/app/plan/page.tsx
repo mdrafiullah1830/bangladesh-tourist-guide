@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge, DataStatusBadge } from "@/components/ui/Card";
 import { Input, Select, CheckboxGroup } from "@/components/ui/Input";
+import { useToast } from "@/components/ui/Toast";
 import { interestOptions, travelStyleOptions } from "@/lib/data/bangladesh";
 import { formatCurrency } from "@/lib/utils";
 
@@ -29,8 +30,10 @@ const airportOptions = [
 ];
 
 export default function PlanTripPage() {
+  const { showToast } = useToast();
   const [step, setStep] = useState<Step>("basics");
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
   const [plan, setPlan] = useState<{
     days: { dayNumber: number; activities: { title: string; type: string; time: string; cost: number }[] }[];
     totalCost: number;
@@ -361,8 +364,9 @@ export default function PlanTripPage() {
             <Button variant="outline" onClick={() => setStep("budget")} className="flex-1">
               ← Modify
             </Button>
-            <Button className="flex-1" size="lg" onClick={async () => {
+            <Button className="flex-1" size="lg" disabled={isSaving} isLoading={isSaving} onClick={async () => {
               if (!plan) return;
+              setIsSaving(true);
               try {
                 const response = await fetch("/api/trips", {
                   method: "POST",
@@ -381,12 +385,16 @@ export default function PlanTripPage() {
                   }),
                 });
                 if (response.ok) {
-                  alert("Trip saved successfully!");
+                  showToast("Trip saved successfully! 🎉", "success");
+                } else if (response.status === 401) {
+                  showToast("Please sign in to save your trip.", "error");
                 } else {
-                  alert("Failed to save trip. Please try again.");
+                  showToast("Failed to save trip. Please try again.", "error");
                 }
               } catch {
-                alert("Network error. Please try again.");
+                showToast("Network error. Please try again.", "error");
+              } finally {
+                setIsSaving(false);
               }
             }}>
               Save Trip

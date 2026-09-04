@@ -1,0 +1,10 @@
+{
+  "name": "Bangladesh Tourist Guide",
+  "short_name": "BD Guide",
+  "description": "AI-powered travel companion for exploring Bangladesh",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#047857",
+  "icons": []
+}

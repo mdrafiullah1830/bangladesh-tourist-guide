@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Input } from "@/components/ui/Input";
+import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 
 type Place = { slug: string; name: string; daily_cost: number; score: number; distance_km: number; category: string };
 type Device = { id: string; name: string; simulated: boolean; stale: boolean; recorded_at: string | null; latitude: number | null; longitude: number | null; temperature: number | null; humidity: number | null };
@@ -36,6 +37,7 @@ export default function SmartPage() {
   const [simulated, setSimulated] = useState(true);
   const [credential, setCredential] = useState<{ id: string; token: string; simulated: boolean } | null>(null);
   const [message, setMessage] = useState("");
+  const [revokeTarget, setRevokeTarget] = useState<{ id: string; name: string } | null>(null);
 
   const [clusterDays, setClusterDays] = useState(5);
   const [clusterTravellers, setClusterTravellers] = useState(2);
@@ -251,7 +253,7 @@ export default function SmartPage() {
             <label className="flex items-start gap-2 text-sm"><input type="checkbox" checked={consent} onChange={event => setConsent(event.target.checked)} required/>I consent to this device’s location and sensor data being stored for this prototype.</label><Button type="submit" disabled={busy || !consent}>Register device</Button>
           </form>
           {credential && <div className="bg-gray-50 p-4 rounded-lg space-y-3"><p className="font-semibold">New device token · shown only in this tab</p><input aria-label="Device token" type="password" readOnly value={credential.token} className="w-full p-2 border rounded" onFocus={event => { event.target.type = "text"; event.target.select(); }} onBlur={event => { event.target.type = "password"; }}/><p className="text-xs">Copy into the ESP32 configuration. Treat it as a password.</p>{credential.simulated && <div className="flex gap-3 flex-wrap">{[false, true].map(sos => <Button key={String(sos)} disabled={busy} variant={sos ? "danger" : "outline"} onClick={() => action(async () => { await api("telemetry", "POST", { event_id: crypto.randomUUID(), recorded_at: new Date().toISOString(), latitude: 21.4272, longitude: 92.0058, temperature: 31, humidity: 76, sos }, credential.token); setSafety(await api("safety")); setMessage(sos ? "Simulated SOS recorded locally. No emergency service was contacted." : "Simulated sensor reading stored."); })}>{sos ? "Simulate SOS" : "Send sample reading"}</Button>)}</div>}</div>}
-          <div className="grid md:grid-cols-2 gap-4">{safety.devices.length === 0 && <p className="text-gray-500">No registered devices yet.</p>}{safety.devices.map(device => <div key={device.id} className="border rounded-xl p-4 space-y-2"><p className="font-semibold">{device.name} <span className="text-xs font-normal">{device.simulated ? "SIMULATED" : "HARDWARE"} · {device.stale ? "STALE / NO DATA" : "RECENT"}</span></p><p className="text-sm">{device.temperature ?? "—"} °C · {device.humidity ?? "—"}% humidity</p><p className="text-sm">GPS: {device.latitude ?? "no fix"}, {device.longitude ?? "no fix"}</p>{device.latitude !== null && device.longitude !== null && <a className="text-sm underline" href={`https://www.openstreetmap.org/?mlat=${device.latitude}&mlon=${device.longitude}#map=15/${device.latitude}/${device.longitude}`} target="_blank" rel="noreferrer">View location on OpenStreetMap (shares coordinates)</a>}<p className="text-xs text-gray-500">{device.recorded_at ? new Date(device.recorded_at).toLocaleString() : "Waiting for first reading"}</p><button className="text-red-700 underline text-sm" disabled={busy} onClick={() => { if (window.confirm("Revoke this device and permanently delete its readings and alerts?")) action(async () => { await api(`devices/${device.id}`, "DELETE"); if (credential?.id === device.id) setCredential(null); setSafety(await api("safety")); }); }}>Revoke & erase device</button></div>)}</div>
+          <div className="grid md:grid-cols-2 gap-4">{safety.devices.length === 0 && <p className="text-gray-500">No registered devices yet.</p>}{safety.devices.map(device => <div key={device.id} className="border rounded-xl p-4 space-y-2"><p className="font-semibold">{device.name} <span className="text-xs font-normal">{device.simulated ? "SIMULATED" : "HARDWARE"} · {device.stale ? "STALE / NO DATA" : "RECENT"}</span></p><p className="text-sm">{device.temperature ?? "—"} °C · {device.humidity ?? "—"}% humidity</p><p className="text-sm">GPS: {device.latitude ?? "no fix"}, {device.longitude ?? "no fix"}</p>{device.latitude !== null && device.longitude !== null && <a className="text-sm underline" href={`https://www.openstreetmap.org/?mlat=${device.latitude}&mlon=${device.longitude}#map=15/${device.latitude}/${device.longitude}`} target="_blank" rel="noreferrer">View location on OpenStreetMap (shares coordinates)</a>}<p className="text-xs text-gray-500">{device.recorded_at ? new Date(device.recorded_at).toLocaleString() : "Waiting for first reading"}</p><button className="text-red-700 underline text-sm" disabled={busy} onClick={() => setRevokeTarget({ id: device.id, name: device.name })}>Revoke &amp; erase device</button></div>)}</div>
           <h3 className="font-semibold pt-3">Recent alerts</h3>{safety.alerts.length === 0 && <p className="text-sm text-gray-500">No alerts received.</p>}
           {safety.alerts.map(alert => <div key={alert.id} className="flex justify-between items-center gap-3 border-t pt-3"><div><p className="font-semibold">{alert.kind} · {alert.name}</p><p className="text-xs text-gray-500">{alert.simulated ? "Simulated" : "Hardware"} · {new Date(alert.recorded_at).toLocaleString()} · {alert.status}</p></div>{alert.status === "open" && <Button disabled={busy} variant="outline" onClick={() => action(async () => { await api(`alerts/${alert.id}/ack`, "POST"); setSafety(await api("safety")); })}>Acknowledge locally</Button>}</div>)}
         </Card>
@@ -264,6 +266,25 @@ export default function SmartPage() {
           <p className="text-sm text-amber-900 mt-3">{report.warning}</p>
         </Card>}
       </>}
+
+      <ConfirmDialog
+        open={revokeTarget !== null}
+        title="Revoke device"
+        message={`Revoke "${revokeTarget?.name}" and permanently delete its readings and alerts? This cannot be undone.`}
+        confirmLabel="Revoke & erase"
+        danger
+        onConfirm={() => {
+          if (!revokeTarget) return;
+          const target = revokeTarget;
+          setRevokeTarget(null);
+          action(async () => {
+            await api(`devices/${target.id}`, "DELETE");
+            if (credential?.id === target.id) setCredential(null);
+            setSafety(await api("safety"));
+          });
+        }}
+        onCancel={() => setRevokeTarget(null)}
+      />
     </div>
   );
 }

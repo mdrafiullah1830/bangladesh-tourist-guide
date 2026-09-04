@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge } from "@/components/ui/Card";
 import { Input, Select, Textarea } from "@/components/ui/Input";
+import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
+import { useToast } from "@/components/ui/Toast";
 import { bangladeshDestinations as staticDestinations } from "@/lib/data/bangladesh";
 
 type AdminSection = "overview" | "destinations" | "transport" | "hotels" | "alerts" | "users";
@@ -43,10 +45,12 @@ interface AdminUser {
 }
 
 export default function AdminPage() {
+  const { showToast } = useToast();
   const [section, setSection] = useState<AdminSection>("overview");
   const [isEditing, setIsEditing] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [destinations, setDestinations] = useState<AdminDestination[]>([]);
+  const [deleteTarget, setDeleteTarget] = useState<string | null>(null);
   const [users, setUsers] = useState<AdminUser[]>([
     { name: "John Smith", email: "john@example.com", role: "traveller", joined: "2026-08-15" },
     { name: "Sarah Johnson", email: "sarah@example.com", role: "traveller", joined: "2026-08-20" },
@@ -113,7 +117,7 @@ export default function AdminPage() {
     };
     setDestinations(prev => [...prev, newDest]);
     setIsEditing(false);
-    setFeedback(`✅ "${destinationForm.name}" added successfully!`);
+    showToast(`"${destinationForm.name}" added successfully!`, "success");
     setDestinationForm({
       name: "", division: "", category: "city",
       latitude: 0, longitude: 0, description: "",
@@ -123,10 +127,14 @@ export default function AdminPage() {
   };
 
   const handleDeleteDestination = (slug: string) => {
-    if (window.confirm(`Delete "${slug}"?`)) {
-      setDestinations(prev => prev.filter(d => d.slug !== slug));
-      setFeedback(`✅ "${slug}" deleted`);
-    }
+    setDeleteTarget(slug);
+  };
+
+  const confirmDelete = () => {
+    if (!deleteTarget) return;
+    setDestinations(prev => prev.filter(d => d.slug !== deleteTarget));
+    showToast(`"${deleteTarget}" deleted`, "success");
+    setDeleteTarget(null);
   };
 
   const stats = [
@@ -482,6 +490,16 @@ export default function AdminPage() {
           </Card>
         </div>
       )}
+
+      <ConfirmDialog
+        open={deleteTarget !== null}
+        title="Delete destination"
+        message={`Are you sure you want to delete "${deleteTarget}"? This cannot be undone.`}
+        confirmLabel="Delete"
+        danger
+        onConfirm={confirmDelete}
+        onCancel={() => setDeleteTarget(null)}
+      />
     </div>
   );
 }
