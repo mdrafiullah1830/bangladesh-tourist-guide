@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { PrismaClient } from "@prisma/client";
+import { calculatePlaceQuality } from "../src/lib/public-places";
 
 type PublicPoi = {
   id: string;
@@ -49,25 +50,30 @@ async function main() {
     throw new Error(`Refusing import: only ${valid.length} valid public POIs`);
   }
 
-  const mapped = valid.map((row) => ({
-    id: row.id,
-    name: row.name.trim(),
-    nameBn: optional(row.name_bn),
-    nameEn: optional(row.name_en),
-    category: row.category,
-    subtype: optional(row.subtype),
-    latitude: row.latitude,
-    longitude: row.longitude,
-    district: optional(row.district),
-    address: optional(row.address),
-    phone: optional(row.phone),
-    website: optional(row.website),
-    openingHours: optional(row.opening_hours),
-    wheelchair: optional(row.wheelchair),
-    source: row.source,
-    sourceUrl: row.source_url,
-    retrievedAt,
-  }));
+  const mapped = valid.map((row) => {
+    const quality = calculatePlaceQuality(row);
+    return {
+      id: row.id,
+      name: row.name.trim(),
+      nameBn: optional(row.name_bn),
+      nameEn: optional(row.name_en),
+      category: row.category,
+      subtype: optional(row.subtype),
+      latitude: row.latitude,
+      longitude: row.longitude,
+      district: optional(row.district),
+      address: optional(row.address),
+      phone: optional(row.phone),
+      website: optional(row.website),
+      openingHours: optional(row.opening_hours),
+      wheelchair: optional(row.wheelchair),
+      qualityScore: quality.score,
+      qualityTier: quality.tier,
+      source: row.source,
+      sourceUrl: row.source_url,
+      retrievedAt,
+    };
+  });
 
   await prisma.$transaction(async (tx) => {
     await tx.publicPlace.deleteMany();

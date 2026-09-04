@@ -35,9 +35,13 @@ export default function PlanTripPage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [plan, setPlan] = useState<{
-    days: { dayNumber: number; activities: { title: string; type: string; time: string; cost: number }[] }[];
+    days: { dayNumber: number; location?: string; activities: { title: string; type: string; time: string; startTime?: string; cost: number; location?: string; latitude?: number; longitude?: number; sourceUrl?: string }[] }[];
     totalCost: number;
     transportOptions: { mode: string; from: string; to: string; duration: string; fare: number; recommendation: string }[];
+    recommendations: { id: string; name: string; type: string; sourceUrl: string; qualityScore: number }[];
+    sourceCount: number;
+    baseCity: string;
+    dataStatus: "LAST_UPDATED";
   } | null>(null);
 
   const [data, setData] = useState<PlanData>({
@@ -65,40 +69,24 @@ export default function PlanTripPage() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const generatePlan = () => {
+  const generatePlan = async () => {
     if (!validate()) return;
     setIsGenerating(true);
-    setTimeout(() => {
-      const dailyBudget = data.budget / data.days;
-      const days = Array.from({ length: data.days }, (_, i) => ({
-        dayNumber: i + 1,
-        activities: [
-          { title: i === 0 ? "Arrival & Check-in" : `Day ${i + 1} Morning: ${data.interests[0] || 'Exploration'}`, type: "attraction", time: "09:00", cost: dailyBudget * 0.2 },
-          { title: "Local Lunch", type: "food", time: "12:30", cost: dailyBudget * 0.15 },
-          { title: i === data.days - 1 ? "Departure Prep" : `Afternoon: ${data.interests[1] || 'Sightseeing'}`, type: "attraction", time: "14:30", cost: dailyBudget * 0.25 },
-          { title: "Dinner & Rest", type: "food", time: "19:00", cost: dailyBudget * 0.2 },
-        ],
-      }));
-
-      // Use user's interests and travel style for personalized suggestions
-      const destinationOptions = [
-        { mode: "bus", from: "Dhaka", to: "Chattogram", duration: "5-6 hours", fare: 900, recommendation: "recommended" },
-        { mode: "train", from: "Dhaka", to: "Chattogram", duration: "6-7 hours", fare: 600, recommendation: "cheapest" },
-        { mode: "flight", from: "Dhaka", to: "Chattogram", duration: "45 mins", fare: 4500, recommendation: "fastest" },
-        { mode: "bus", from: "Dhaka", to: "Sylhet", duration: "5-6 hours", fare: 600, recommendation: "scenic" },
-        { mode: "bus", from: "Dhaka", to: "Cox's Bazar", duration: "8-10 hours", fare: 1200, recommendation: "popular" },
-      ];
-
-      setPlan({
-        days,
-        totalCost: data.budget * 0.85,
-        transportOptions: data.travellers > 2 
-          ? destinationOptions.filter(t => t.mode !== "flight") // Groups: avoid flights for cost
-          : destinationOptions,
+    try {
+      const response = await fetch("/api/plan", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || "Plan generation failed");
+      setPlan(result);
       setIsGenerating(false);
       setStep("result");
-    }, 2000);
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : "Unable to generate trip plan", "error");
+      setIsGenerating(false);
+    }
   };
 
   return (
@@ -295,9 +283,9 @@ export default function PlanTripPage() {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <h2 className="text-xl font-bold">Your {data.days}-Day Bangladesh Trip</h2>
-                <p className="text-green-100 text-sm">AI-generated itinerary</p>
+                <p className="text-green-100 text-sm">Public-data itinerary around {plan.baseCity}</p>
               </div>
-              <DataStatusBadge status="ESTIMATED" />
+              <DataStatusBadge status={plan.dataStatus} />
             </div>
             <div className="grid grid-cols-3 gap-4">
               <div>
@@ -315,6 +303,24 @@ export default function PlanTripPage() {
             </div>
           </Card>
 
+          <Card>
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h3 className="font-bold text-gray-900">🏨 Suggested stays</h3>
+                <p className="text-xs text-gray-500 mt-1">Selected from {plan.sourceCount} nearby public-data matches</p>
+              </div>
+              <DataStatusBadge status="LAST_UPDATED" />
+            </div>
+            <div className="grid sm:grid-cols-3 gap-3 mt-4">
+              {plan.recommendations.map((place) => (
+                <a key={place.id} href={place.sourceUrl} target="_blank" rel="noreferrer" className="rounded-lg border p-3 hover:border-bangladesh-green">
+                  <div className="font-medium text-sm">{place.name}</div>
+                  <div className="text-xs text-gray-500 mt-1">Source completeness: {Math.round(place.qualityScore * 100)}%</div>
+                </a>
+              ))}
+            </div>
+          </Card>
+
           {/* Day-by-day */}
           {plan.days.map((day) => (
             <Card key={day.dayNumber}>
@@ -325,6 +331,7 @@ export default function PlanTripPage() {
                     <div className="w-12 text-xs text-gray-500 font-medium">{act.time}</div>
                     <div className="flex-1">
                       <div className="font-medium text-sm">{act.title}</div>
+                      {act.location && <div className="text-xs text-gray-500">{act.location}</div>}
                       <Badge variant="default" size="sm">{act.type}</Badge>
                     </div>
                     <div className="text-sm text-gray-500">~{formatCurrency(act.cost)}</div>

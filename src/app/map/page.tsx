@@ -46,7 +46,7 @@ export default function MapPage() {
   useEffect(() => {
     const controller = new AbortController();
     setIsLoading(true);
-    fetch(`/api/places?type=${encodeURIComponent(selectedType)}&limit=500`, { signal: controller.signal })
+    fetch(`/api/places?type=${encodeURIComponent(selectedType)}&limit=500&minQuality=0.35`, { signal: controller.signal })
       .then(async (response) => {
         if (!response.ok) throw new Error("Public places unavailable");
         return response.json() as Promise<{ points: MapPoint[]; total: number }>;
@@ -100,7 +100,7 @@ export default function MapPage() {
           <h1 className="text-3xl font-bold text-gray-900">Interactive Map</h1>
           <p className="text-gray-500 mt-1">Explore Bangladesh&apos;s points of interest</p>
         </div>
-        <DataStatusBadge status={usingFallback ? "ESTIMATED" : "VERIFIED"} />
+        <DataStatusBadge status={usingFallback ? "ESTIMATED" : "LAST_UPDATED"} />
       </div>
 
       <div className="grid md:grid-cols-4 gap-6">

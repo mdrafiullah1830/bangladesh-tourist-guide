@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useEffect, useState, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/Button";
@@ -18,6 +18,27 @@ const categories = [
   { id: "city", label: "Cities", icon: "🏙️" },
 ];
 
+const publicTypes = [
+  { id: "all", label: "All public places" },
+  { id: "attraction", label: "Attractions" },
+  { id: "hotel", label: "Stays" },
+  { id: "restaurant", label: "Food" },
+  { id: "hospital", label: "Hospitals" },
+  { id: "station", label: "Transport" },
+];
+
+interface PublicPlaceResult {
+  id: string;
+  name: string;
+  type: string;
+  lat: number;
+  lng: number;
+  description?: string;
+  district?: string;
+  sourceUrl: string;
+  qualityScore: number;
+}
+
 function DestinationsContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
@@ -25,6 +46,41 @@ function DestinationsContent() {
   const [query, setQuery] = useState(initialQuery);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [showGems, setShowGems] = useState(false);
+  const [publicType, setPublicType] = useState("all");
+  const [publicPlaces, setPublicPlaces] = useState<PublicPlaceResult[]>([]);
+  const [publicTotal, setPublicTotal] = useState(0);
+  const [publicLoading, setPublicLoading] = useState(true);
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const timer = window.setTimeout(() => {
+      const params = new URLSearchParams({ type: publicType, limit: "12", minQuality: "0.45" });
+      if (query.trim()) params.set("q", query.trim());
+      setPublicLoading(true);
+      fetch(`/api/places?${params}`, { signal: controller.signal })
+        .then(async (response) => {
+          if (!response.ok) throw new Error("Public search unavailable");
+          return response.json() as Promise<{ points: PublicPlaceResult[]; total: number }>;
+        })
+        .then((result) => {
+          setPublicPlaces(result.points);
+          setPublicTotal(result.total);
+        })
+        .catch((error) => {
+          if (!(error instanceof DOMException && error.name === "AbortError")) {
+            setPublicPlaces([]);
+            setPublicTotal(0);
+          }
+        })
+        .finally(() => {
+          if (!controller.signal.aborted) setPublicLoading(false);
+        });
+    }, 250);
+    return () => {
+      window.clearTimeout(timer);
+      controller.abort();
+    };
+  }, [publicType, query]);
 
   const filtered = bangladeshDestinations.filter((dest) => {
     const matchesQuery = !query || 
@@ -139,6 +195,48 @@ function DestinationsContent() {
           ))}
         </div>
       )}
+
+      <section className="mt-10">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-4">
+          <div>
+            <h2 className="text-xl font-bold text-gray-900">Public place explorer</h2>
+            <p className="text-sm text-gray-500">Search source-attributed places across Bangladesh</p>
+          </div>
+          <select
+            value={publicType}
+            onChange={(event) => setPublicType(event.target.value)}
+            className="rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+            aria-label="Public place type"
+          >
+            {publicTypes.map((type) => <option key={type.id} value={type.id}>{type.label}</option>)}
+          </select>
+        </div>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-sm text-gray-500">{publicLoading ? "Searching…" : `${publicTotal.toLocaleString()} matches`}</p>
+          <DataStatusBadge status="LAST_UPDATED" />
+        </div>
+        {publicLoading ? (
+          <Card><Skeleton lines={5} /></Card>
+        ) : publicPlaces.length ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {publicPlaces.map((place) => (
+              <a key={place.id} href={place.sourceUrl} target="_blank" rel="noreferrer">
+                <Card hover className="h-full">
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="font-semibold text-gray-900">{place.name}</h3>
+                    <Badge>{place.type}</Badge>
+                  </div>
+                  <p className="text-xs text-gray-500 mt-2 capitalize">{place.description || "public place"}</p>
+                  {place.district && <p className="text-xs text-gray-500 mt-1">{place.district}</p>}
+                  <p className="text-xs text-bangladesh-green mt-3">Source completeness: {Math.round(place.qualityScore * 100)}%</p>
+                </Card>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <Card className="text-center text-sm text-gray-500">No source-attributed public places found.</Card>
+        )}
+      </section>
 
       {/* Quick Info */}
       <Card className="mt-8 bg-bangladesh-green/5 border-bangladesh-green/20">

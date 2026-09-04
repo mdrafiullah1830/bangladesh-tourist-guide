@@ -329,6 +329,8 @@ model PublicPlace {
   website      String?
   openingHours String?
   wheelchair   String?
+  qualityScore Float    @default(0)
+  qualityTier  String   @default("low")
   source       String
   sourceUrl    String
   retrievedAt  DateTime
@@ -336,6 +338,7 @@ model PublicPlace {
   updatedAt    DateTime @updatedAt
 
   @@index([category, subtype])
+  @@index([qualityScore])
   @@index([district])
   @@index([latitude, longitude])
 }
