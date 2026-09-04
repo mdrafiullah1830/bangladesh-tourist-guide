@@ -284,8 +284,8 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm text-gray-400">
                 <li><Link href="/plan" className="hover:text-white transition-colors">AI Trip Planner</Link></li>
                 <li><Link href="/emergency" className="hover:text-white transition-colors">Emergency Center</Link></li>
-                <li><Link href="/translation" className="hover:text-white transition-colors">Translation</Link></li>
-                <li><Link href="/weather" className="hover:text-white transition-colors">Weather</Link></li>
+                <li><Link href="/smart" className="hover:text-white transition-colors">ML & IoT Dashboard</Link></li>
+                <li><Link href="/admin" className="hover:text-white transition-colors">Admin</Link></li>
               </ul>
             </div>
             <div>

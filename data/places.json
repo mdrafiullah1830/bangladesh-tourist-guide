@@ -1,0 +1,134 @@
+[
+  {
+    "slug": "dhaka",
+    "name": "Dhaka",
+    "category": "city",
+    "latitude": 23.8103,
+    "longitude": 90.4125,
+    "tags": "heritage culture food shopping history",
+    "description": "Capital city with Mughal heritage and vibrant culture",
+    "daily_cost": 3000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "chattogram",
+    "name": "Chattogram",
+    "category": "beach",
+    "latitude": 22.3569,
+    "longitude": 91.7832,
+    "tags": "port beach hill nature",
+    "description": "Port city with beaches and hill tracts",
+    "daily_cost": 2500,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "coxs-bazar",
+    "name": "Cox's Bazar",
+    "category": "beach",
+    "latitude": 21.4272,
+    "longitude": 92.0058,
+    "tags": "beach sunset seafood nature",
+    "description": "World's longest natural sea beach",
+    "daily_cost": 2000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "sylhet",
+    "name": "Sylhet",
+    "category": "nature",
+    "latitude": 24.8949,
+    "longitude": 91.8687,
+    "tags": "tea hills nature waterfall spiritual",
+    "description": "Tea capital with rolling hills and gardens",
+    "daily_cost": 2500,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "sundarbans",
+    "name": "Sundarbans",
+    "category": "nature",
+    "latitude": 21.9497,
+    "longitude": 89.1833,
+    "tags": "wildlife mangrove tiger nature UNESCO",
+    "description": "World's largest mangrove forest, UNESCO site",
+    "daily_cost": 5000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "sreemangal",
+    "name": "Sreemangal",
+    "category": "nature",
+    "latitude": 24.3065,
+    "longitude": 91.7296,
+    "tags": "tea nature tribal photography",
+    "description": "Tea capital with estates and national park",
+    "daily_cost": 2000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "bandarban",
+    "name": "Bandarban",
+    "category": "mountain",
+    "latitude": 22.1953,
+    "longitude": 92.218,
+    "tags": "hill indigenous adventure nature",
+    "description": "Hill district with indigenous culture and peaks",
+    "daily_cost": 3000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "rangamati",
+    "name": "Rangamati",
+    "category": "nature",
+    "latitude": 22.6372,
+    "longitude": 92.1641,
+    "tags": "lake hill indigenous peace",
+    "description": "Hill tract lake district with indigenous culture",
+    "daily_cost": 2500,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "kuakata",
+    "name": "Kuakata",
+    "category": "beach",
+    "latitude": 21.8167,
+    "longitude": 90.1167,
+    "tags": "beach sunrise sunset culture",
+    "description": "Beach with both sunrise and sunset views",
+    "daily_cost": 1800,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "paharpur",
+    "name": "Paharpur",
+    "category": "heritage",
+    "latitude": 25.0306,
+    "longitude": 88.9781,
+    "tags": "UNESCO heritage Buddhist history",
+    "description": "UNESCO Buddhist monastery ruins",
+    "daily_cost": 1500,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "srimangal",
+    "name": "Srimangal",
+    "category": "nature",
+    "latitude": 24.3065,
+    "longitude": 91.7296,
+    "tags": "tea nature wildlife tribal",
+    "description": "Tea gardens and nature trails",
+    "daily_cost": 2000,
+    "provenance": "existing repository; costs unverified estimates"
+  },
+  {
+    "slug": "rajshahi",
+    "name": "Rajshahi",
+    "category": "heritage",
+    "latitude": 24.3745,
+    "longitude": 88.6042,
+    "tags": "silk temple mango heritage",
+    "description": "Silk city with temples and mangoes",
+    "daily_cost": 1800,
+    "provenance": "existing repository; costs unverified estimates"
+  }
+]

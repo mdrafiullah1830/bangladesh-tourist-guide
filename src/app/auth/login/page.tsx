@@ -16,17 +16,26 @@ export default function LoginPage() {
     e.preventDefault();
     setIsLoading(true);
     setError("");
-    
-    // Demo login - in production, this would use NextAuth
-    setTimeout(() => {
-      setIsLoading(false);
-      if (email && password) {
-        // For demo purposes, redirect to home
+
+    try {
+      const response = await fetch('/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
         window.location.href = "/";
       } else {
-        setError("Please enter email and password");
+        setError(data.error || "Login failed");
       }
-    }, 1000);
+    } catch {
+      setError("Network error. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -87,7 +96,7 @@ export default function LoginPage() {
 
         <div className="mt-4 p-3 bg-gray-50 rounded-lg">
           <p className="text-xs text-gray-500 text-center">
-            🔒 Demo: Enter any email and password to continue
+            🔒 Demo: admin@bdguide.com / admin123 or demo@example.com / demo123
           </p>
         </div>
       </Card>

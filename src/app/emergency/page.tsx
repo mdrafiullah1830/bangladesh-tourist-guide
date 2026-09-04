@@ -22,6 +22,12 @@ const hospitals = [
   { name: "Apollo Hospital", phone: "+880 2 8401616", location: "Dhaka (Bashundhara)", type: "Private", hours: "24/7" },
   { name: "Chittagong Medical College", phone: "+880 31 619400", location: "Chattogram", type: "Government", hours: "24/7" },
   { name: "Cox's Bazar Sadar Hospital", phone: "+880 341 63630", location: "Cox's Bazar", type: "Government", hours: "24/7" },
+  { name: "Sylhet MAG Osmani Medical College", phone: "+880 821 713737", location: "Sylhet", type: "Government", hours: "24/7" },
+  { name: "Khulna Medical College Hospital", phone: "+880 41 720105", location: "Khulna", type: "Government", hours: "24/7" },
+  { name: "Rajshahi Medical College Hospital", phone: "+880 721 775701", location: "Rajshahi", type: "Government", hours: "24/7" },
+  { name: "Barishal Sher-e-Bangla Medical College", phone: "+880 431 63274", location: "Barishal", type: "Government", hours: "24/7" },
+  { name: "Rangpur Medical College Hospital", phone: "+880 521 61104", location: "Rangpur", type: "Government", hours: "24/7" },
+  { name: "Evercare Hospital", phone: "+880 9643 333777", location: "Dhaka (Bashundhara)", type: "Private", hours: "24/7" },
 ];
 
 const safetyTips = [
@@ -61,6 +67,13 @@ const embassies = [
   { country: "Canada", phone: "+880 2 55668444", address: "House 16/A, Road 48, Gulshan, Dhaka" },
   { country: "Australia", phone: "+880 2 8813101", address: "184 Gulshan Avenue, Dhaka" },
   { country: "India", phone: "+880 2 9889339", address: "Plot 1-3, Park Road, Baridhara, Dhaka" },
+  { country: "China", phone: "+880 2 8824162", address: "Plot 2/4, Block-1, Baridhara, Dhaka" },
+  { country: "Japan", phone: "+880 2 8826147", address: "Plot 5, Dutabash Road, Baridhara, Dhaka" },
+  { country: "South Korea", phone: "+880 2 8812088", address: "House 2, Road 49, Gulshan-2, Dhaka" },
+  { country: "Germany", phone: "+880 2 8853361", address: "House 178, Road 86, Gulshan-2, Dhaka" },
+  { country: "France", phone: "+880 2 8813811", address: "House 18, Road 108, Gulshan-2, Dhaka" },
+  { country: "Russia", phone: "+880 2 8828976", address: "NE(J) 9, Road 79, Gulshan-2, Dhaka" },
+  { country: "Saudi Arabia", phone: "+880 2 8824854", address: "House 9, Road 76, Gulshan-2, Dhaka" },
 ];
 
 export default function EmergencyPage() {

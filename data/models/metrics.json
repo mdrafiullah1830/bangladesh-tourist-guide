@@ -1,0 +1,189 @@
+{
+  "created_at": "2026-09-04T15:19:53.522318+00:00",
+  "seed": 42,
+  "sklearn_version": "1.8.0",
+  "places": 12,
+  "warning": "All cost / crowd / demand / hotel / sentiment / anomaly / season targets are SYNTHETIC. Scores measure generated-data fit, not real-world accuracy. Anomaly baseline is a 5% injected synthetic contamination for metric calculation only.",
+  "weather_features": "Open-Meteo reanalysis",
+  "models": {
+    "cost": {
+      "features": [
+        "days",
+        "travellers",
+        "daily_cost",
+        "distance_km"
+      ],
+      "train_rows": 1920,
+      "test_rows": 480,
+      "split": "80/20 random holdout of independent synthetic trips",
+      "random_forest": {
+        "mae": 7768.684,
+        "r2": 0.951
+      },
+      "mean_baseline": {
+        "mae": 44076.677,
+        "r2": -0.003
+      },
+      "model_type": "RandomForestRegressor"
+    },
+    "crowd": {
+      "features": [
+        "month",
+        "weekend",
+        "rain_mm"
+      ],
+      "train_rows": 1096,
+      "test_rows": 365,
+      "split": "chronological: 2022-2024 train, 2025 test; contemporaneous rain input, not a weather forecast",
+      "random_forest": {
+        "mae": 7.072,
+        "r2": 0.777
+      },
+      "mean_baseline": {
+        "mae": 15.727,
+        "r2": -0.0
+      },
+      "model_type": "RandomForestRegressor"
+    }
+  },
+  "extensions": {
+    "clustering": {
+      "model_type": "KMeans (k=4) + StandardScaler",
+      "silhouette": 0.194,
+      "inertia": 5736.836,
+      "clusters": [
+        {
+          "cluster_id": 0,
+          "name": "Budget backpacker",
+          "count": 625,
+          "avg_days": 7.7,
+          "avg_travellers": 1.97,
+          "avg_daily_budget": 2596.56,
+          "avg_distance_km": 264.52
+        },
+        {
+          "cluster_id": 1,
+          "name": "Family comfort",
+          "count": 602,
+          "avg_days": 6.47,
+          "avg_travellers": 5.18,
+          "avg_daily_budget": 2872.4,
+          "avg_distance_km": 342.31
+        },
+        {
+          "cluster_id": 2,
+          "name": "Adventure premium",
+          "count": 599,
+          "avg_days": 8.23,
+          "avg_travellers": 3.08,
+          "avg_daily_budget": 5958.93,
+          "avg_distance_km": 453.88
+        },
+        {
+          "cluster_id": 3,
+          "name": "Short city break",
+          "count": 574,
+          "avg_days": 7.65,
+          "avg_travellers": 3.69,
+          "avg_daily_budget": 6187.51,
+          "avg_distance_km": 143.36
+        }
+      ]
+    },
+    "demand": {
+      "ridge": {
+        "mae": 182.389,
+        "r2": 0.899
+      },
+      "mean_baseline": {
+        "mae": 581.061,
+        "r2": -0.0
+      },
+      "train_rows": 288,
+      "test_rows": 144,
+      "split": "chronological: 2022-2024 train, 2025 test",
+      "features": [
+        "month",
+        "avg_daily_cost",
+        "visitors_count_lag1",
+        "visitors_count_lag12"
+      ],
+      "model_type": "Ridge regression with lag features"
+    },
+    "hotel_price": {
+      "random_forest": {
+        "mae": 924.093,
+        "r2": 0.912
+      },
+      "mean_baseline": {
+        "mae": 3419.609,
+        "r2": -0.0
+      },
+      "train_rows": 1200,
+      "test_rows": 300,
+      "split": "80/20 random holdout of independent synthetic hotel quotes",
+      "features": [
+        "stars",
+        "distance_center_km",
+        "baseline_daily_cost",
+        "season_winter",
+        "season_monsoon",
+        "room_type_deluxe",
+        "room_type_suite"
+      ],
+      "model_type": "RandomForestRegressor"
+    },
+    "sentiment": {
+      "logistic_regression": {
+        "mae": 0.158,
+        "accuracy": 0.842
+      },
+      "mean_baseline": {
+        "mae": 1.221
+      },
+      "train_rows": 960,
+      "test_rows": 240,
+      "split": "80/20 stratified random holdout of synthetic labeled reviews",
+      "model_type": "LogisticRegression + TF-IDF"
+    },
+    "anomaly": {
+      "isolation_forest": {
+        "precision": 0.811,
+        "recall": 1.0,
+        "contamination": 0.05
+      },
+      "split": "1200 synthetic baseline training rows; 230 mixed test rows",
+      "train_rows": 1200,
+      "test_rows": 230,
+      "features": [
+        "temperature",
+        "humidity",
+        "latitude",
+        "longitude"
+      ],
+      "model_type": "IsolationForest"
+    },
+    "season": {
+      "decision_tree": {
+        "accuracy": 1.0
+      },
+      "mean_baseline": {
+        "accuracy": 1.0
+      },
+      "train_rows": 9,
+      "test_rows": 3,
+      "split": "stratified 75/25 holdout of per-destination synthetic demand peaks",
+      "features": [
+        "avg_daily_cost",
+        "category"
+      ],
+      "model_type": "DecisionTreeClassifier"
+    }
+  },
+  "recommendation": {
+    "method": "fitted TF-IDF cosine similarity plus explicit budget/distance ranking",
+    "category_precision_at_3": 0.667,
+    "evaluation": "category sanity check on catalog metadata; NOT held-out user relevance evaluation"
+  },
+  "places_sha256": "618fcf4e49e6a13d5ac1a68f9170cd33d32477d066416c47b41bea0237d41e25"
+}

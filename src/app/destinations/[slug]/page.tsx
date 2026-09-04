@@ -202,6 +202,12 @@ function getAttractionsForDestination(slug: string): { name: string; desc: strin
       { name: "Star Mosque", desc: "Beautiful mosaic-decorated mosque", type: "Religious" },
       { name: "National Parliament House", desc: "Iconic Louis Kahn architecture", type: "Modern" },
     ],
+    chattogram: [
+      { name: "Patenga Beach", desc: "Popular city beach", type: "Natural" },
+      { name: "Foy's Lake", desc: "Amusement park and lake", type: "Recreation" },
+      { name: "Bhatiary Lake", desc: "Scenic hill lake", type: "Natural" },
+      { name: "Ethnic Museum", desc: "Tribal heritage museum", type: "Cultural" },
+    ],
     "coxs-bazar": [
       { name: "Cox's Bazar Beach", desc: "World's longest natural sea beach", type: "Natural" },
       { name: "Inani Beach", desc: "Coral-strewn pristine beach", type: "Natural" },
@@ -214,6 +220,36 @@ function getAttractionsForDestination(slug: string): { name: string; desc: strin
       { name: "Shahjalal Dargah", desc: "Sufi shrine", type: "Religious" },
       { name: "Madhabkunda Waterfall", desc: "Scenic waterfall in hills", type: "Natural" },
     ],
+    sreemangal: [
+      { name: "Lawachara National Park", desc: "Rainforest with gibbons", type: "Natural" },
+      { name: "Tea Estates", desc: "Over 150 tea gardens", type: "Natural" },
+      { name: "Seven-layer Tea", desc: "Famous layered tea", type: "Food" },
+      { name: "Madhabpur Lake", desc: "Beautiful lake in tea garden", type: "Natural" },
+    ],
+    sundarbans: [
+      { name: "Royal Bengal Tiger Safari", desc: "Tiger spotting cruise", type: "Wildlife" },
+      { name: "Katka Wildlife Sanctuary", desc: "Deer and bird watching", type: "Wildlife" },
+      { name: "Hiron Point", desc: "Famous wildlife viewing spot", type: "Wildlife" },
+      { name: "Sundarbans Mangrove Forest", desc: "Largest mangrove forest", type: "Natural" },
+    ],
+    bandarban: [
+      { name: "Nafakhum Waterfall", desc: "Largest waterfall in BD", type: "Natural" },
+      { name: "Nilgiri", desc: "Hilltop viewpoint at 2700ft", type: "Scenic" },
+      { name: "Boga Lake", desc: "Mysterious lake in hills", type: "Natural" },
+      { name: "Ruma Bazaar", desc: "Tribal market town", type: "Cultural" },
+    ],
+    rangamati: [
+      { name: "Kaptai Lake", desc: "Largest artificial lake in BD", type: "Natural" },
+      { name: "Shuvolong Waterfall", desc: "Hot water spring waterfall", type: "Natural" },
+      { name: "Pedaling Ting", desc: "Indigenous village", type: "Cultural" },
+      { name: "Chakma Rajbari", desc: "Royal palace of Chakma king", type: "Historical" },
+    ],
+    kuakata: [
+      { name: "Kuakata Beach", desc: "Sunrise and sunset beach", type: "Natural" },
+      { name: "Fatrar Char", desc: "Picturesque island", type: "Natural" },
+      { name: "Gangamati Reserved Forest", desc: "Coastal forest", type: "Natural" },
+      { name: "Sunset Point", desc: "Beautiful sunset view", type: "Scenic" },
+    ],
   };
   return attractions[slug] || [
     { name: "Local Heritage Sites", desc: "Historical landmarks", type: "Historical" },
@@ -225,8 +261,16 @@ function getAttractionsForDestination(slug: string): { name: string; desc: strin
 function getFoodForDestination(slug: string): string[] {
   const foods: Record<string, string[]> = {
     dhaka: ["Dhaka Biryani", "Fuchka", "Chotpoti", "Hilsha Fish", "Seven-layer Tea", "Roshogolla"],
+    chattogram: ["Mezbani Beef", "Kala Bhuna", "Sea Fish Fry", "Halim", "Coconut Sweets"],
     "coxs-bazar": ["Grilled Fish", "Fresh Crab", "Pomfret Fry", "Coconut Water", "Seafood Platter"],
     sylhet: ["Seven-layer Tea", "Pitha (Rice Cakes)", "Duck Curry", "Tangerines", "Fish from Haor"],
+    sreemangal: ["Seven-layer Tea", "Pitha", "Roast Duck", "Local Honey", "Amloki Pickle"],
+    sundarbans: ["Crab Curry", "Kuchia (Eel)", "Freshwater Fish", "Coconut Rice", "Shrimp"],
+    bandarban: ["Bamboo Chicken", "Bamboo Fish", "Tribal Thali", "Wild Honey", "Hill Ridge Rice"],
+    rangamati: ["Rakhine Fish Curry", "Door Pitha", "Tribal Rice Wine", "Chakma Cuisine", "Bamboo Shoot Curry"],
+    kuakata: ["Sea Fish Curry", "Coconut Milk Fish", "Panta Bhaat", "Fresh Crab", "Hilsha Shorshe"],
+    paharpur: ["Kachchi Biryani", "Sheek Kebab", "Naan", "Roshogolla", "Local Sweets"],
+    rajshahi: ["Fuska", "Mango Delicacies", "Mori Bora", "Khoi Bhaja", "Sweet Curd"],
   };
   return foods[slug] || ["Local Bengali Thali", "Fresh Fish Curry", "Street Food", "Traditional Sweets"];
 }
@@ -238,6 +282,11 @@ function getTransportForDestination(slug: string): { mode: string; icon: string;
       { mode: "Train", icon: "🚂", desc: "From Chattogram/Sylhet", fare: "৳300-1,200", duration: "5-9 hours" },
       { mode: "Bus", icon: "🚌", desc: "From all major cities", fare: "৳500-1,500", duration: "5-10 hours" },
     ],
+    chattogram: [
+      { mode: "Flight", icon: "✈️", desc: "From Dhaka", fare: "৳3,500-6,000", duration: "45 min" },
+      { mode: "Train", icon: "🚂", desc: "From Dhaka", fare: "৳300-1,200", duration: "6-7 hours" },
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka", fare: "৳600-1,500", duration: "5-7 hours" },
+    ],
     "coxs-bazar": [
       { mode: "Flight", icon: "✈️", desc: "From Dhaka", fare: "৳4,000-7,000", duration: "55 min" },
       { mode: "Bus", icon: "🚌", desc: "From Dhaka/Chattogram", fare: "৳800-1,600", duration: "8-10 hours" },
@@ -246,6 +295,26 @@ function getTransportForDestination(slug: string): { mode: string; icon: string;
       { mode: "Flight", icon: "✈️", desc: "From Dhaka", fare: "৳3,000-5,000", duration: "45 min" },
       { mode: "Train", icon: "🚂", desc: "From Dhaka", fare: "৳250-1,000", duration: "6-7 hours" },
       { mode: "Bus", icon: "🚌", desc: "From Dhaka", fare: "৳500-900", duration: "5-6 hours" },
+    ],
+    sreemangal: [
+      { mode: "Train", icon: "🚂", desc: "From Dhaka", fare: "৳250-800", duration: "4 hours" },
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka/Sylhet", fare: "৳400-800", duration: "3-4 hours" },
+    ],
+    sundarbans: [
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka to Khulna", fare: "৳600-1,000", duration: "6-7 hours" },
+      { mode: "Launch", icon: "🚢", desc: "From Khulna to Sundarbans", fare: "৳2,000-5,000", duration: "4-6 hours" },
+    ],
+    bandarban: [
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka/Chattogram", fare: "৳500-1,000", duration: "8-9 hours" },
+      { mode: "UPS", icon: "🚐", desc: "From Chattogram", fare: "৳200-400", duration: "2-3 hours" },
+    ],
+    rangamati: [
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka/Chattogram", fare: "৳500-900", duration: "6-8 hours" },
+      { mode: "Boat", icon: "🛶", desc: "On Kaptai Lake", fare: "৳200-800", duration: "Varies" },
+    ],
+    kuakata: [
+      { mode: "Bus", icon: "🚌", desc: "From Dhaka", fare: "৳600-1,200", duration: "8-10 hours" },
+      { mode: "Bus", icon: "🚌", desc: "From Barishal", fare: "৳250-500", duration: "3-4 hours" },
     ],
   };
   return transport[slug] || [

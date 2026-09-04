@@ -1,0 +1,2401 @@
+days,travellers,daily_budget,distance_km,month,interests,category,season,total_spend
+2,1,5205,186.4,7,wildlife,nature,monsoon,11155.6
+11,4,5094,95.4,6,sunset wildlife,heritage,monsoon,225662.4
+10,5,2394,310.7,1,sunset lake,heritage,winter,125914.0
+7,4,6504,147.6,2,food lake wildlife,mountain,winter,184473.6
+7,3,5780,562.6,8,hills shopping wildlife,heritage,monsoon,128131.20000000001
+13,5,6222,22.3,7,shopping sunset lake,nature,monsoon,404876.0
+2,3,4168,103.1,7,sunset adventure,nature,monsoon,26245.199999999997
+10,5,7226,163.0,2,sunset food adventure,heritage,winter,364560.0
+3,3,3606,135.4,7,hills,mountain,monsoon,34078.8
+2,1,6601,151.0,1,tea,nature,winter,13806.0
+8,4,2265,400.5,2,hills lake,nature,winter,78888.0
+14,1,2580,210.0,6,heritage hills shopping,beach,monsoon,36960.0
+11,6,4592,376.7,8,tea beach wildlife,mountain,monsoon,312112.80000000005
+11,4,4802,536.3,8,sunset wildlife adventure,beach,monsoon,219868.8
+11,3,6172,369.5,12,hills food wildlife,beach,autumn,208110.0
+12,3,2941,422.8,11,lake adventure,nature,autumn,110949.59999999999
+8,4,7083,232.0,5,sunset food,city,monsoon,230368.0
+2,2,3174,112.6,10,adventure lake,city,autumn,13596.8
+12,2,4646,205.9,2,tea,heritage,winter,113151.2
+7,3,7509,579.3,11,shopping lake,nature,autumn,164640.59999999998
+8,2,4683,380.7,5,heritage,mountain,monsoon,77973.6
+6,5,5709,181.0,10,hills sunset adventure,mountain,autumn,174890.0
+3,1,7342,281.5,12,shopping lake sunset,heritage,autumn,23152.0
+13,5,7817,504.6,9,heritage tea,city,monsoon,518197.0
+11,3,4395,407.7,12,food shopping,city,autumn,149927.40000000002
+10,4,3801,345.2,1,wildlife beach,mountain,winter,157563.2
+6,1,2217,533.4,3,sunset lake,nature,summer,15435.6
+12,3,4669,410.0,8,beach adventure,nature,monsoon,173004.0
+8,5,7412,392.8,7,adventure lake,beach,monsoon,304336.0
+7,2,4307,130.1,2,beach,beach,winter,61338.8
+7,1,3309,81.7,9,hills heritage beach,beach,monsoon,23489.8
+4,4,1572,579.8,1,shopping,heritage,winter,34428.8
+2,1,3606,367.3,12,shopping sunset,mountain,autumn,8681.2
+8,2,2504,261.1,2,sunset,heritage,winter,42152.8
+13,3,7832,361.6,6,wildlife sunset,mountain,monsoon,309787.19999999995
+1,4,4598,55.9,10,lake adventure hills,heritage,autumn,19286.4
+13,4,1786,496.8,7,wildlife,beach,monsoon,100820.8
+12,5,1285,145.7,9,food lake,mountain,monsoon,80014.0
+4,6,6925,486.6,9,shopping hills,mountain,monsoon,177878.40000000002
+9,1,7506,329.9,12,beach,nature,autumn,68873.6
+3,3,6293,180.4,6,lake shopping hills,nature,monsoon,58801.799999999996
+11,1,1691,37.5,12,lake,beach,autumn,18751.0
+10,1,1507,493.2,7,lake adventure,heritage,monsoon,17042.8
+5,2,2225,122.3,11,food,city,autumn,23228.4
+1,4,6208,50.0,9,sunset wildlife hills,beach,monsoon,25632.0
+14,6,6310,458.4,2,sunset,beach,winter,541041.6000000001
+7,5,6832,223.0,8,hills shopping heritage,city,monsoon,243580.0
+13,4,1497,245.8,11,beach shopping,heritage,autumn,81776.8
+10,5,1903,163.3,2,sunset wildlife,city,winter,98416.0
+11,2,7282,518.3,11,heritage,heritage,autumn,164350.4
+11,6,7486,192.5,2,hills food sunset,heritage,winter,498696.0
+3,6,6025,141.9,11,sunset heritage,beach,autumn,111855.59999999999
+6,1,1563,199.4,10,beach,nature,autumn,10175.6
+7,3,1294,137.8,2,sunset hills shopping,mountain,winter,28827.600000000002
+7,5,1200,204.2,9,wildlife,city,monsoon,46084.0
+1,3,5781,68.1,2,hills tea,beach,winter,18160.199999999997
+8,6,6890,111.9,7,wildlife heritage tea,beach,monsoon,333405.6
+3,6,5347,261.9,12,beach lake shopping,nature,autumn,102531.59999999999
+11,3,2687,530.1,3,hills tea beach,city,summer,95032.20000000001
+10,1,6252,53.2,3,wildlife lake,city,summer,62732.8
+13,3,1225,143.4,6,wildlife heritage food,nature,monsoon,49495.799999999996
+11,2,6763,546.8,5,hills wildlife,nature,monsoon,153160.4
+6,3,7221,536.2,1,food wildlife,mountain,winter,136412.40000000002
+14,4,5972,414.1,6,sunset,city,monsoon,341057.6
+6,3,7130,159.5,4,wildlife tea,beach,summer,130254.0
+5,2,5020,263.5,2,wildlife lake,beach,winter,52308.0
+13,2,4172,142.5,4,shopping,nature,summer,109612.0
+6,5,3121,94.6,1,wildlife beach hills,mountain,winter,95522.0
+2,1,7436,240.4,11,food,nature,autumn,15833.6
+7,2,5820,354.0,12,tea shopping,city,autumn,84312.0
+12,6,2171,228.8,5,beach,mountain,monsoon,161803.2
+3,1,7690,374.3,11,tea adventure,city,autumn,24567.2
+7,3,1226,191.8,6,wildlife,mountain,monsoon,28047.600000000002
+2,2,5030,220.6,11,food tea wildlife,mountain,autumn,21884.8
+10,1,2171,478.6,3,beach,beach,summer,23624.4
+7,3,5583,529.4,4,hills food,heritage,summer,123595.79999999999
+5,4,3771,206.8,9,hills heritage lake,city,monsoon,78728.8
+4,2,3947,351.5,3,tea hills food,city,summer,34388.0
+8,1,5635,181.3,10,shopping,beach,autumn,45805.2
+10,1,6244,50.9,6,heritage adventure,heritage,monsoon,62643.6
+14,4,3536,448.0,5,sunset adventure wildlife,beach,monsoon,205184.0
+7,6,7983,119.2,6,beach,heritage,monsoon,338146.80000000005
+3,2,4389,266.9,10,hills lake adventure,heritage,autumn,28469.2
+12,2,1954,302.5,1,tea heritage adventure,beach,winter,49316.0
+9,3,846,127.0,10,sunset beach heritage,beach,autumn,24366.0
+10,3,2257,74.8,10,beach hills,beach,autumn,68607.6
+2,2,5775,221.8,10,heritage adventure wildlife,heritage,autumn,24874.4
+5,1,4683,572.3,12,shopping wildlife,heritage,autumn,25704.2
+11,4,3232,376.8,10,tea sunset,beach,autumn,148236.8
+12,3,4265,241.2,7,hills tea,nature,monsoon,156434.40000000002
+7,3,6834,42.6,6,adventure heritage,heritage,monsoon,144025.2
+12,2,4915,368.2,5,heritage beach,mountain,monsoon,120905.6
+12,6,1218,73.5,10,hills beach tea,heritage,autumn,89460.0
+6,4,1153,334.7,5,adventure,mountain,monsoon,33027.2
+13,3,4270,456.1,7,lake shopping sunset,mountain,monsoon,172003.2
+5,2,3710,265.7,2,tea shopping,mountain,winter,39225.6
+4,5,6923,193.7,4,adventure,mountain,summer,142334.0
+10,6,4997,47.5,4,wildlife tea heritage,nature,summer,300960.0
+9,1,6249,34.4,6,hills heritage food,mountain,monsoon,56378.6
+2,6,5013,269.4,7,lake,mountain,monsoon,66621.6
+12,5,3286,532.3,9,food heritage sunset,heritage,monsoon,207806.0
+3,1,5532,161.6,6,tea shopping adventure,mountain,monsoon,17242.4
+12,5,5274,353.0,2,food,heritage,winter,323500.0
+1,1,5985,416.9,7,food wildlife,beach,monsoon,7652.6
+12,1,2162,55.3,1,hills lake,beach,winter,26165.2
+12,1,5419,108.8,11,hills beach wildlife,city,autumn,65463.2
+11,3,2855,212.1,10,lake hills,nature,autumn,96760.20000000001
+10,4,6489,408.7,3,adventure wildlife hills,heritage,summer,266099.2
+7,3,6549,274.6,4,hills heritage adventure,heritage,summer,140824.2
+10,1,5298,445.8,1,adventure lake sunset,beach,winter,54763.2
+4,2,7616,523.2,5,sunset food hills,city,monsoon,65113.6
+11,6,4670,459.9,1,lake wildlife,nature,winter,319257.6
+8,6,980,595.5,12,beach wildlife,city,autumn,61332.0
+7,5,5164,457.5,2,sunset wildlife,nature,winter,189890.0
+8,1,6399,514.3,8,adventure shopping lake,nature,monsoon,53249.2
+8,5,1528,502.8,7,beach shopping lake,heritage,monsoon,71176.0
+1,5,1553,443.6,3,food wildlife,beach,summer,16637.0
+2,4,2766,485.0,10,food heritage,heritage,autumn,29888.0
+4,1,6878,562.1,2,lake tea,city,winter,29760.4
+2,6,4597,295.6,11,shopping,heritage,autumn,62258.399999999994
+7,3,7830,390.2,9,adventure food tea,beach,monsoon,169112.40000000002
+10,1,7085,318.7,8,sunset adventure,heritage,monsoon,72124.8
+10,2,4794,513.6,11,lake food,beach,autumn,99988.8
+7,3,5689,270.2,5,food,beach,monsoon,122711.40000000001
+12,1,3183,495.4,4,beach lake food,mountain,summer,40177.6
+8,2,1450,483.6,2,shopping beach,mountain,winter,27068.8
+2,3,3670,577.9,12,hills,beach,autumn,28954.800000000003
+11,6,5064,164.4,5,food shopping tea,beach,monsoon,338169.6
+9,1,2111,431.6,10,wildlife shopping lake,heritage,autumn,20725.4
+9,4,2396,459.0,4,wildlife heritage,nature,summer,93600.0
+8,6,907,563.0,12,heritage,beach,autumn,57048.0
+8,5,6084,546.0,11,wildlife tea,nature,autumn,254280.0
+2,6,7275,352.6,4,sunset food,heritage,summer,95762.4
+8,2,6757,355.9,6,lake,heritage,monsoon,110959.2
+12,5,3535,117.0,10,food,mountain,autumn,214440.0
+5,6,5072,585.5,3,adventure,beach,summer,166212.0
+9,2,7717,167.9,1,tea beach,city,winter,140249.2
+1,3,5057,440.3,4,sunset tea,heritage,summer,20454.6
+5,4,2930,481.6,8,lake hills,city,monsoon,66305.6
+7,3,3237,275.9,2,lake,mountain,winter,71287.79999999999
+14,2,6035,142.5,5,sunset tea,beach,monsoon,170120.0
+4,6,4013,129.6,12,hills,mountain,autumn,99422.40000000001
+4,6,6828,516.8,1,sunset,mountain,winter,176275.2
+6,3,7021,316.2,1,food sunset wildlife,heritage,winter,130172.40000000001
+14,5,1058,72.3,6,heritage food,heritage,monsoon,75506.0
+12,3,6007,435.9,1,food,beach,winter,221482.80000000002
+1,5,3463,165.1,1,food shopping,nature,winter,20617.0
+4,4,4542,528.3,3,wildlife lake,mountain,summer,81124.8
+12,3,2706,199.6,2,shopping wildlife,heritage,winter,99811.20000000001
+1,1,3451,136.2,10,lake sunset shopping,mountain,autumn,3995.8
+12,4,3178,69.2,2,shopping,nature,winter,153651.2
+4,2,1162,316.7,7,heritage tea beach,heritage,monsoon,11829.6
+13,2,6435,281.4,9,shopping adventure,mountain,monsoon,169561.2
+5,2,1829,455.8,8,sunset,beach,monsoon,21936.4
+7,6,3505,289.5,8,lake shopping,heritage,monsoon,154158.0
+10,1,2189,219.4,5,sunset beach,city,monsoon,22767.6
+2,5,1956,171.8,11,beach wildlife,nature,autumn,22996.0
+8,6,3488,181.3,1,tea lake hills,city,winter,171775.2
+8,1,7415,558.2,2,adventure shopping,beach,winter,61552.8
+11,4,7597,115.7,11,sunset wildlife hills,city,autumn,336119.2
+14,4,3548,593.1,1,hills beach wildlife,city,winter,208177.6
+10,3,4437,209.6,3,wildlife,mountain,summer,135625.2
+6,5,7897,71.3,3,adventure lake food,beach,summer,238336.0
+6,3,2490,164.2,1,hills,heritage,winter,46790.399999999994
+6,3,7601,53.9,2,tea,city,winter,137464.8
+12,3,1561,478.2,7,shopping sunset,beach,monsoon,61934.399999999994
+5,5,2426,317.3,8,shopping,heritage,monsoon,66996.0
+3,4,3235,215.5,1,lake,city,winter,42268.0
+5,3,1067,404.0,12,lake heritage,beach,autumn,20853.0
+1,6,6673,385.8,2,tea heritage,nature,winter,49297.200000000004
+2,5,6958,565.1,9,hills,beach,monsoon,80882.0
+2,6,3560,577.5,10,beach sunset tea,beach,autumn,56580.0
+11,5,6821,414.8,7,tea lake food,nature,monsoon,383451.0
+11,3,6362,494.3,6,tea adventure beach,mountain,monsoon,215877.59999999998
+10,5,6570,479.6,2,adventure tea,beach,winter,338092.0
+7,2,6579,305.0,3,beach tea adventure,city,summer,94546.0
+11,2,4929,428.6,11,heritage,mountain,autumn,111866.8
+3,3,1597,65.4,5,tea,city,monsoon,15157.800000000001
+13,6,7449,459.7,1,adventure beach sunset,beach,winter,592054.8
+8,4,5182,577.9,9,lake,nature,monsoon,175070.4
+14,3,7289,69.3,9,sunset hills,heritage,monsoon,306969.6
+3,3,7705,504.9,1,lake,nature,winter,75403.79999999999
+7,2,2147,561.1,1,tea beach,nature,winter,34546.8
+10,4,3695,151.2,2,beach,heritage,winter,150219.2
+7,3,2185,324.4,1,lake adventure heritage,beach,winter,49777.799999999996
+7,4,1166,558.2,8,adventure wildlife beach,city,monsoon,41579.2
+3,3,7758,576.9,2,shopping food hills,heritage,winter,76744.79999999999
+6,2,7447,94.2,8,lake heritage,heritage,monsoon,90117.6
+4,6,7508,222.4,3,hills,nature,summer,185529.59999999998
+5,3,7162,424.9,12,sunset adventure,mountain,autumn,112528.79999999999
+10,1,5471,148.5,9,heritage,nature,monsoon,55304.0
+9,3,4559,208.4,5,wildlife,heritage,monsoon,125593.79999999999
+9,4,7938,33.5,6,sunset lake,city,monsoon,286304.0
+6,1,4776,109.0,1,sunset,city,winter,29092.0
+14,2,5425,346.2,1,shopping,beach,winter,154669.6
+2,1,2324,398.8,7,adventure tea food,beach,monsoon,6243.2
+5,4,6176,396.4,1,wildlife heritage,city,winter,129862.4
+2,5,6700,471.4,8,lake,mountain,monsoon,76428.0
+5,6,5685,260.9,5,lake,nature,monsoon,176811.59999999998
+14,3,4389,178.6,2,food,beach,winter,186481.2
+6,6,2224,29.0,7,food heritage,beach,monsoon,80760.0
+13,2,1043,139.8,7,lake,nature,monsoon,28236.4
+7,5,5316,201.2,9,beach shopping hills,heritage,monsoon,190084.0
+10,4,5717,123.4,3,lake wildlife adventure,heritage,summer,230654.4
+7,5,6362,31.7,7,shopping,city,monsoon,223304.0
+4,5,7643,111.3,11,tea wildlife,beach,autumn,155086.0
+11,4,4381,406.3,4,shopping tea wildlife,mountain,summer,199264.8
+14,2,6769,385.2,11,adventure,nature,autumn,192613.6
+4,4,5957,562.7,9,wildlife heritage shopping,nature,monsoon,104315.2
+11,5,2795,482.9,6,shopping beach,beach,monsoon,163383.0
+4,6,6884,349.3,11,beach sunset wildlife,nature,autumn,173599.2
+11,6,1183,99.8,12,lake sunset,city,autumn,80473.20000000001
+12,2,5112,347.2,3,adventure heritage,beach,summer,125465.6
+7,4,7570,55.7,12,shopping lake,city,autumn,212851.2
+11,1,5544,269.9,1,wildlife food,nature,winter,62063.6
+4,5,7546,246.4,2,beach shopping heritage,nature,winter,155848.0
+2,6,1204,268.1,1,heritage food,heritage,winter,20882.4
+2,1,4633,182.3,5,beach,heritage,monsoon,9995.2
+7,4,6420,417.8,12,adventure wildlife beach,heritage,autumn,186444.8
+13,6,5424,507.7,8,tea food beach,beach,monsoon,435256.80000000005
+2,6,7139,465.7,8,lake wildlife,mountain,monsoon,96844.79999999999
+7,3,4130,384.1,2,shopping food sunset,city,winter,91339.20000000001
+10,1,5714,332.2,7,lake heritage,beach,monsoon,58468.8
+3,6,3822,38.0,5,hills tea,heritage,monsoon,69708.0
+11,6,7079,439.3,6,adventure,nature,monsoon,477757.19999999995
+5,4,1660,336.1,4,shopping lake hills,beach,summer,38577.6
+12,6,2629,177.0,3,wildlife hills lake,beach,summer,193536.0
+9,1,1496,210.1,12,hills adventure heritage,city,autumn,14304.4
+8,4,5855,562.7,7,shopping wildlife heritage,beach,monsoon,196363.2
+3,1,2475,382.1,5,heritage food,beach,monsoon,8953.4
+7,6,3083,296.0,1,hills,beach,winter,136590.0
+12,5,6823,380.1,10,heritage adventure food,heritage,autumn,416982.0
+1,6,3393,260.0,6,food,city,monsoon,26598.0
+11,4,1849,292.7,5,tea,beach,monsoon,86039.2
+7,1,950,188.4,9,sunset tea,heritage,monsoon,7403.6
+11,1,2432,275.1,2,sunset wildlife,heritage,winter,27852.4
+10,3,7385,417.6,7,food shopping,mountain,monsoon,226561.19999999998
+7,5,4750,43.2,11,lake adventure,beach,autumn,167114.0
+5,1,7962,481.1,6,shopping heritage sunset,nature,monsoon,41734.4
+9,6,2348,184.1,1,heritage wildlife,beach,winter,131210.40000000002
+2,2,3330,415.9,3,beach,beach,summer,16647.2
+9,3,1975,392.8,1,heritage,nature,winter,58038.600000000006
+2,2,3668,398.5,7,lake wildlife,city,monsoon,17860.0
+10,3,4855,372.7,5,tea lake,city,monsoon,150122.40000000002
+9,3,6618,576.3,2,wildlife,heritage,winter,185601.59999999998
+2,1,3450,314.8,9,lake hills shopping,mountain,monsoon,8159.2
+11,4,6355,444.7,3,hills beach food,mountain,summer,286735.2
+6,5,5308,429.2,5,food beach heritage,heritage,monsoon,167824.0
+12,6,2901,157.0,12,hills,beach,autumn,212640.0
+1,2,7367,184.3,1,food heritage,nature,winter,16208.4
+3,6,3926,265.9,3,beach food,heritage,summer,77049.6
+7,6,1887,181.1,4,lake adventure,city,summer,83600.4
+3,6,7731,232.7,7,tea,beach,monsoon,144742.8
+5,3,7376,246.8,3,tea,mountain,summer,113601.59999999999
+10,6,1156,370.2,12,food sunset beach,mountain,autumn,78244.79999999999
+3,4,7297,147.5,1,lake shopping heritage,nature,winter,89924.0
+10,1,7621,486.5,12,tea adventure,beach,autumn,78156.0
+2,2,6769,273.8,7,wildlife adventure,city,monsoon,29266.4
+3,5,2635,429.6,1,hills wildlife sunset,city,winter,48117.0
+9,1,5345,67.2,2,heritage wildlife hills,mountain,winter,48373.8
+12,3,4675,292.6,2,lake wildlife hills,nature,winter,171811.2
+3,5,5265,36.4,4,sunset,nature,summer,79703.0
+5,1,5238,412.0,4,wildlife food,beach,summer,27838.0
+13,3,5402,219.4,8,heritage,city,monsoon,213310.80000000002
+14,2,4500,570.6,4,beach,heritage,summer,130564.8
+9,4,5771,208.0,9,heritage,mountain,monsoon,211084.0
+7,2,4591,347.0,4,adventure heritage,nature,summer,67050.0
+5,6,918,169.3,4,adventure shopping,mountain,summer,31603.199999999997
+9,1,1054,379.7,4,adventure,mountain,summer,11004.8
+9,6,7698,290.9,4,heritage beach food,mountain,summer,422673.60000000003
+5,5,7346,235.0,11,tea,beach,autumn,188350.0
+1,6,5016,138.1,3,adventure heritage,city,summer,33410.399999999994
+3,6,2057,84.7,4,tea lake hills,heritage,summer,39058.8
+14,2,6426,89.5,12,lake wildlife beach,city,autumn,180644.0
+6,6,1831,599.4,8,tea beach,beach,monsoon,80301.6
+7,4,3516,259.1,3,sunset food,heritage,summer,102593.6
+7,6,3174,21.1,11,shopping adventure tea,nature,autumn,133814.40000000002
+11,6,889,572.7,3,tea food,heritage,summer,72418.79999999999
+1,4,6610,31.6,2,wildlife hills food,city,winter,26945.6
+2,3,4470,262.8,6,wildlife beach food,mountain,monsoon,29973.600000000002
+4,1,3077,436.1,9,lake shopping beach,beach,monsoon,14052.4
+7,1,4451,550.5,3,wildlife tea heritage,beach,summer,33359.0
+10,3,800,433.5,10,hills food,nature,autumn,29202.0
+7,5,3946,288.9,2,adventure,beach,winter,143888.0
+7,4,4540,585.2,10,tea,beach,autumn,136483.2
+14,3,3245,42.8,2,lake heritage,beach,winter,136803.59999999998
+3,2,6778,592.4,6,wildlife,mountain,monsoon,45407.2
+9,4,2598,512.6,8,adventure heritage shopping,beach,monsoon,101729.6
+8,4,1792,558.8,4,heritage tea sunset,nature,summer,66284.8
+7,6,4598,167.8,8,food,heritage,monsoon,197143.19999999998
+12,5,7188,102.6,9,hills adventure heritage,mountain,monsoon,433332.0
+4,4,3502,404.7,8,adventure,beach,monsoon,62507.2
+14,6,1135,319.2,5,tea,nature,monsoon,103000.79999999999
+5,3,7783,323.4,10,beach wildlife adventure,beach,autumn,120625.79999999999
+8,6,3998,556.3,9,food hills sunset,heritage,monsoon,205255.19999999998
+8,3,2045,379.6,4,wildlife beach tea,mountain,summer,53635.200000000004
+12,1,5232,200.4,9,shopping adventure,nature,monsoon,63585.6
+7,3,3101,252.0,12,lake,mountain,autumn,68145.0
+4,1,7552,97.4,10,beach adventure hills,mountain,autumn,30597.6
+1,1,2916,131.5,9,food sunset tea,beach,monsoon,3442.0
+6,6,4760,103.1,10,tea beach,nature,autumn,173834.40000000002
+12,5,4711,490.0,10,food wildlife,beach,autumn,292460.0
+1,2,2545,428.8,4,wildlife lake shopping,heritage,summer,8520.4
+13,6,4394,327.6,9,tea lake wildlife,mountain,monsoon,350594.4
+8,1,1585,237.1,3,hills lake,nature,summer,13628.4
+2,2,5434,407.7,5,hills heritage,nature,monsoon,24997.6
+5,5,6259,491.5,12,hills lake,heritage,autumn,166305.0
+8,2,7640,531.1,4,wildlife shopping,heritage,summer,126488.8
+5,5,3145,337.3,11,shopping wildlife,nature,autumn,85371.0
+2,6,2853,495.5,6,tea wildlife,city,monsoon,46128.0
+10,1,4751,316.6,3,adventure,mountain,summer,48776.4
+10,1,5787,295.2,2,wildlife shopping,heritage,winter,59050.8
+2,6,7945,522.0,7,wildlife adventure tea,mountain,monsoon,107868.0
+4,4,980,244.1,6,shopping food,heritage,monsoon,19585.6
+4,4,2515,249.6,7,tea,nature,monsoon,44233.6
+10,3,2689,196.8,1,food,city,winter,83031.6
+11,3,2638,320.8,4,lake heritage tea,mountain,summer,90903.6
+11,5,4138,336.0,1,food,nature,winter,234310.0
+14,4,7084,403.1,4,hills shopping food,beach,summer,403153.6
+11,1,1023,269.7,12,tea,heritage,autumn,12331.8
+5,4,6674,146.3,2,tea hills shopping,beach,winter,135820.8
+2,5,5247,522.8,9,shopping beach adventure,nature,monsoon,62926.0
+9,1,5229,220.7,1,shopping beach hills,beach,winter,47943.8
+13,3,5683,555.3,7,adventure,mountain,monsoon,228300.59999999998
+14,5,1630,140.3,12,tea wildlife beach,nature,autumn,116906.0
+4,4,6176,344.8,5,shopping heritage lake,mountain,monsoon,104332.8
+4,1,2586,331.2,3,sunset beach tea,mountain,summer,11668.8
+1,1,4519,500.6,7,lake heritage,beach,monsoon,6521.4
+2,4,5673,100.5,4,shopping,heritage,summer,46992.0
+8,3,5148,547.8,11,adventure,heritage,autumn,130125.59999999999
+8,6,3126,328.2,11,lake,nature,autumn,157924.8
+6,4,3651,359.9,8,hills sunset,beach,monsoon,93382.4
+5,6,4230,315.9,8,hills beach,beach,monsoon,134481.59999999998
+12,2,1097,40.9,8,lake food beach,heritage,monsoon,26655.2
+7,3,6027,308.3,9,lake wildlife tea,city,monsoon,130266.59999999999
+12,1,1519,172.9,6,food beach,city,monsoon,18919.6
+14,4,4101,218.8,12,heritage sunset,nature,autumn,233156.8
+5,2,5515,396.5,5,hills sunset wildlife,nature,monsoon,58322.0
+3,3,1378,308.7,1,hills food,beach,winter,16106.400000000001
+14,3,7967,74.1,9,wildlife adventure sunset,beach,monsoon,335503.19999999995
+9,2,3516,62.4,8,heritage lake adventure,heritage,monsoon,63787.2
+5,1,913,127.7,12,wildlife sunset,nature,autumn,5075.8
+9,4,5542,130.7,5,food lake,nature,monsoon,201603.2
+8,6,4814,372.8,6,food,mountain,monsoon,240019.19999999998
+13,2,5410,123.1,7,wildlife,mountain,monsoon,141644.8
+4,3,6207,531.4,5,hills adventure lake,city,monsoon,80860.79999999999
+14,2,4224,141.7,10,adventure lake,city,autumn,119405.6
+14,5,6752,72.9,6,sunset adventure shopping,heritage,monsoon,474098.0
+3,3,3465,527.9,10,adventure heritage tea,mountain,autumn,37519.8
+3,6,4725,191.3,6,wildlife adventure sunset,heritage,monsoon,89641.20000000001
+8,2,1941,266.7,3,sunset,mountain,summer,33189.6
+1,1,5263,576.2,12,hills,nature,autumn,7567.8
+5,4,2683,567.7,7,hills,beach,monsoon,62743.2
+7,4,5816,434.7,9,beach hills wildlife,heritage,monsoon,169803.2
+14,6,6567,60.0,8,beach tea food,beach,monsoon,553068.0
+14,6,6984,364.1,5,tea shopping hills,heritage,monsoon,595394.3999999999
+3,6,7489,593.7,12,tea,heritage,autumn,149050.8
+13,4,1680,569.2,5,tea beach hills,beach,monsoon,96467.2
+2,3,1793,81.5,12,wildlife shopping hills,nature,autumn,11736.0
+11,3,7468,249.7,6,food,mountain,monsoon,249440.40000000002
+12,1,3541,203.0,1,hills food,nature,winter,43304.0
+13,3,987,95.2,1,beach adventure heritage,beach,winter,39635.399999999994
+4,3,2866,423.0,12,sunset lake,heritage,autumn,39468.0
+13,1,6820,178.8,7,tea sunset heritage,nature,monsoon,89375.2
+2,2,3355,220.0,5,adventure sunset,mountain,monsoon,15180.0
+8,4,1352,72.4,10,heritage wildlife,city,autumn,44422.4
+7,3,5999,308.8,8,beach wildlife,heritage,monsoon,129684.59999999999
+5,6,2201,111.7,8,lake tea hills,heritage,monsoon,68710.79999999999
+1,3,3340,270.6,9,hills heritage food,beach,monsoon,13267.199999999999
+11,6,828,103.1,3,food heritage sunset,nature,summer,57122.399999999994
+5,4,5134,573.2,2,beach wildlife,heritage,winter,111851.2
+10,1,4005,104.1,9,hills,city,monsoon,40466.4
+6,2,7042,322.7,1,adventure heritage,heritage,winter,87085.6
+6,5,3207,134.2,9,adventure,beach,monsoon,98894.0
+13,4,2273,64.3,2,adventure lake sunset,heritage,winter,119224.8
+2,2,1995,137.3,4,wildlife sunset,beach,summer,9078.4
+11,4,2241,51.8,9,wildlife sunset hills,mountain,monsoon,99432.8
+11,6,4047,100.9,8,sunset shopping,city,monsoon,269523.6
+6,3,1427,306.2,10,hills lake adventure,city,autumn,29360.399999999998
+4,1,3697,398.1,8,sunset heritage food,city,monsoon,16380.4
+1,2,6953,70.7,1,adventure beach tea,mountain,winter,14471.6
+14,6,6327,275.8,11,hills beach,heritage,autumn,538087.2
+14,5,5388,357.1,3,heritage hills,heritage,summer,384302.0
+4,6,7230,155.9,2,tea,mountain,winter,177261.59999999998
+1,6,6417,235.8,11,sunset lake,city,autumn,44161.2
+2,1,5498,61.7,3,sunset,city,summer,11242.8
+1,2,7014,147.7,7,tea wildlife beach,beach,monsoon,15209.6
+12,1,1695,290.7,6,adventure,heritage,monsoon,21502.8
+13,1,6691,594.5,10,heritage tea,nature,autumn,89361.0
+3,6,2926,597.8,1,adventure hills,heritage,winter,67015.20000000001
+11,6,6078,588.2,2,lake,nature,winter,415264.80000000005
+3,1,7375,265.4,5,shopping beach,mountain,monsoon,23186.6
+6,5,4371,66.8,6,wildlife,beach,monsoon,132466.0
+9,4,1438,207.7,10,beach,nature,autumn,55091.2
+11,1,3465,157.9,8,tea food,city,monsoon,38746.6
+13,6,3729,28.2,2,adventure,city,winter,291538.80000000005
+1,6,7544,75.2,12,wildlife,mountain,autumn,47068.8
+3,4,7586,282.9,6,shopping food,city,monsoon,95558.4
+4,5,4892,217.0,12,tea lake,mountain,autumn,102180.0
+5,3,7644,124.6,12,heritage,nature,autumn,116155.20000000001
+14,5,3941,435.3,1,adventure tea,mountain,winter,284576.0
+11,3,3760,227.1,7,adventure sunset wildlife,nature,monsoon,126805.20000000001
+5,6,6822,514.1,6,beach heritage food,nature,monsoon,216998.40000000002
+14,1,5605,159.8,6,food,heritage,monsoon,79109.2
+7,2,4561,332.3,4,tea heritage beach,nature,summer,66512.4
+8,6,4088,126.8,7,beach wildlife heritage,nature,monsoon,199267.19999999998
+7,2,5880,307.3,6,sunset,heritage,monsoon,84778.4
+3,2,6224,108.4,3,beach hills,nature,summer,38211.2
+14,5,4332,113.7,4,sunset adventure,nature,summer,305514.0
+1,2,1027,375.1,2,adventure sunset,beach,winter,5054.8
+3,4,1533,173.0,11,lake tea food,city,autumn,21164.0
+4,2,1837,120.0,9,lake shopping,beach,monsoon,15656.0
+4,2,4127,559.3,5,shopping lake,city,monsoon,37490.4
+2,6,5222,44.9,5,lake shopping food,heritage,monsoon,63741.600000000006
+1,2,6587,347.8,1,food,city,winter,15956.4
+10,1,2474,338.0,4,tea sunset,beach,summer,26092.0
+14,5,6463,165.4,12,adventure beach,mountain,autumn,455718.0
+2,6,5595,282.6,1,tea,beach,winter,73922.4
+5,1,1171,70.9,2,food,nature,winter,6138.6
+8,5,3328,438.3,11,shopping heritage,city,autumn,141886.0
+13,4,2979,148.6,7,beach hills,heritage,monsoon,157285.6
+10,5,7183,132.2,1,sunset wildlife,heritage,winter,361794.0
+11,1,7432,202.6,6,lake,city,monsoon,82562.4
+9,6,6698,543.4,9,heritage,beach,monsoon,374733.6
+6,4,4601,482.0,5,food,heritage,monsoon,118136.0
+3,6,4348,569.2,5,hills wildlife heritage,mountain,monsoon,91924.79999999999
+13,3,3042,398.1,8,heritage,heritage,monsoon,123415.20000000001
+12,6,6364,404.5,8,beach tea adventure,heritage,monsoon,467916.0
+1,4,1421,298.4,11,shopping sunset,heritage,autumn,10458.4
+11,1,2752,545.0,3,heritage beach tea,nature,summer,32452.0
+2,6,1773,316.3,4,hills heritage sunset,heritage,summer,28867.199999999997
+11,5,4358,225.9,2,hills,nature,winter,244208.0
+12,2,2958,391.4,8,tea heritage,heritage,monsoon,74123.2
+2,4,2221,336.8,7,wildlife,nature,monsoon,23156.8
+7,3,3510,91.9,5,beach sunset tea,mountain,monsoon,74812.79999999999
+2,4,6998,247.8,9,beach lake,mountain,monsoon,59948.8
+8,6,4817,201.7,5,beach sunset,mountain,monsoon,236056.80000000002
+13,6,6726,511.2,3,heritage tea,heritage,summer,536896.8
+2,2,7380,239.7,7,hills lake shopping,city,monsoon,31437.6
+6,6,7295,496.5,6,adventure,beach,monsoon,274536.0
+14,3,3327,276.6,5,shopping,beach,monsoon,143053.2
+5,5,7117,457.0,6,adventure beach,nature,monsoon,187065.0
+2,5,7347,98.5,11,shopping lake hills,heritage,autumn,75440.0
+7,3,7709,556.3,3,shopping tea,beach,summer,168564.59999999998
+8,3,3327,298.7,4,hills adventure lake,mountain,summer,83432.4
+10,3,2444,170.7,7,tea adventure food,beach,monsoon,75368.4
+5,6,5006,160.1,1,wildlife,beach,winter,154022.40000000002
+14,3,7509,173.7,2,wildlife shopping,beach,winter,317462.4
+8,2,7284,232.7,7,sunset heritage adventure,heritage,monsoon,118405.6
+5,3,4912,436.2,7,wildlife adventure beach,city,monsoon,78914.4
+14,2,1874,570.8,8,hills food shopping,nature,monsoon,57038.4
+13,3,3841,408.0,2,lake sunset food,beach,winter,154695.0
+7,1,5941,337.4,11,sunset,city,autumn,42936.6
+1,1,4834,280.2,6,heritage beach tea,mountain,monsoon,5954.8
+9,5,3287,500.4,2,beach,beach,winter,157923.0
+8,1,3266,512.8,4,wildlife shopping,beach,summer,28179.2
+3,4,1230,190.0,3,tea,mountain,summer,17800.0
+9,5,2877,573.0,6,tea,heritage,monsoon,140925.0
+12,5,5619,249.2,6,shopping tea,mountain,monsoon,342124.0
+2,3,2537,484.0,6,food heritage lake,nature,monsoon,21030.0
+11,2,7952,580.8,6,sunset hills lake,mountain,monsoon,179590.4
+2,6,1393,428.1,11,heritage tea,city,autumn,26990.399999999998
+11,6,5039,113.7,12,lake sunset heritage,heritage,autumn,335302.80000000005
+6,4,4375,360.0,6,lake,heritage,monsoon,110760.0
+1,1,6799,88.9,12,sunset,nature,autumn,7154.6
+14,1,7191,477.7,10,adventure hills,nature,autumn,102584.8
+3,2,4713,183.2,10,wildlife,city,autumn,29743.6
+9,1,5337,423.2,3,food lake wildlife,heritage,summer,49725.8
+3,6,5832,547.9,6,tea,city,monsoon,118125.59999999999
+14,2,4551,125.0,5,wildlife sunset shopping,beach,monsoon,128428.0
+11,2,2131,247.9,2,lake sunset,city,winter,48865.2
+12,6,3885,395.3,1,wildlife,city,winter,289207.19999999995
+7,5,2539,263.4,8,lake shopping adventure,heritage,monsoon,94133.0
+7,2,4143,121.4,6,food,city,monsoon,58973.2
+9,3,5229,36.9,10,beach,nature,autumn,141625.8
+11,4,2306,255.8,9,lake shopping adventure,mountain,monsoon,105556.8
+12,4,2595,396.5,2,tea heritage wildlife,heritage,winter,130904.0
+1,6,6725,352.9,11,sunset food shopping,heritage,autumn,48819.600000000006
+10,6,3519,110.6,6,wildlife hills,beach,monsoon,213794.40000000002
+2,6,2228,281.4,7,tea heritage shopping,mountain,monsoon,33489.600000000006
+5,1,5934,234.3,12,adventure hills,mountain,autumn,30607.2
+12,2,5959,179.0,8,shopping hills beach,nature,monsoon,144448.0
+4,4,6748,443.0,1,adventure hills food,beach,winter,115056.0
+12,1,6271,199.6,3,heritage hills lake,heritage,summer,76050.4
+7,3,7942,333.3,6,beach,beach,monsoon,170781.59999999998
+4,1,4939,555.5,1,lake,city,winter,21978.0
+5,6,2865,332.8,3,shopping tea food,heritage,summer,93937.20000000001
+8,1,7013,377.9,10,shopping tea wildlife,mountain,autumn,57615.6
+11,1,2706,62.5,2,tea food lake,mountain,winter,30016.0
+9,2,2895,123.3,3,lake,heritage,summer,53096.4
+14,1,6765,78.6,7,adventure shopping food,beach,monsoon,95024.4
+13,4,7147,463.6,2,beach,heritage,winter,379061.6
+11,3,3243,504.8,4,hills food shopping,nature,summer,113076.59999999999
+9,6,6051,128.1,12,shopping sunset wildlife,mountain,autumn,329828.4
+5,2,7441,147.2,8,tea hills,city,monsoon,75587.6
+6,4,6550,207.5,12,tea,heritage,autumn,160520.0
+2,4,835,362.8,5,hills sunset,beach,monsoon,12484.8
+6,4,5584,380.6,8,hills,heritage,monsoon,140105.6
+13,5,2023,418.3,3,lake,nature,summer,139861.0
+6,2,6893,545.0,5,hills food,heritage,monsoon,87076.0
+2,4,1282,191.1,3,hills shopping,nature,summer,13313.6
+10,5,7950,402.1,10,shopping,city,autumn,405542.0
+14,6,2076,344.6,3,adventure beach hills,city,summer,182654.40000000002
+13,4,3825,197.4,3,food,beach,summer,202058.4
+4,4,2485,546.3,6,adventure shopping,nature,monsoon,48500.8
+7,6,6660,75.4,6,lake sunset beach,mountain,monsoon,281529.6
+8,4,3633,433.0,4,wildlife,nature,summer,123184.0
+4,6,6160,442.2,5,lake,beach,monsoon,158452.8
+4,1,1283,550.9,4,heritage hills,nature,summer,7335.6
+4,3,4060,320.8,11,heritage wildlife beach,beach,autumn,52569.600000000006
+14,1,7359,206.5,7,hills wildlife,heritage,monsoon,103852.0
+11,1,7474,500.1,12,lake sunset food,nature,autumn,84214.4
+12,3,2302,467.1,12,adventure hills heritage,city,autumn,88477.20000000001
+12,2,3639,310.2,8,shopping beach,city,monsoon,89817.6
+14,3,3745,465.4,10,beach wildlife,heritage,autumn,162874.8
+2,3,4871,175.4,2,shopping wildlife lake,nature,winter,31330.800000000003
+13,4,4668,361.9,12,sunset shopping,heritage,autumn,248526.4
+1,6,1562,521.8,6,food hills adventure,heritage,monsoon,21895.199999999997
+7,6,6291,204.4,9,hills sunset wildlife,beach,monsoon,269127.6
+9,3,2425,300.5,3,tea food sunset,mountain,summer,69081.0
+6,2,3067,571.6,2,wildlife adventure lake,city,winter,41376.8
+3,5,6853,483.0,11,lake heritage tea,mountain,autumn,112455.0
+3,1,5765,534.5,6,wildlife hills,beach,monsoon,19433.0
+12,4,3655,243.4,2,shopping beach,city,winter,179334.4
+5,3,7369,598.0,8,heritage,city,monsoon,117711.0
+5,2,3637,108.5,1,beach sunset,heritage,winter,37238.0
+13,4,4871,320.9,6,hills sunset adventure,heritage,monsoon,258426.4
+3,2,2571,298.0,9,heritage,mountain,monsoon,17810.0
+13,2,2118,483.1,9,heritage beach shopping,mountain,monsoon,58932.8
+13,4,4339,547.0,6,beach food tea,city,monsoon,234380.0
+9,2,4853,444.1,5,wildlife,city,monsoon,90906.8
+3,5,6601,383.6,11,hills food wildlife,nature,autumn,106687.0
+3,1,3614,267.9,3,heritage adventure,mountain,summer,11913.6
+4,3,7245,316.0,1,beach shopping heritage,beach,winter,90732.0
+9,5,5173,315.4,2,wildlife hills,beach,winter,239093.0
+3,2,1304,31.8,10,tea wildlife adventure,nature,autumn,8078.4
+7,5,6121,311.8,6,wildlife,nature,monsoon,220471.0
+2,5,4938,516.5,1,hills food heritage,heritage,winter,59710.0
+8,6,3603,431.4,3,sunset,city,summer,183297.59999999998
+1,2,4164,481.5,1,shopping tea heritage,mountain,winter,12180.0
+10,5,2972,246.5,10,food,beach,autumn,153530.0
+1,6,5222,326.8,6,beach lake adventure,city,monsoon,39175.2
+3,5,4882,39.4,1,shopping adventure hills,heritage,winter,74018.0
+3,2,4020,242.1,3,lake adventure,nature,summer,26056.8
+12,5,2853,295.2,8,hills,beach,monsoon,177084.0
+1,1,3670,168.0,8,shopping,nature,monsoon,4342.0
+7,4,4384,38.1,10,shopping food beach,heritage,autumn,123361.6
+9,3,4197,420.4,1,shopping,city,winter,118363.79999999999
+8,4,3026,272.4,1,sunset,nature,winter,101190.4
+10,4,4990,261.1,1,lake beach,nature,winter,203777.6
+12,1,2431,165.0,5,heritage shopping,mountain,monsoon,29832.0
+6,4,4407,331.9,9,food,nature,monsoon,111078.4
+12,6,1675,274.1,8,lake shopping,beach,monsoon,127178.40000000001
+5,3,4199,294.9,3,adventure tea,beach,summer,66523.79999999999
+14,2,6444,356.9,8,shopping,heritage,monsoon,183287.2
+8,6,6688,23.7,8,sunset beach hills,mountain,monsoon,321592.80000000005
+11,1,5801,546.5,3,adventure wildlife sunset,city,summer,65997.0
+13,3,6168,61.2,9,hills food heritage,mountain,monsoon,241286.40000000002
+12,4,1274,281.5,6,shopping,city,monsoon,65656.0
+12,3,3257,140.3,1,wildlife sunset beach,beach,winter,118935.59999999999
+8,6,5510,323.8,5,lake hills shopping,beach,monsoon,272251.19999999995
+1,3,6564,182.5,10,wildlife lake,nature,autumn,21882.0
+7,6,4996,518.8,9,hills sunset adventure,city,monsoon,222283.19999999998
+3,1,6946,249.9,4,lake wildlife,beach,summer,21837.6
+13,5,2766,390.5,10,heritage,nature,autumn,187600.0
+4,4,1905,164.4,5,tea heritage,mountain,monsoon,33110.4
+4,2,1421,31.3,6,wildlife shopping tea,heritage,monsoon,11618.4
+4,2,4995,254.4,2,adventure,nature,winter,41995.2
+9,5,5589,331.2,12,sunset,heritage,autumn,258129.0
+8,4,2854,286.5,11,lake wildlife,mountain,autumn,95912.0
+14,4,6442,578.0,3,heritage hills,mountain,summer,370000.0
+6,1,6122,430.0,7,hills,heritage,monsoon,38452.0
+4,4,3392,597.5,10,hills tea food,mountain,autumn,63832.0
+1,6,2519,191.1,7,lake,heritage,monsoon,19700.4
+1,1,6144,477.7,3,food,beach,summer,8054.8
+6,3,5634,342.2,12,wildlife food,mountain,autumn,105518.40000000001
+13,3,2029,374.8,4,shopping,beach,summer,83628.6
+8,6,2636,591.8,5,heritage,beach,monsoon,140731.2
+13,2,4298,399.3,5,heritage beach,mountain,monsoon,114942.4
+2,3,4480,541.3,11,beach lake,nature,autumn,33375.600000000006
+2,5,1994,440.9,7,heritage adventure,beach,monsoon,28758.0
+12,1,7630,93.9,9,adventure lake sunset,beach,monsoon,91935.6
+2,5,3598,425.7,11,hills shopping,city,autumn,44494.0
+1,5,3545,300.9,12,adventure shopping,nature,autumn,23743.0
+6,5,1235,552.9,11,hills tea shopping,heritage,autumn,48108.0
+13,4,7105,488.0,11,adventure shopping lake,heritage,autumn,377268.0
+10,5,2493,80.4,12,food,beach,autumn,126258.0
+2,5,7906,97.7,12,shopping food,heritage,autumn,81014.0
+12,6,4371,60.4,8,beach,city,monsoon,316161.6
+12,3,7098,306.1,2,sunset,nature,winter,259201.19999999998
+12,3,2089,66.8,2,sunset lake,city,winter,76005.6
+13,4,1994,439.7,10,wildlife,city,autumn,110723.2
+4,2,6568,340.4,4,beach,nature,summer,55267.2
+14,6,6701,504.8,10,tea,beach,autumn,574999.2
+5,5,4710,182.3,12,sunset,heritage,autumn,121396.0
+12,4,1031,321.1,8,food shopping,city,monsoon,54625.6
+9,2,7594,88.1,10,wildlife,nature,autumn,137396.8
+11,3,3631,533.1,4,food,city,summer,126220.20000000001
+9,3,7539,121.5,6,food adventure,nature,monsoon,205011.0
+9,4,7069,79.4,12,sunset food,nature,autumn,255754.4
+9,5,6930,138.9,10,beach,city,autumn,314628.0
+11,5,5759,487.6,3,beach,beach,summer,326497.0
+11,6,5647,81.4,12,adventure heritage,nature,autumn,374655.6
+2,6,4635,376.4,6,food adventure shopping,beach,monsoon,64653.600000000006
+12,5,978,452.8,11,adventure heritage,heritage,autumn,67736.0
+8,3,3592,455.6,7,hills,city,monsoon,91675.20000000001
+5,4,6059,130.2,8,sunset wildlife shopping,city,monsoon,123263.2
+8,3,6648,55.7,2,wildlife lake,mountain,winter,160220.40000000002
+14,4,4828,280.3,5,beach heritage hills,heritage,monsoon,274852.8
+13,5,5908,137.4,9,hills,city,monsoon,386768.0
+12,3,956,425.6,11,adventure,city,autumn,39523.2
+7,4,4172,226.9,2,food adventure beach,nature,winter,120446.4
+11,1,4455,280.6,1,lake,beach,winter,50127.4
+6,5,7225,85.8,9,food hills,nature,monsoon,218466.0
+10,3,3039,349.2,6,lake,heritage,monsoon,95360.4
+9,3,2455,127.6,11,sunset,heritage,autumn,67816.20000000001
+4,4,3337,413.8,1,food adventure,mountain,winter,60012.8
+4,2,2026,61.3,5,lake,mountain,monsoon,16698.4
+1,4,4820,586.0,1,food lake,heritage,winter,28656.0
+2,5,5428,417.0,9,adventure tea,nature,monsoon,62620.0
+7,3,6568,125.4,11,beach heritage,nature,autumn,139432.8
+7,1,7798,28.2,2,food,city,winter,54698.8
+3,3,1329,214.0,4,shopping wildlife heritage,beach,summer,14529.0
+6,2,2580,108.6,11,sunset,mountain,autumn,31828.8
+9,3,2965,146.7,1,adventure beach wildlife,city,winter,81815.4
+4,4,2597,526.2,12,tea food,city,autumn,49971.2
+5,1,6756,369.9,11,beach heritage,mountain,autumn,35259.6
+6,5,1804,122.3,2,beach shopping lake,city,winter,56566.0
+8,2,1014,342.9,2,adventure lake,mountain,winter,18967.2
+6,6,6996,168.4,9,shopping lake,beach,monsoon,255897.59999999998
+11,5,7722,586.2,1,adventure sunset,mountain,winter,436434.0
+5,2,2430,39.0,7,adventure,nature,monsoon,24612.0
+7,4,3196,444.7,1,adventure,beach,winter,96603.2
+6,1,4422,468.3,7,hills food,beach,monsoon,28405.2
+3,1,4586,59.0,5,wildlife beach sunset,heritage,monsoon,13994.0
+10,6,7934,119.7,9,beach heritage,heritage,monsoon,478912.80000000005
+4,5,3709,242.9,11,lake,heritage,autumn,79038.0
+5,1,887,523.5,6,food,city,monsoon,6529.0
+12,2,3843,331.5,8,lake beach,mountain,monsoon,94884.0
+14,2,4806,400.1,8,shopping adventure hills,city,monsoon,137768.8
+10,3,4521,474.1,12,wildlife shopping,mountain,autumn,141319.2
+13,2,4488,500.3,3,food,city,summer,120690.4
+12,2,7442,296.2,3,tea lake,heritage,summer,180977.6
+7,4,6613,315.1,5,wildlife adventure,mountain,monsoon,190205.6
+11,2,2612,436.4,9,food,mountain,monsoon,60955.2
+5,6,3358,172.7,11,lake heritage tea,nature,autumn,104884.79999999999
+7,5,5606,515.6,4,food,nature,summer,206522.0
+8,5,3754,32.1,2,tea sunset,mountain,winter,150802.0
+14,2,3884,133.5,8,heritage hills beach,mountain,monsoon,109820.0
+12,5,2009,484.1,8,wildlife,city,monsoon,130222.0
+7,6,2631,217.3,5,lake adventure heritage,heritage,monsoon,115717.20000000001
+10,2,6133,106.9,3,sunset,beach,summer,123515.2
+3,5,6869,128.3,11,sunset,heritage,autumn,105601.0
+12,3,6449,327.8,11,shopping,beach,autumn,236097.59999999998
+8,5,3016,510.8,9,food tea shopping,nature,monsoon,130856.0
+8,3,1783,61.0,7,lake beach,beach,monsoon,43524.0
+11,5,1949,37.7,4,lake adventure beach,heritage,summer,107949.0
+9,1,3632,289.8,5,tea beach lake,beach,monsoon,33847.2
+2,3,4527,574.6,1,tea,mountain,winter,34057.2
+5,2,7228,181.8,3,hills,beach,summer,73734.4
+3,2,7271,576.3,6,tea beach,beach,monsoon,48236.4
+11,2,819,534.9,6,adventure wildlife sunset,beach,monsoon,22297.2
+1,3,5894,184.2,1,food sunset lake,nature,winter,19892.4
+3,1,2951,493.8,12,food shopping wildlife,city,autumn,10828.2
+9,5,2224,417.8,4,adventure,mountain,summer,108436.0
+10,4,4796,316.9,7,shopping tea,heritage,monsoon,196910.4
+8,5,1044,265.3,6,hills wildlife shopping,nature,monsoon,47066.0
+13,5,3205,493.0,6,tea lake,mountain,monsoon,218185.0
+13,1,4776,480.0,11,tea wildlife lake,beach,autumn,64008.0
+2,1,2758,459.0,9,tea,heritage,monsoon,7352.0
+14,3,5072,599.0,11,heritage wildlife,beach,autumn,220212.0
+9,3,4112,297.5,5,adventure sunset heritage,nature,monsoon,114594.0
+9,2,6555,488.0,4,adventure,beach,summer,121894.0
+2,5,2106,520.2,6,food adventure,heritage,monsoon,31464.0
+9,4,1211,142.7,7,shopping lake heritage,city,monsoon,45879.2
+11,5,4613,44.4,5,food,mountain,monsoon,254603.0
+9,1,2649,254.8,6,tea food beach,mountain,monsoon,24860.2
+2,5,5888,516.9,2,hills,nature,winter,69218.0
+8,2,1471,187.7,8,hills food,nature,monsoon,25037.6
+14,3,4942,426.0,9,food,mountain,monsoon,212676.0
+11,3,7926,24.3,7,beach,mountain,monsoon,261849.59999999998
+2,5,1470,226.1,11,food adventure,beach,autumn,19222.0
+14,2,2973,377.0,12,tea hills,mountain,autumn,86260.0
+14,2,6879,95.3,11,heritage lake,nature,autumn,193374.4
+3,3,4641,540.0,2,food,heritage,winter,48249.0
+12,3,2059,110.6,11,beach wildlife,heritage,autumn,75451.20000000001
+6,2,2334,547.7,5,tea heritage,nature,monsoon,32389.6
+9,2,6306,145.5,6,adventure,heritage,monsoon,114672.0
+7,2,6998,596.7,5,shopping food adventure,nature,monsoon,102745.6
+11,3,3396,370.8,4,heritage,mountain,summer,116517.59999999999
+14,3,4211,68.9,11,shopping beach heritage,mountain,autumn,177688.8
+12,3,6435,57.9,8,sunset heritage,nature,monsoon,232354.80000000002
+14,5,2073,63.5,12,lake wildlife,mountain,autumn,146380.0
+14,2,2285,362.1,12,adventure,heritage,autumn,66876.8
+2,6,6375,489.6,6,sunset tea,beach,monsoon,88250.4
+4,5,2143,253.7,9,hills,beach,monsoon,47934.0
+11,2,6349,278.0,7,adventure,nature,monsoon,141902.0
+9,2,4378,361.8,6,beach food adventure,beach,monsoon,81698.4
+1,2,7928,329.2,9,food lake shopping,beach,monsoon,18489.6
+2,2,1037,419.1,9,lake adventure hills,mountain,monsoon,7500.8
+8,3,7610,293.6,11,shopping,beach,autumn,186163.2
+9,1,2422,434.0,10,hills,mountain,autumn,23534.0
+3,1,1052,598.4,8,lake shopping,nature,monsoon,5549.6
+3,3,6012,223.2,12,beach wildlife adventure,mountain,autumn,56786.399999999994
+2,5,4634,27.1,2,heritage,city,winter,46882.0
+8,2,6829,92.9,10,food tea shopping,beach,autumn,110007.2
+1,6,1580,341.0,5,beach lake,heritage,monsoon,17664.0
+9,3,1381,219.7,6,lake beach,nature,monsoon,39923.399999999994
+7,6,4884,565.2,10,adventure tea,heritage,autumn,218692.80000000002
+7,2,7150,383.9,4,food,heritage,summer,103171.2
+10,4,3721,321.8,11,beach,beach,autumn,153988.8
+8,5,6542,482.9,6,tea,heritage,monsoon,271338.0
+11,1,7324,170.0,5,tea sunset,mountain,monsoon,81244.0
+11,6,7061,495.4,4,wildlife,heritage,summer,477915.60000000003
+13,3,4462,21.8,6,wildlife,mountain,monsoon,174279.59999999998
+12,3,5828,379.4,12,food shopping wildlife,mountain,autumn,214360.80000000002
+8,4,4584,562.2,2,heritage beach,heritage,winter,155683.2
+7,4,5653,477.0,7,wildlife,city,monsoon,165916.0
+4,1,4883,515.1,11,sunset lake,city,autumn,21592.4
+9,6,4580,250.2,6,tea hills,heritage,monsoon,253324.80000000002
+2,4,3945,498.1,7,tea,nature,monsoon,39529.6
+14,6,5500,339.5,5,hills,nature,monsoon,470148.0
+12,3,6207,378.8,2,heritage beach,city,winter,227997.59999999998
+2,4,7417,54.2,8,lake wildlife tea,mountain,monsoon,60203.2
+12,3,5215,136.9,12,wildlife adventure lake,city,autumn,189382.8
+2,6,1523,339.6,7,heritage food,heritage,monsoon,26426.399999999998
+11,5,5029,54.1,6,shopping tea,heritage,monsoon,277677.0
+2,6,3073,450.0,2,sunset,nature,winter,47676.0
+7,4,993,507.2,12,beach,city,autumn,35919.2
+10,5,1321,553.8,11,wildlife,heritage,autumn,77126.0
+11,3,5057,79.0,11,heritage sunset,beach,autumn,167829.0
+6,3,7602,565.0,5,hills heritage,heritage,monsoon,143616.0
+13,5,4440,59.2,8,adventure,heritage,monsoon,289784.0
+11,1,4005,295.0,6,shopping,city,monsoon,45235.0
+3,5,1438,507.3,3,sunset lake shopping,city,summer,31716.0
+10,1,5662,60.8,3,food shopping,city,summer,56863.2
+11,4,1199,30.6,5,sunset,beach,monsoon,53245.6
+5,3,6856,34.5,7,adventure tea,heritage,monsoon,103254.0
+11,3,6678,316.5,2,lake adventure,city,winter,224172.0
+13,3,7935,490.7,9,beach,city,monsoon,315353.4
+12,3,2846,93.9,6,sunset,nature,monsoon,103582.79999999999
+11,3,1964,92.3,11,food wildlife heritage,city,autumn,65919.6
+9,3,2956,349.8,4,adventure beach sunset,city,summer,84009.6
+4,4,6556,155.9,1,hills,beach,winter,107390.4
+12,5,2375,443.5,4,food wildlife,city,summer,151370.0
+6,4,7189,570.8,12,hills,heritage,autumn,181668.8
+8,4,1910,464.3,4,tea lake,nature,summer,68548.8
+5,6,1151,528.8,9,shopping hills,beach,monsoon,47221.2
+5,6,2379,321.4,11,hills heritage,city,autumn,79083.6
+3,1,6229,502.7,4,food hills,mountain,summer,20697.8
+14,5,5136,126.1,8,hills beach,nature,monsoon,362042.0
+3,2,3354,59.6,3,heritage shopping,mountain,summer,20600.8
+2,2,5523,400.5,5,adventure beach,city,monsoon,25296.0
+14,5,5469,50.1,4,shopping beach,nature,summer,383832.0
+8,1,4793,537.6,9,food hills,beach,monsoon,40494.4
+7,6,4501,421.1,11,food,beach,autumn,199148.40000000002
+11,5,1530,572.3,4,heritage sunset beach,city,summer,95596.0
+6,6,2670,202.1,4,food tea adventure,mountain,summer,100970.40000000001
+2,5,4599,302.0,10,sunset lake,heritage,autumn,52030.0
+11,6,1773,450.2,6,beach tea hills,beach,monsoon,127822.79999999999
+3,1,4226,160.8,7,tea,city,monsoon,13321.2
+8,6,1642,334.3,9,food,heritage,monsoon,86839.20000000001
+14,1,6468,402.5,2,adventure wildlife,mountain,winter,92162.0
+14,2,1543,587.7,11,shopping beach tea,city,autumn,47905.6
+6,1,1466,451.9,5,tea beach adventure,mountain,monsoon,10603.6
+11,3,5392,88.5,8,beach adventure,city,monsoon,178998.0
+9,5,2387,295.7,6,hills shopping adventure,nature,monsoon,113329.0
+7,2,3330,361.5,10,wildlife shopping lake,nature,autumn,49512.0
+2,5,3062,105.0,8,adventure,beach,monsoon,32720.0
+6,4,2359,270.5,3,adventure heritage sunset,mountain,summer,60944.0
+10,4,6284,184.7,3,hills sunset shopping,beach,summer,254315.2
+14,6,5781,88.9,11,tea hills sunset,city,autumn,487737.60000000003
+1,3,2519,317.0,7,wildlife,beach,monsoon,11361.0
+11,3,5745,116.1,4,hills,beach,summer,190978.2
+12,6,5936,362.5,2,beach heritage hills,beach,winter,436092.0
+14,4,4682,118.4,2,shopping,city,winter,264086.4
+6,4,4964,439.7,12,heritage shopping wildlife,city,autumn,126171.2
+2,2,7531,133.2,12,food adventure beach,heritage,autumn,31189.6
+4,2,4067,539.8,5,beach lake tea,beach,monsoon,36854.4
+12,2,3574,35.2,3,shopping beach,nature,summer,86057.6
+13,2,4680,322.8,6,hills,city,monsoon,124262.4
+9,2,6818,205.7,2,heritage hills,beach,winter,124369.6
+2,5,5909,150.5,7,sunset,heritage,monsoon,62100.0
+2,1,1341,293.5,8,tea,beach,monsoon,3856.0
+7,4,4106,508.4,12,food,city,autumn,123102.4
+9,6,6126,550.9,4,hills food,nature,summer,344025.6
+1,5,2412,195.9,3,tea,city,summer,15978.0
+10,3,7916,109.5,2,hills shopping,nature,winter,238794.0
+8,1,6618,437.7,5,shopping,heritage,monsoon,54694.8
+1,6,6895,357.6,8,shopping,city,monsoon,49952.399999999994
+2,1,1388,136.6,1,tea sunset,mountain,winter,3322.4
+7,5,4973,461.0,10,tea sunset adventure,heritage,autumn,183275.0
+11,5,4600,321.0,6,shopping food,nature,monsoon,259420.0
+12,2,5312,399.0,10,heritage food,nature,autumn,130680.0
+7,5,6921,228.4,6,wildlife food,heritage,monsoon,246803.0
+5,2,3343,274.7,2,heritage,mountain,winter,35627.6
+14,2,4644,124.6,1,hills,beach,winter,131028.8
+7,5,5692,458.8,7,shopping tea hills,nature,monsoon,208396.0
+5,6,6222,111.1,7,adventure tea,city,monsoon,189326.40000000002
+7,2,6346,471.4,10,adventure sunset beach,beach,autumn,92615.2
+1,6,3225,482.8,11,adventure lake sunset,mountain,autumn,30937.199999999997
+5,6,7987,453.0,2,food beach,heritage,winter,250482.0
+8,5,869,31.3,4,wildlife sunset,nature,summer,35386.0
+13,1,4345,178.4,3,adventure food,heritage,summer,57198.6
+11,2,5183,291.6,2,adventure,nature,winter,116358.8
+11,5,1241,365.4,1,beach wildlife adventure,city,winter,75563.0
+8,6,4048,553.1,1,food shopping adventure,city,winter,207578.40000000002
+2,5,5090,237.9,7,adventure beach,nature,monsoon,55658.0
+6,3,5174,527.5,2,food sunset,nature,winter,99462.0
+14,2,1656,114.8,3,adventure lake beach,mountain,summer,47286.4
+1,6,2798,235.3,2,beach food,nature,winter,22435.199999999997
+13,2,2562,50.3,9,wildlife beach sunset,city,monsoon,67014.4
+10,3,5407,450.6,8,adventure,nature,monsoon,167617.2
+4,6,3167,107.4,12,food shopping hills,heritage,autumn,78585.6
+11,4,4914,169.1,2,wildlife hills,nature,winter,218921.6
+12,2,6063,469.6,3,adventure tea heritage,heritage,summer,149268.8
+1,1,6540,330.1,6,shopping tea food,heritage,monsoon,7860.4
+2,3,2123,28.1,8,lake,nature,monsoon,13075.199999999999
+10,6,7305,21.3,2,wildlife,city,winter,438811.19999999995
+14,3,1993,316.2,3,hills,city,summer,87500.4
+1,5,957,196.9,6,hills,beach,monsoon,8723.0
+10,2,1123,124.6,1,food heritage wildlife,mountain,winter,23456.8
+2,5,2247,375.9,5,sunset,city,monsoon,29988.0
+10,5,7087,152.5,10,lake,nature,autumn,357400.0
+9,4,2296,363.5,7,lake tea sunset,mountain,monsoon,88472.0
+2,5,5793,240.0,6,wildlife lake sunset,heritage,monsoon,62730.0
+10,4,3813,128.3,6,beach,heritage,monsoon,154572.8
+13,3,1087,100.1,12,wildlife heritage,beach,autumn,43594.2
+13,5,3997,157.4,7,wildlife lake heritage,beach,monsoon,262953.0
+1,6,1003,37.3,7,hills sunset heritage,city,monsoon,6913.200000000001
+4,6,4228,198.7,12,adventure,heritage,autumn,106240.79999999999
+4,2,4822,543.1,2,sunset beach,mountain,winter,42920.8
+7,5,4553,502.2,2,shopping adventure beach,city,winter,169399.0
+3,1,2834,235.8,6,heritage hills,beach,monsoon,9445.2
+12,4,6319,354.0,4,lake,city,summer,308976.0
+11,4,5096,349.1,3,hills beach food,beach,summer,229809.6
+12,3,2634,500.7,2,beach shopping hills,heritage,winter,100832.40000000001
+3,6,3929,157.0,11,beach heritage shopping,city,autumn,74490.0
+1,6,1581,191.9,8,adventure,heritage,monsoon,14091.599999999999
+13,1,7447,195.0,9,hills tea shopping,heritage,monsoon,97591.0
+5,2,6221,43.7,2,food hills,mountain,winter,62559.6
+10,2,2872,202.5,5,lake tea,mountain,monsoon,59060.0
+13,6,5659,529.2,8,hills lake beach,mountain,monsoon,454102.80000000005
+1,4,5689,549.0,7,adventure,beach,monsoon,31540.0
+1,5,5189,83.6,9,wildlife tea lake,mountain,monsoon,27617.0
+1,5,1189,285.7,9,beach wildlife sunset,mountain,monsoon,11659.0
+3,5,7125,241.2,5,wildlife adventure hills,heritage,monsoon,111699.0
+1,1,7682,303.8,10,shopping,mountain,autumn,8897.2
+12,1,7813,341.7,4,adventure wildlife heritage,beach,summer,95122.8
+9,3,7861,31.8,1,tea sunset heritage,heritage,winter,212628.59999999998
+14,3,7487,508.5,11,food lake heritage,nature,autumn,320556.0
+12,5,6121,584.7,1,beach,mountain,winter,378954.0
+14,1,1209,399.0,4,wildlife,heritage,summer,18522.0
+4,3,4149,403.1,2,heritage food wildlife,mountain,winter,54625.200000000004
+5,2,2565,326.2,3,sunset adventure wildlife,heritage,summer,28259.6
+12,2,2383,213.9,5,adventure tea heritage,beach,monsoon,58903.2
+4,2,6780,106.4,2,sunset shopping,nature,winter,55091.2
+1,2,6650,358.8,6,lake sunset,nature,monsoon,16170.4
+10,4,4558,46.1,12,heritage food beach,mountain,autumn,183057.6
+12,3,6101,498.2,2,lake hills,heritage,winter,225614.40000000002
+14,3,1731,264.1,12,beach,mountain,autumn,75871.20000000001
+13,3,2398,260.6,5,adventure,heritage,monsoon,96649.20000000001
+2,5,6995,209.8,8,heritage shopping lake,mountain,monsoon,74146.0
+11,6,4048,582.2,6,heritage food wildlife,nature,monsoon,281140.80000000005
+12,4,4735,121.5,4,tea,heritage,summer,229224.0
+10,4,4132,107.8,2,food,city,winter,167004.8
+12,5,2255,116.0,8,tea hills,mountain,monsoon,137620.0
+12,5,6750,401.9,11,lake shopping wildlife,nature,autumn,413038.0
+7,1,6259,595.3,7,food beach sunset,nature,monsoon,46194.2
+1,6,5723,156.6,8,lake tea,city,monsoon,38096.399999999994
+7,1,3342,545.3,8,adventure,city,monsoon,25575.2
+3,3,5430,181.6,5,shopping food,heritage,monsoon,51049.200000000004
+2,4,7663,395.8,2,hills,city,winter,67636.8
+2,3,5478,43.5,7,heritage wildlife lake,beach,monsoon,33390.0
+10,2,4358,307.5,11,sunset heritage lake,heritage,autumn,89620.0
+8,6,2747,399.7,4,adventure beach shopping,city,summer,141448.8
+8,1,4564,331.1,11,lake sunset beach,heritage,autumn,37836.4
+11,2,3476,157.9,11,food tea shopping,nature,autumn,77735.2
+8,6,5201,500.5,3,heritage tea shopping,city,summer,261660.0
+9,5,1128,582.7,7,food lake,heritage,monsoon,62414.0
+2,1,2169,286.3,9,tea lake,city,monsoon,5483.2
+12,5,6465,388.8,6,beach,beach,monsoon,395676.0
+7,6,3541,478.4,9,wildlife,heritage,monsoon,160203.59999999998
+3,1,3917,160.1,11,sunset,nature,autumn,12391.4
+12,3,4716,521.4,8,adventure hills lake,city,monsoon,176032.8
+11,3,3955,182.5,11,heritage,city,autumn,132705.0
+1,1,6262,470.0,10,hills sunset adventure,city,autumn,8142.0
+3,2,2566,85.0,10,lake,mountain,autumn,16076.0
+1,2,6260,187.3,11,shopping sunset food,nature,autumn,14018.4
+4,2,2307,329.5,3,heritage,beach,summer,21092.0
+2,3,3468,324.5,1,shopping beach,city,winter,24702.0
+10,3,5032,513.3,2,food adventure hills,mountain,winter,157119.59999999998
+8,2,7179,597.8,3,sunset food beach,heritage,summer,119646.4
+14,2,2474,82.2,9,beach sunset food,nature,monsoon,69929.6
+11,2,5029,177.4,7,lake,city,monsoon,112057.2
+9,5,1262,227.4,6,sunset,city,monsoon,61338.0
+8,2,1343,297.8,1,shopping,heritage,winter,23870.4
+1,6,6326,306.5,9,wildlife,heritage,monsoon,45312.0
+1,4,5976,516.6,5,shopping sunset,beach,monsoon,32169.6
+9,5,3510,466.9,10,tea lake,city,autumn,167288.0
+1,4,5285,30.9,2,heritage sunset,beach,winter,21634.4
+1,2,3537,283.9,4,lake hills food,nature,summer,9345.2
+4,4,2796,378.5,1,sunset,mountain,winter,50792.0
+13,2,3905,287.0,4,lake beach food,mountain,summer,103826.0
+7,1,3045,95.8,12,heritage sunset,city,autumn,21698.2
+10,2,6668,250.5,6,sunset,mountain,monsoon,135364.0
+6,2,3764,258.8,6,heritage,nature,monsoon,47238.4
+3,1,3110,128.9,4,tea,mountain,summer,9845.6
+6,1,4660,458.7,4,sunset wildlife,city,summer,29794.8
+2,6,6257,206.4,9,sunset tea beach,heritage,monsoon,80037.6
+11,4,2770,361.6,12,hills,nature,autumn,127665.6
+3,3,7564,319.1,9,shopping lake tea,beach,monsoon,71905.20000000001
+6,6,4137,528.9,9,beach,beach,monsoon,161625.59999999998
+14,2,5558,90.8,6,beach tea,mountain,monsoon,156350.4
+9,3,7692,86.3,2,shopping sunset,nature,winter,208719.59999999998
+7,6,3908,194.2,9,beach wildlife,city,monsoon,168796.8
+8,4,2238,270.1,10,lake,beach,autumn,75937.6
+11,3,6184,193.2,7,adventure tea,nature,monsoon,206390.40000000002
+4,2,847,462.6,2,sunset food,mountain,winter,10476.8
+9,1,4096,162.3,9,lake,beach,monsoon,37513.2
+13,1,7855,69.2,12,beach,heritage,autumn,102391.8
+9,1,3783,260.0,3,adventure lake,heritage,summer,35087.0
+7,5,5725,468.6,2,heritage sunset,city,winter,209747.0
+3,4,4582,513.3,9,adventure,nature,monsoon,63196.8
+4,3,2345,445.3,4,hills,mountain,summer,33483.600000000006
+14,5,3087,343.6,9,tea food,city,monsoon,222962.0
+8,1,4569,440.0,9,food,mountain,monsoon,38312.0
+5,2,1550,415.2,4,wildlife food hills,heritage,summer,18821.6
+6,3,3787,155.9,1,wildlife,city,winter,70036.79999999999
+9,6,3786,339.4,7,shopping hills food,beach,monsoon,212589.59999999998
+8,4,6811,467.0,5,hills wildlife,city,monsoon,225424.0
+10,6,1691,203.9,11,adventure shopping,mountain,autumn,106353.59999999999
+4,2,6867,399.3,5,heritage tea adventure,nature,monsoon,58130.4
+10,6,3755,299.3,3,sunset beach tea,mountain,summer,232483.19999999998
+7,1,5489,311.8,11,beach,beach,autumn,39670.2
+14,2,4809,72.2,9,tea food,heritage,monsoon,135229.6
+3,4,2958,406.4,8,food,nature,monsoon,41998.4
+3,1,7501,522.1,12,shopping sunset wildlife,nature,autumn,24591.4
+7,6,2416,102.0,10,lake hills,nature,autumn,103920.0
+8,6,1060,232.3,11,tea,heritage,autumn,56455.200000000004
+10,4,6200,48.2,10,adventure lake heritage,city,autumn,248771.2
+6,2,5274,37.2,5,food,nature,monsoon,63585.6
+13,1,7211,594.0,1,lake,beach,winter,96119.0
+7,4,4095,306.2,8,tea lake,mountain,monsoon,119559.2
+2,4,921,226.2,10,heritage,nature,autumn,10987.2
+2,5,945,179.4,12,adventure,beach,autumn,13038.0
+14,4,3919,588.4,9,shopping lake,mountain,monsoon,228878.4
+2,1,2596,166.3,7,food hills,mountain,monsoon,5857.2
+14,1,7439,440.9,7,sunset,city,monsoon,105909.6
+4,5,1653,184.6,2,shopping lake wildlife,nature,winter,36752.0
+2,1,7141,60.9,1,adventure heritage wildlife,city,winter,14525.6
+5,6,2360,416.3,1,hills adventure,nature,winter,80791.20000000001
+9,1,1659,20.9,11,food,nature,autumn,15014.6
+6,5,2776,411.9,10,heritage sunset adventure,city,autumn,91518.0
+11,6,1837,165.2,4,lake,heritage,summer,125206.79999999999
+9,3,3689,452.7,6,wildlife sunset shopping,mountain,monsoon,105035.40000000001
+6,1,3179,466.5,6,shopping sunset,mountain,monsoon,20940.0
+9,6,4609,440.0,3,wildlife food,heritage,summer,259446.0
+14,2,4666,34.2,6,shopping,beach,monsoon,130921.6
+6,4,807,428.2,5,beach,beach,monsoon,26219.2
+3,6,1699,594.3,9,adventure,beach,monsoon,44845.2
+6,5,1965,160.7,10,heritage,heritage,autumn,62164.0
+12,1,2202,179.1,2,food,nature,winter,27140.4
+4,5,1473,491.8,6,beach,beach,monsoon,39296.0
+14,1,3065,113.0,12,hills shopping,heritage,autumn,43362.0
+9,5,4757,403.1,11,shopping food wildlife,heritage,autumn,222127.0
+9,4,3024,457.9,10,wildlife beach,heritage,autumn,116190.4
+5,2,3169,41.6,9,shopping hills beach,beach,monsoon,32022.8
+13,3,4180,341.2,1,heritage tea food,city,winter,167114.40000000002
+1,1,4748,354.0,12,wildlife,beach,autumn,6164.0
+5,6,3182,196.0,9,hills,nature,monsoon,100164.0
+6,2,2397,528.3,11,wildlife,nature,autumn,32990.4
+7,2,3747,114.4,11,wildlife shopping,mountain,autumn,53373.2
+7,4,974,231.2,4,lake,mountain,summer,30971.2
+3,5,4346,512.2,1,beach wildlife lake,beach,winter,75434.0
+4,4,7577,130.6,8,hills,nature,monsoon,123321.6
+2,4,3665,496.4,6,tea,heritage,monsoon,37262.4
+9,4,1579,65.9,1,heritage,mountain,winter,57898.4
+5,6,5890,303.8,4,wildlife,nature,summer,183991.2
+8,3,1713,63.7,12,shopping beach lake,city,autumn,41876.399999999994
+9,5,2194,413.2,5,tea heritage,mountain,monsoon,106994.0
+10,5,1855,478.5,4,wildlife heritage hills,mountain,summer,102320.0
+8,6,7162,512.9,8,tea hills sunset,beach,monsoon,356085.6
+10,6,7865,589.1,8,tea beach,nature,monsoon,486038.39999999997
+9,5,4901,409.8,4,sunset lake,mountain,summer,228741.0
+10,2,5247,466.1,11,heritage,city,autumn,108668.8
+9,5,5447,313.3,7,heritage,mountain,monsoon,251381.0
+5,5,5194,549.4,2,wildlife shopping,heritage,winter,140838.0
+4,2,4717,393.4,4,shopping wildlife,beach,summer,40883.2
+12,5,7904,532.5,11,wildlife adventure,mountain,autumn,484890.0
+5,2,6078,156.6,2,adventure,beach,winter,62032.8
+8,4,1436,308.1,1,lake,nature,winter,50881.6
+3,5,3621,443.3,8,shopping adventure,beach,monsoon,63181.0
+7,2,7816,137.6,6,shopping heritage,beach,monsoon,110524.8
+8,3,3706,142.6,4,hills heritage,nature,summer,90655.20000000001
+9,5,2268,587.3,6,food heritage tea,nature,monsoon,113806.0
+8,3,7053,272.1,3,hills,mountain,summer,172537.2
+6,6,5286,125.5,5,tea food,nature,monsoon,193308.0
+14,1,4850,212.2,3,tea,nature,summer,68748.8
+8,5,3824,250.5,8,wildlife hills heritage,heritage,monsoon,157970.0
+12,5,1695,381.4,9,tea lake wildlife,nature,monsoon,109328.0
+11,6,3564,555.3,11,sunset shopping lake,city,autumn,248551.19999999998
+8,1,3949,592.2,1,tea,mountain,winter,33960.8
+13,6,7504,398.0,4,adventure,beach,summer,594864.0
+2,3,3012,426.0,4,lake,nature,summer,23184.0
+13,3,1874,206.7,7,hills wildlife shopping,beach,monsoon,75566.4
+12,3,3878,517.2,7,beach,heritage,monsoon,145814.40000000002
+8,4,7978,146.3,11,food sunset lake,mountain,autumn,257636.8
+11,4,4271,81.7,12,adventure,mountain,autumn,189231.2
+8,3,3529,584.5,10,sunset hills lake,nature,autumn,91710.0
+4,1,5601,521.2,3,wildlife,beach,summer,24488.8
+12,6,5471,196.1,1,shopping,mountain,winter,398618.39999999997
+4,2,2954,411.6,11,beach lake,city,autumn,26924.8
+5,1,7768,290.9,12,adventure beach lake,heritage,autumn,40003.6
+8,4,5069,207.4,4,wildlife,nature,summer,165526.4
+12,3,1214,186.3,1,beach food adventure,nature,winter,45939.600000000006
+6,4,3734,98.9,9,shopping hills adventure,nature,monsoon,91198.4
+7,6,7444,338.6,8,wildlife tea,city,monsoon,320774.4
+1,1,3632,279.0,11,adventure,city,autumn,4748.0
+2,2,4888,317.1,7,beach sunset,nature,monsoon,22088.8
+1,4,5210,144.9,10,food wildlife beach,city,autumn,23158.4
+2,5,5871,564.4,10,food tea hills,beach,autumn,69998.0
+13,4,7080,390.4,1,shopping wildlife tea,mountain,winter,374406.4
+12,3,1874,541.8,2,tea,mountain,winter,73965.6
+12,4,4520,83.4,10,wildlife,heritage,autumn,218294.4
+1,6,4640,381.3,3,shopping sunset,heritage,summer,36991.2
+2,3,1897,512.7,3,sunset,nature,summer,17534.4
+4,6,5649,211.9,10,tea,mountain,autumn,140661.59999999998
+8,5,1650,133.2,3,heritage tea,nature,summer,68664.0
+5,2,4084,173.7,2,wildlife,mountain,winter,42229.6
+7,2,3177,178.3,1,wildlife heritage,nature,winter,45904.4
+3,5,1915,279.4,6,hills adventure,mountain,monsoon,34313.0
+11,2,6720,209.1,8,sunset,city,monsoon,149512.8
+5,3,2557,177.3,9,hills lake,heritage,monsoon,40482.600000000006
+1,2,2637,396.1,11,heritage,beach,autumn,8442.8
+11,4,6951,50.8,8,lake heritage shopping,city,monsoon,306656.8
+13,2,7117,217.4,10,beach,heritage,autumn,186781.2
+1,4,1048,420.1,3,lake sunset shopping,mountain,summer,10913.6
+7,6,2800,122.0,5,heritage beach lake,nature,monsoon,120528.0
+12,5,5903,148.1,4,beach,beach,summer,357142.0
+10,6,6402,136.4,1,tea lake,beach,winter,387393.6
+12,1,7995,20.5,12,sunset tea,nature,autumn,96022.0
+6,3,4793,294.8,3,beach heritage,heritage,summer,89811.6
+6,2,853,42.6,6,heritage,mountain,monsoon,10576.8
+10,6,7090,178.3,5,hills,mountain,monsoon,429679.19999999995
+3,5,1959,597.0,1,adventure beach,city,winter,41325.0
+4,2,1669,552.7,11,hills wildlife beach,city,autumn,17773.6
+9,4,5653,144.7,3,sunset,nature,summer,205823.2
+10,4,5147,199.8,2,beach lake food,beach,winter,209076.8
+2,3,1231,288.9,5,adventure wildlife,heritage,monsoon,10852.8
+8,3,2018,509.8,2,shopping adventure hills,heritage,winter,54549.600000000006
+6,1,5046,485.5,12,adventure,city,autumn,32218.0
+8,3,2638,93.2,3,tea beach lake,city,summer,64430.399999999994
+14,3,5724,92.2,4,adventure beach,heritage,summer,241514.40000000002
+2,5,3764,261.7,4,adventure food,beach,summer,42874.0
+14,6,5034,524.7,1,wildlife lake,mountain,winter,435448.80000000005
+7,5,4219,531.6,1,shopping food hills,heritage,winter,158297.0
+11,1,3429,82.3,7,hills shopping heritage,heritage,monsoon,38048.2
+6,6,3265,353.1,3,sunset adventure,nature,summer,126014.40000000001
+5,3,5820,110.3,2,beach hills shopping,nature,winter,88623.6
+11,3,4503,418.0,4,tea,heritage,summer,153615.0
+10,6,5078,551.5,4,hills wildlife,nature,summer,317916.0
+3,6,4956,283.8,6,wildlife food shopping,beach,monsoon,96019.20000000001
+10,1,2294,68.2,12,beach heritage lake,city,autumn,23212.8
+11,3,7375,356.0,4,shopping,mountain,summer,247647.0
+6,5,4854,256.9,9,lake beach,mountain,monsoon,150758.0
+13,4,5970,490.3,10,shopping,beach,autumn,318284.8
+9,2,7149,217.4,1,food hills,nature,winter,130421.2
+5,4,7457,527.4,7,wildlife sunset,city,monsoon,157578.4
+1,6,5601,178.7,6,food,beach,monsoon,37894.8
+10,2,6467,111.4,7,hills tea,mountain,monsoon,130231.2
+3,5,4196,197.8,3,sunset beach food,beach,summer,66896.0
+11,5,6112,40.3,6,beach lake food,beach,monsoon,336966.0
+8,6,3115,183.1,2,sunset,heritage,winter,153914.40000000002
+7,2,5924,402.9,12,beach shopping food,mountain,autumn,86159.2
+3,2,1418,102.5,8,shopping heritage,heritage,monsoon,9328.0
+10,4,7382,84.6,1,tea shopping food,nature,winter,296633.6
+3,4,2561,96.8,7,adventure shopping beach,heritage,monsoon,32280.8
+6,3,5527,65.0,12,shopping tea beach,beach,autumn,100266.0
+12,5,880,527.3,9,shopping,mountain,monsoon,63346.0
+13,5,1921,567.6,4,heritage beach,nature,summer,136217.0
+14,2,7903,47.0,11,tea,beach,autumn,221660.0
+14,5,6800,460.8,3,shopping heritage,nature,summer,485216.0
+8,2,2401,447.5,3,adventure beach shopping,nature,summer,41996.0
+3,3,1742,598.2,2,shopping sunset beach,nature,winter,22856.4
+12,1,6667,221.8,12,sunset food,nature,autumn,80891.2
+12,3,7929,185.6,9,beach sunset,heritage,monsoon,287671.19999999995
+14,6,2014,282.8,7,wildlife,heritage,monsoon,175963.2
+10,3,5580,516.8,9,hills,beach,monsoon,173601.59999999998
+2,5,2841,442.6,4,sunset wildlife heritage,heritage,summer,37262.0
+8,1,6159,293.5,1,beach sunset,city,winter,50446.0
+7,4,3811,161.8,11,heritage sunset adventure,city,autumn,109296.8
+12,3,1702,441.7,12,tea,mountain,autumn,66572.4
+6,5,3135,515.6,1,beach shopping wildlife,heritage,winter,104362.0
+5,6,4678,252.0,1,food,city,winter,146388.0
+2,4,6548,407.8,7,tea,mountain,monsoon,58908.8
+12,1,951,252.1,1,adventure,city,winter,12420.4
+11,3,7695,297.5,9,shopping,heritage,monsoon,257505.0
+1,1,5477,324.4,12,food sunset,heritage,autumn,6774.6
+7,3,7102,469.9,4,adventure,heritage,summer,154780.8
+7,1,7496,587.0,4,food shopping hills,heritage,summer,54820.0
+7,4,1905,277.7,11,shopping heritage,city,autumn,57783.2
+13,2,1474,218.5,5,tea food shopping,city,monsoon,40072.0
+3,2,6392,236.7,3,hills wildlife adventure,nature,summer,40245.6
+5,1,2152,97.7,2,adventure wildlife,nature,winter,11150.8
+3,6,1865,192.2,11,tea,heritage,autumn,38182.8
+4,6,4173,70.1,12,sunset heritage,city,autumn,101834.40000000001
+13,5,7376,268.2,1,heritage lake adventure,mountain,winter,484804.0
+14,1,6528,117.1,10,heritage lake,mountain,autumn,91860.4
+1,3,4528,220.9,2,beach,heritage,winter,16234.800000000001
+9,6,2214,480.3,2,beach wildlife,city,winter,131083.2
+4,4,3221,162.6,5,hills tea,city,monsoon,54137.6
+3,1,5757,374.9,6,heritage hills shopping,beach,monsoon,18770.6
+5,1,1930,542.7,11,shopping,city,autumn,11820.8
+3,2,4575,348.8,9,tea adventure,heritage,monsoon,30240.4
+7,6,885,132.4,2,food hills shopping,beach,winter,40347.600000000006
+14,2,3140,220.0,8,hills shopping food,beach,monsoon,89680.0
+9,6,2585,362.4,11,shopping tea,mountain,autumn,148287.59999999998
+11,5,5703,313.8,8,hills lake,city,monsoon,319941.0
+7,6,7380,106.2,3,lake,heritage,summer,312508.80000000005
+1,5,1854,279.1,2,wildlife shopping,nature,winter,14852.0
+2,2,6540,335.0,6,wildlife shopping,heritage,monsoon,28840.0
+4,5,5522,175.1,6,food,nature,monsoon,113942.0
+4,2,7782,375.2,5,lake heritage tea,city,monsoon,65257.6
+12,2,7362,60.7,2,lake,beach,winter,177173.6
+12,2,1525,215.2,2,tea,mountain,winter,38321.6
+12,1,6151,486.5,7,adventure heritage,mountain,monsoon,75758.0
+9,1,5063,170.4,12,food,city,autumn,46248.6
+8,2,1614,371.0,8,hills,nature,monsoon,28792.0
+10,1,2651,257.8,6,beach hills,heritage,monsoon,27541.2
+6,3,7473,203.5,12,heritage lake wildlife,city,autumn,136956.0
+10,1,4709,551.4,9,hills beach,beach,monsoon,49295.6
+12,1,3236,219.1,9,hills,city,monsoon,39708.4
+11,6,3107,157.3,7,tea sunset,beach,monsoon,208837.19999999998
+9,1,6832,547.4,10,hills adventure shopping,heritage,autumn,63677.6
+1,1,2840,452.6,7,tea food,heritage,monsoon,4650.4
+11,1,1944,415.4,8,hills beach lake,city,monsoon,23045.6
+6,1,4931,48.7,8,tea sunset lake,beach,monsoon,29780.8
+11,4,7946,96.1,10,shopping food wildlife,city,autumn,351161.6
+8,5,2119,390.2,11,adventure heritage wildlife,heritage,autumn,92564.0
+13,5,2638,141.5,4,shopping,beach,summer,174300.0
+5,4,4177,150.9,9,lake shopping,nature,monsoon,85954.4
+14,1,2238,471.9,1,lake beach food,city,winter,33219.6
+12,5,5485,185.8,7,adventure wildlife food,nature,monsoon,332816.0
+5,1,2626,61.5,11,sunset,mountain,autumn,13376.0
+7,4,1722,41.1,8,shopping food,mountain,monsoon,48873.6
+8,3,2681,277.0,4,hills,nature,summer,67668.0
+11,6,7500,377.9,8,beach food hills,city,monsoon,504069.60000000003
+10,2,7531,524.0,5,hills heritage,heritage,monsoon,154812.0
+12,4,4441,84.3,6,sunset shopping food,heritage,monsoon,214516.8
+6,3,3683,134.1,3,heritage shopping adventure,heritage,summer,67903.20000000001
+8,4,6700,327.3,8,heritage adventure hills,heritage,monsoon,219636.8
+7,6,2198,231.2,3,food,nature,summer,97864.79999999999
+13,5,5508,299.9,6,heritage,heritage,monsoon,364018.0
+5,3,5696,556.0,12,tea,mountain,autumn,92112.0
+9,3,5912,336.0,10,sunset,nature,autumn,163656.0
+2,5,2369,260.8,5,hills food,mountain,monsoon,28906.0
+12,3,5956,593.9,12,wildlife lake adventure,city,autumn,221542.80000000002
+6,2,5206,57.8,1,hills adventure lake,heritage,winter,62934.4
+5,3,7100,560.6,12,adventure beach food,nature,autumn,113227.20000000001
+9,1,2055,311.0,5,beach food heritage,nature,monsoon,19739.0
+7,2,5217,312.2,10,hills adventure,nature,autumn,75535.6
+12,3,6773,554.7,12,heritage beach,heritage,autumn,250484.40000000002
+8,5,2803,314.2,8,wildlife sunset,mountain,monsoon,118404.0
+8,5,6155,274.3,8,lake,city,monsoon,251686.0
+2,2,1516,178.0,9,heritage sunset tea,mountain,monsoon,7488.0
+1,3,5970,402.1,3,adventure,beach,summer,22735.199999999997
+6,1,5165,350.4,3,beach,heritage,summer,32391.6
+14,5,2186,144.3,5,lake,heritage,monsoon,155906.0
+13,2,1277,431.5,6,adventure heritage tea,mountain,monsoon,36654.0
+9,5,6167,393.6,9,food,heritage,monsoon,285387.0
+9,6,2537,250.5,4,tea,heritage,summer,143010.0
+6,5,4381,22.6,7,shopping,heritage,monsoon,131882.0
+3,2,1237,279.0,1,lake food wildlife,city,winter,9654.0
+1,6,7737,23.5,1,hills tea adventure,city,winter,46986.0
+5,5,4751,63.5,12,hills,nature,autumn,120045.0
+5,4,7507,269.8,11,beach hills,mountain,autumn,154456.8
+3,6,1954,67.5,11,shopping sunset tea,beach,autumn,36792.0
+4,6,2281,179.9,4,shopping lake,nature,summer,59061.600000000006
+1,1,5194,400.2,7,hills,heritage,monsoon,6794.8
+9,6,5152,199.0,9,beach heritage,heritage,monsoon,282984.0
+13,5,6494,598.6,4,lake food sunset,beach,summer,434082.0
+10,2,7482,551.5,9,beach tea shopping,heritage,monsoon,154052.0
+7,2,6717,359.5,9,hills beach,heritage,monsoon,96914.0
+6,5,1809,580.8,5,wildlife tea,heritage,monsoon,65886.0
+5,2,3028,523.5,6,food beach sunset,nature,monsoon,34468.0
+2,3,7379,205.0,4,shopping,beach,summer,46734.0
+9,5,4752,454.8,10,shopping hills,nature,autumn,222936.0
+8,4,7042,99.4,12,adventure,heritage,autumn,226934.4
+1,6,4853,417.0,12,beach,nature,autumn,39126.0
+6,1,1158,304.8,10,hills heritage sunset,nature,autumn,8167.2
+4,2,4204,29.8,5,beach adventure,nature,monsoon,33870.4
+3,6,6737,179.1,10,food,nature,autumn,125564.40000000001
+10,4,5516,574.1,3,shopping sunset hills,mountain,summer,229825.6
+8,2,1756,203.2,11,beach hills,heritage,autumn,29721.6
+9,2,2312,125.2,4,shopping,mountain,summer,42617.6
+10,3,6951,128.8,5,hills heritage wildlife,nature,monsoon,210075.59999999998
+14,4,7850,297.9,2,tea adventure shopping,nature,winter,444366.4
+12,2,6220,508.7,1,food,heritage,winter,153349.6
+9,4,1506,459.6,5,tea hills shopping,city,monsoon,61569.6
+13,3,5258,273.4,7,hills lake food,heritage,monsoon,208342.80000000002
+7,4,6770,141.1,1,food,beach,winter,191817.6
+14,1,5409,46.7,11,tea sunset,heritage,autumn,75912.8
+11,4,5077,288.3,2,sunset tea,mountain,winter,228000.8
+10,6,4164,492.6,12,wildlife tea food,beach,autumn,261662.40000000002
+13,1,2562,443.2,4,heritage,beach,summer,35078.8
+8,2,2821,257.0,5,beach,city,monsoon,47192.0
+11,5,6168,364.9,2,beach hills food,nature,winter,346538.0
+4,4,1302,273.0,10,hills,mountain,autumn,25200.0
+14,5,1408,355.8,9,food wildlife lake,beach,monsoon,105676.0
+9,4,3655,320.2,1,hills shopping adventure,heritage,winter,136703.2
+11,5,6375,415.0,2,wildlife,heritage,winter,358925.0
+7,4,5530,314.5,8,lake,mountain,monsoon,159872.0
+13,1,5047,565.6,11,food lake,beach,autumn,67873.4
+2,5,4645,268.3,2,shopping adventure tea,mountain,winter,51816.0
+2,3,1597,29.2,3,shopping,heritage,summer,9932.400000000001
+8,1,3188,157.1,7,beach,beach,monsoon,26132.4
+11,3,1372,310.4,2,heritage sunset shopping,mountain,winter,49000.8
+12,3,6258,333.5,4,adventure lake tea,beach,summer,229290.0
+7,1,6206,340.4,1,adventure sunset hills,nature,winter,44803.6
+10,6,2658,434.4,6,lake heritage wildlife,beach,monsoon,169905.59999999998
+8,2,2909,179.3,9,tea,beach,monsoon,47978.4
+14,2,3085,405.6,5,heritage,beach,monsoon,89624.8
+10,3,7202,428.3,4,sunset,heritage,summer,221199.59999999998
+6,5,4317,258.5,6,shopping hills tea,nature,monsoon,134680.0
+14,5,6286,253.3,7,sunset,city,monsoon,445086.0
+2,5,4031,123.8,2,beach adventure,mountain,winter,42786.0
+14,2,5826,260.1,2,beach adventure,mountain,winter,165208.8
+3,6,4603,476.4,3,shopping wildlife,mountain,summer,94287.6
+5,5,2805,547.2,12,food shopping,city,autumn,81069.0
+12,3,7109,364.3,9,food adventure,nature,monsoon,260295.59999999998
+11,4,5904,193.6,2,food tea lake,mountain,winter,262873.6
+14,1,6339,415.7,4,sunset lake,heritage,summer,90408.8
+11,5,7626,449.3,5,tea lake,nature,monsoon,428416.0
+9,6,2591,212.7,3,sunset food,beach,summer,145018.8
+5,3,1459,499.4,11,heritage,heritage,autumn,27877.800000000003
+1,4,4992,62.7,12,beach hills,beach,autumn,20971.2
+2,3,3148,26.2,3,adventure,beach,summer,19202.4
+5,1,3937,91.3,1,hills wildlife,heritage,winter,20050.2
+1,4,2489,110.5,4,tea food,nature,summer,11724.0
+8,5,3668,529.8,7,tea adventure sunset,mountain,monsoon,157316.0
+11,6,3631,266.5,10,beach heritage sunset,beach,autumn,246042.0
+14,6,3324,179.5,5,lake beach,nature,monsoon,283524.0
+7,3,6144,268.9,4,heritage,heritage,summer,132250.8
+13,6,5067,249.0,3,hills,mountain,summer,401202.0
+14,4,4214,194.8,1,lake shopping,nature,winter,239100.8
+13,4,1611,100.0,1,wildlife heritage lake,mountain,winter,85372.0
+7,4,4909,400.4,6,heritage,city,monsoon,143858.4
+5,6,2060,99.2,8,hills,heritage,monsoon,64180.799999999996
+14,5,3061,469.7,1,tea,mountain,winter,223664.0
+4,1,3787,137.0,3,shopping beach,nature,summer,15696.0
+6,1,1817,444.2,11,lake,city,autumn,12678.8
+2,3,3604,487.2,12,tea,mountain,autumn,27470.399999999998
+12,4,2721,92.7,8,wildlife tea,beach,monsoon,132091.2
+10,5,6918,70.3,7,shopping food,mountain,monsoon,347306.0
+2,3,6989,570.8,7,shopping lake wildlife,heritage,monsoon,48783.600000000006
+4,4,832,288.6,5,wildlife beach,city,monsoon,17929.6
+8,6,5137,385.5,3,shopping adventure,mountain,summer,255828.0
+8,3,5411,33.5,5,tea heritage,beach,monsoon,130266.0
+12,3,3521,181.7,9,beach shopping,beach,monsoon,128936.40000000001
+4,4,4177,313.1,8,beach,nature,monsoon,71841.6
+13,3,6487,534.0,9,adventure,beach,monsoon,259401.0
+7,6,3521,177.4,8,beach heritage adventure,beach,monsoon,152139.59999999998
+12,6,1264,469.6,1,shopping,heritage,winter,102278.40000000001
+4,4,3482,404.1,8,beach tea shopping,city,monsoon,62177.6
+1,3,2628,86.9,11,food adventure,mountain,autumn,8926.8
+1,4,3555,190.2,8,tea hills wildlife,nature,monsoon,17263.2
+6,2,2456,158.0,7,beach hills,nature,monsoon,30736.0
+14,3,1879,276.7,3,shopping food,heritage,summer,82238.4
+1,2,7894,388.5,10,hills wildlife,city,autumn,18896.0
+6,1,1727,271.4,6,shopping,city,monsoon,11447.6
+2,1,5883,161.8,4,food,mountain,summer,12413.2
+14,4,5966,423.6,6,wildlife hills,city,monsoon,340873.6
+10,1,5248,359.0,2,sunset shopping food,beach,winter,53916.0
+11,4,7362,321.2,12,shopping,city,autumn,329067.2
+10,3,835,341.6,9,sunset adventure wildlife,beach,monsoon,29149.199999999997
+10,3,2971,148.7,4,lake,beach,summer,90914.4
+11,5,2127,414.7,10,wildlife adventure lake,beach,autumn,125279.0
+1,4,4953,244.8,1,heritage food lake,beach,winter,23728.8
+13,5,5375,230.8,5,food,nature,monsoon,353991.0
+11,5,7264,106.8,8,beach tea shopping,heritage,monsoon,401656.0
+11,1,3533,366.2,1,beach lake,heritage,winter,40327.8
+6,2,2498,369.5,9,heritage sunset tea,beach,monsoon,32932.0
+12,4,7454,217.4,10,tea shopping sunset,mountain,autumn,361270.4
+6,6,5645,518.7,8,sunset beach,beach,monsoon,215668.80000000002
+1,1,6306,510.4,3,shopping beach,beach,summer,8347.6
+13,1,4003,83.3,9,heritage lake,heritage,monsoon,52372.2
+4,6,4021,423.1,5,hills,heritage,monsoon,106658.40000000001
+2,6,3601,248.4,9,hills tea,mountain,monsoon,49173.600000000006
+9,2,6196,599.8,8,sunset food tea,mountain,monsoon,116326.4
+4,3,2316,150.5,2,wildlife heritage shopping,city,winter,29598.0
+13,4,7822,182.7,2,food,nature,winter,409667.2
+7,2,2066,276.4,1,shopping,mountain,winter,31135.2
+1,2,4119,175.9,1,food hills,city,winter,9645.2
+14,3,3065,421.4,4,hills shopping,beach,summer,133786.8
+8,4,5426,298.9,1,sunset tea,mountain,winter,178414.4
+4,2,5700,148.1,12,beach,heritage,autumn,46784.8
+10,3,7414,313.7,11,hills heritage beach,nature,autumn,226184.40000000002
+8,2,6482,535.5,3,hills beach tea,beach,summer,107996.0
+1,5,2590,479.6,4,heritage,city,summer,22542.0
+11,1,2287,309.3,9,beach,mountain,monsoon,26394.2
+6,2,7183,187.3,8,food hills,heritage,monsoon,87694.4
+10,2,4312,124.3,7,adventure,mountain,monsoon,87234.4
+13,6,1502,529.5,12,tea,heritage,autumn,129864.0
+9,6,6739,431.9,8,sunset,city,monsoon,374271.6
+10,4,5468,351.9,9,tea shopping,heritage,monsoon,224350.4
+4,1,984,530.1,7,heritage,city,monsoon,6056.4
+4,5,6436,90.6,7,adventure,nature,monsoon,130532.0
+6,3,5173,415.8,4,tea wildlife lake,beach,summer,98103.6
+12,6,5225,145.7,7,beach wildlife,nature,monsoon,379696.80000000005
+8,3,7027,89.9,12,lake hills,nature,autumn,169726.8
+5,6,4367,290.1,5,wildlife food beach,heritage,monsoon,137972.40000000002
+11,5,4121,244.7,2,shopping sunset lake,mountain,winter,231549.0
+12,2,5244,565.9,8,lake wildlife hills,heritage,monsoon,130383.2
+13,5,2224,207.9,10,wildlife adventure heritage,nature,autumn,148718.0
+5,2,1891,492.6,12,tea adventure heritage,heritage,autumn,22850.8
+10,3,6875,454.3,7,adventure sunset food,nature,monsoon,211701.59999999998
+9,2,2352,407.4,10,food beach,mountain,autumn,45595.2
+7,5,4431,553.8,4,heritage beach,mountain,summer,166161.0
+6,2,2743,256.6,6,sunset heritage,city,monsoon,34968.8
+2,4,2459,246.0,6,hills sunset lake,beach,monsoon,23608.0
+4,4,5104,113.3,4,hills food,mountain,summer,83476.8
+8,5,6577,179.9,9,wildlife shopping heritage,nature,monsoon,266678.0
+13,6,3981,530.3,11,beach,beach,autumn,323245.19999999995
+13,1,1798,295.1,4,shopping tea wildlife,city,summer,24554.4
+3,6,2560,218.0,2,lake hills heritage,mountain,winter,51312.0
+10,1,1984,145.3,10,food shopping tea,mountain,autumn,20421.2
+2,4,7156,301.3,11,food,mountain,autumn,62068.8
+10,3,3100,435.7,12,hills,beach,autumn,98228.4
+5,4,3492,186.3,4,tea heritage,heritage,summer,72820.8
+7,5,1311,459.5,9,adventure sunset,nature,monsoon,55075.0
+11,6,4011,385.3,9,beach food wildlife,mountain,monsoon,273973.19999999995
+6,3,7380,476.8,10,hills,city,autumn,138561.59999999998
+12,6,3749,165.5,10,lake,heritage,autumn,273900.0
+8,2,5488,386.0,12,beach lake sunset,nature,autumn,90896.0
+14,2,2109,109.2,6,tea,nature,monsoon,59925.6
+9,3,1829,231.0,1,lake wildlife hills,heritage,winter,52155.0
+5,4,6067,440.1,3,heritage hills shopping,beach,summer,128381.6
+11,5,1273,386.4,11,hills shopping lake,city,autumn,77743.0
+6,5,4028,129.0,11,lake wildlife,mountain,autumn,123420.0
+8,2,3080,517.8,1,adventure tea,beach,winter,53422.4
+2,2,917,50.9,5,adventure shopping,nature,monsoon,4075.2
+2,6,4624,365.2,3,lake,city,summer,64252.799999999996
+9,3,7740,590.6,4,food,heritage,summer,216067.19999999998
+3,2,1297,328.3,8,heritage beach lake,mountain,monsoon,10408.4
+14,6,6673,484.4,7,heritage lake,mountain,monsoon,572157.6000000001
+12,3,4682,365.2,6,food lake,nature,monsoon,172934.40000000002
+10,6,6009,474.2,6,shopping wildlife,mountain,monsoon,371920.80000000005
+11,6,1495,400.2,8,tea,city,monsoon,108274.79999999999
+9,6,7057,420.9,9,hills food,mountain,monsoon,391179.6
+1,4,882,152.1,1,lake food heritage,mountain,winter,5961.6
+6,5,7329,450.3,2,food,beach,winter,228876.0
+7,6,5536,158.0,5,shopping heritage wildlife,heritage,monsoon,236304.0
+13,2,3229,588.8,6,beach food,beach,monsoon,88664.4
+4,1,851,152.1,12,tea adventure lake,city,autumn,4012.4
+7,2,5198,157.3,11,tea wildlife,city,autumn,74030.4
+5,4,1429,518.0,8,heritage,beach,monsoon,36868.0
+2,4,5183,160.9,1,beach adventure,beach,winter,44038.4
+2,1,6366,229.3,2,hills shopping,city,winter,13649.2
+6,4,2724,434.5,6,adventure food,beach,monsoon,72328.0
+2,2,2518,112.1,8,beach,nature,monsoon,10968.8
+1,4,2398,112.3,8,lake,city,monsoon,11388.8
+5,4,2418,302.1,2,beach shopping food,beach,winter,53193.6
+3,4,1620,161.3,11,adventure heritage,heritage,autumn,22020.8
+8,3,2597,156.7,6,wildlife heritage food,mountain,monsoon,64208.399999999994
+1,3,5547,25.4,8,sunset,nature,monsoon,16945.800000000003
+5,5,2978,234.9,1,tea,city,winter,79148.0
+7,5,6422,204.6,10,tea,heritage,autumn,228862.0
+14,5,6698,38.1,7,tea,mountain,monsoon,469622.0
+9,3,6278,380.3,3,shopping adventure wildlife,city,summer,174069.59999999998
+13,3,4684,383.5,4,adventure food hills,nature,summer,187278.0
+5,2,3077,61.1,5,hills tea,beach,monsoon,31258.8
+7,4,7495,203.9,1,tea food shopping,mountain,winter,213122.4
+6,1,2277,526.2,12,food,mountain,autumn,15766.8
+13,3,4144,357.7,10,beach lake food,heritage,autumn,165908.40000000002
+14,2,4066,258.9,11,shopping wildlife tea,city,autumn,115919.2
+14,4,6168,289.8,5,adventure,beach,monsoon,350044.8
+11,6,4737,140.8,7,hills,heritage,monsoon,316021.19999999995
+8,6,6556,490.9,6,heritage,city,monsoon,326469.6
+8,3,7417,550.1,6,wildlife,city,monsoon,184609.2
+14,1,3612,548.2,8,heritage,heritage,monsoon,52760.8
+4,2,7098,149.9,6,hills food wildlife,mountain,monsoon,57983.2
+5,1,2021,200.2,10,food beach,beach,autumn,10905.8
+13,5,7395,113.2,1,wildlife,city,winter,482939.0
+6,6,2081,198.2,3,adventure food,nature,summer,79672.79999999999
+4,4,6921,213.0,11,food,mountain,autumn,114144.0
+8,2,3609,387.2,11,food shopping beach,heritage,autumn,60841.6
+5,1,7744,130.0,10,wildlife shopping,heritage,autumn,39240.0
+13,6,1730,553.3,5,beach adventure heritage,city,monsoon,148219.2
+13,2,4151,79.8,6,hills,city,monsoon,108564.4
+5,1,7293,24.0,1,wildlife hills tea,city,winter,36561.0
+8,2,1141,515.9,4,sunset wildlife,beach,summer,22383.2
+14,2,2708,428.2,9,heritage lake shopping,beach,monsoon,79249.6
+11,4,1401,226.1,5,shopping adventure,mountain,monsoon,65261.6
+4,6,3113,365.4,6,lake wildlife,heritage,monsoon,83481.6
+9,2,3609,149.7,2,shopping wildlife,nature,winter,66159.6
+9,5,5256,117.7,6,wildlife hills,city,monsoon,238874.0
+10,1,2655,293.3,9,beach wildlife lake,city,monsoon,27723.2
+1,1,1942,224.8,7,wildlife,city,monsoon,2841.2
+5,1,2023,376.8,7,heritage beach,beach,monsoon,11622.2
+12,6,7556,146.5,11,adventure,heritage,autumn,547548.0
+4,4,7663,404.5,3,heritage hills,city,summer,129080.0
+5,5,2394,464.8,4,hills tea wildlife,city,summer,69146.0
+5,1,2207,116.6,8,lake,mountain,monsoon,11501.4
+3,1,1190,45.4,6,hills,heritage,monsoon,3751.6
+3,6,7707,275.0,12,tea heritage,nature,autumn,145326.0
+5,1,5884,468.9,1,food,beach,winter,31295.6
+13,1,6278,397.5,2,beach,mountain,winter,83204.0
+1,4,2892,427.1,5,hills,mountain,monsoon,18401.6
+4,4,5414,253.6,6,lake sunset,city,monsoon,90681.6
+1,2,1230,156.3,11,adventure food heritage,beach,autumn,3710.4
+8,3,5667,328.4,6,lake shopping,beach,monsoon,139948.8
+4,5,4973,138.5,6,wildlife adventure tea,nature,monsoon,102230.0
+12,3,3186,441.2,3,beach hills,nature,summer,119990.40000000001
+9,3,5915,134.2,6,lake,nature,monsoon,161315.40000000002
+11,1,5454,188.9,7,hills,beach,monsoon,60749.6
+9,3,3960,313.8,8,adventure shopping hills,nature,monsoon,110685.59999999999
+7,5,2144,302.3,8,adventure,city,monsoon,81086.0
+13,4,969,368.5,6,food hills sunset,beach,monsoon,56284.0
+7,6,7551,273.7,2,sunset wildlife,heritage,winter,323710.80000000005
+14,1,2825,553.3,2,food shopping heritage,beach,winter,41763.2
+14,1,2972,507.2,2,beach heritage hills,mountain,winter,43636.8
+9,4,5703,529.9,8,hills food,city,monsoon,213786.4
+10,2,2637,385.1,11,shopping lake wildlife,mountain,autumn,55820.8
+4,4,3505,388.3,11,lake adventure beach,nature,autumn,62292.8
+12,6,5920,373.3,4,beach wildlife,mountain,summer,435199.19999999995
+10,3,5086,272.2,1,sunset wildlife adventure,heritage,winter,155846.40000000002
+13,4,5526,206.8,8,sunset beach,nature,monsoon,290660.8
+4,5,833,363.4,1,food heritage lake,nature,winter,23928.0
+12,1,4049,34.8,8,heritage,city,monsoon,48727.2
+7,6,4221,24.3,5,beach heritage shopping,nature,monsoon,177865.2
+3,2,5353,514.0,11,beach sunset,nature,autumn,36230.0
+3,5,1890,46.9,8,lake,city,monsoon,29288.0
+8,4,1948,324.4,9,tea,nature,monsoon,67526.4
+5,1,6289,376.7,5,hills,city,monsoon,32951.8
+2,5,5647,134.9,11,heritage food,heritage,autumn,59168.0
+6,2,6640,539.5,7,tea wildlife,city,monsoon,83996.0
+10,4,2748,130.3,8,hills shopping,nature,monsoon,112004.8
+5,6,7982,533.0,5,food,nature,monsoon,252252.0
+14,6,2764,462.5,6,hills beach,beach,monsoon,243276.0
+11,6,5486,159.6,11,shopping wildlife,beach,autumn,365906.4
+8,3,1967,107.4,5,lake food hills,beach,monsoon,48496.8
+14,4,7413,203.4,1,shopping,heritage,winter,418382.4
+7,2,3193,250.8,5,adventure food,mountain,monsoon,46708.4
+2,6,6577,162.6,5,sunset hills shopping,mountain,monsoon,82826.4
+1,3,3185,599.4,6,adventure shopping,heritage,monsoon,16747.800000000003
+14,5,6494,153.2,1,hills,mountain,winter,457644.0
+14,3,4070,501.8,2,food hills,beach,winter,176961.59999999998
+11,5,1249,112.3,4,shopping,nature,summer,70941.0
+2,2,2171,588.5,6,adventure beach lake,nature,monsoon,13392.0
+5,5,5720,150.8,1,tea heritage,beach,winter,146016.0
+1,1,2189,264.6,5,shopping wildlife lake,mountain,monsoon,3247.4
+1,1,2782,344.0,4,beach food tea,mountain,summer,4158.0
+4,3,4700,89.8,1,lake,heritage,winter,57477.600000000006
+9,3,2621,493.8,4,tea adventure,mountain,summer,76692.6
+1,5,1727,179.3,4,heritage wildlife,beach,summer,12221.0
+14,3,5294,338.6,2,sunset tea wildlife,mountain,winter,226411.19999999998
+7,1,5760,338.8,10,heritage,nature,autumn,41675.2
+4,2,6077,369.5,1,sunset hills,heritage,winter,51572.0
+8,3,7596,52.2,7,heritage,beach,monsoon,182930.40000000002
+12,4,1696,117.8,8,beach tea,city,monsoon,83292.8
+5,4,3872,113.5,10,wildlife tea,mountain,autumn,79256.0
+1,2,2484,195.2,7,hills,mountain,monsoon,6529.6
+1,4,7287,104.1,7,tea hills,beach,monsoon,30813.6
+12,4,4686,554.7,10,beach,mountain,autumn,233803.2
+2,5,1507,317.5,11,lake,nature,autumn,21420.0
+9,4,5783,381.7,3,beach tea wildlife,heritage,summer,214295.2
+6,5,1109,227.3,10,beach lake heritage,heritage,autumn,37816.0
+11,2,2774,180.2,6,food,nature,monsoon,62469.6
+1,5,5993,311.8,2,tea,beach,winter,36201.0
+13,1,4443,190.7,8,adventure,mountain,monsoon,58521.8
+10,1,6279,219.3,12,lake shopping,heritage,autumn,63667.2
+7,6,4912,282.6,2,beach lake sunset,heritage,winter,213086.40000000002
+3,3,6870,313.3,1,tea adventure hills,nature,winter,65589.6
+14,4,4850,590.9,11,lake,nature,autumn,281054.4
+5,4,1209,149.5,8,lake beach sunset,nature,monsoon,26572.0
+7,5,1313,303.0,3,food beach heritage,city,summer,52015.0
+6,2,6393,106.7,10,beach,nature,autumn,77569.6
+4,2,1077,223.0,5,wildlife,nature,monsoon,10400.0
+6,1,3511,436.0,4,beach wildlife,mountain,summer,22810.0
+3,6,915,121.2,4,heritage,nature,summer,19378.800000000003
+1,2,2984,357.2,8,adventure,heritage,monsoon,8825.6
+5,4,5084,261.7,2,tea lake,city,winter,105867.2
+2,3,2045,49.9,5,hills,heritage,monsoon,12868.800000000001
+6,1,4155,561.2,4,food,heritage,summer,27174.8
+13,3,7971,259.9,1,wildlife food,heritage,winter,313987.80000000005
+3,1,1307,474.7,10,hills,beach,autumn,5819.8
+1,2,1258,261.5,1,adventure lake sunset,mountain,winter,4608.0
+2,1,2752,563.7,12,adventure lake hills,mountain,autumn,7758.8
+8,5,6754,188.5,2,adventure tea sunset,heritage,winter,273930.0
+4,4,3721,259.1,5,tea,heritage,monsoon,63681.6
+7,6,5404,460.1,2,food beach wildlife,beach,winter,238010.40000000002
+1,3,1043,219.3,5,tea food,beach,monsoon,5760.6
+5,2,6092,231.3,8,adventure wildlife,nature,monsoon,62770.4
+6,4,1285,597.0,2,beach hills tea,city,winter,40392.0
+7,6,5924,342.3,7,shopping beach food,beach,monsoon,257023.19999999998
+8,4,1865,419.8,10,food tea,city,autumn,66396.8
+11,1,6980,393.2,6,lake,beach,monsoon,78352.8
+7,2,2932,500.2,2,food wildlife beach,mountain,winter,45049.6
+12,6,2123,519.9,9,lake beach wildlife,heritage,monsoon,165333.59999999998
+8,4,3224,346.7,3,shopping lake,heritage,summer,108715.2
+4,6,805,190.8,1,sunset,city,winter,23899.199999999997
+4,4,1988,33.2,6,sunset adventure food,beach,monsoon,32339.2
+5,1,5109,376.4,4,heritage shopping,beach,summer,27050.6
+9,6,2965,498.8,1,food,nature,winter,172081.2
+4,5,3347,281.3,10,food,nature,autumn,72566.0
+13,5,6612,115.5,8,lake hills,mountain,monsoon,432090.0
+7,6,1691,187.1,11,wildlife,heritage,autumn,75512.4
+13,2,3650,315.8,6,heritage beach lake,mountain,monsoon,97426.4
+10,6,2140,505.3,6,food,city,monsoon,140527.2
+5,2,4276,119.6,11,adventure,beach,autumn,43716.8
+4,6,3188,375.0,1,food,heritage,winter,85512.0
+11,2,1132,457.0,5,shopping,nature,monsoon,28560.0
+5,4,1305,562.9,10,tea beach,beach,autumn,35106.4
+4,5,6936,87.7,4,shopping,heritage,summer,140474.0
+14,1,1209,557.3,11,adventure tea,beach,autumn,19155.2
+7,1,6435,368.9,4,food sunset,nature,summer,46520.6
+1,6,7395,464.7,5,food heritage adventure,heritage,monsoon,55522.799999999996
+7,1,4153,51.2,11,heritage beach,beach,autumn,29275.8
+7,4,3047,313.6,3,wildlife,mountain,summer,90333.6
+13,6,6389,381.1,12,heritage lake,mountain,autumn,507488.39999999997
+10,4,7872,198.0,1,adventure wildlife,city,winter,318048.0
+3,3,1667,270.4,4,shopping tea sunset,mountain,summer,18247.800000000003
+3,3,7743,341.5,8,hills,city,monsoon,73785.0
+9,4,7594,340.5,8,adventure wildlife,nature,monsoon,278832.0
+1,4,1826,44.3,11,wildlife beach tea,city,autumn,8012.8
+5,4,1194,274.9,12,tea wildlife hills,city,autumn,28278.4
+2,1,5947,144.0,9,adventure beach wildlife,mountain,monsoon,12470.0
+1,4,1359,551.7,8,sunset beach,nature,monsoon,14263.2
+13,5,5125,586.4,4,lake,heritage,summer,344853.0
+2,5,1266,193.8,10,adventure wildlife sunset,beach,autumn,16536.0
+1,1,5772,121.6,8,wildlife,heritage,monsoon,6258.4
+14,5,2468,147.3,1,sunset,nature,winter,175706.0
+3,5,1492,297.1,10,heritage,beach,autumn,28322.0
+12,2,1279,527.2,5,wildlife adventure,city,monsoon,34913.6
+1,6,2157,310.0,6,adventure hills,mountain,monsoon,20382.0
+3,4,4693,52.1,6,beach,city,monsoon,57149.6
+2,3,1351,43.1,10,tea,mountain,autumn,8623.2
+10,5,6576,151.9,4,adventure heritage tea,nature,summer,331838.0
+9,4,5149,508.8,5,tea,mountain,monsoon,193504.8
+7,4,2940,380.5,1,food adventure,city,winter,88408.0
+4,2,7903,346.5,5,food tea sunset,city,monsoon,65996.0
+2,6,5541,205.0,2,wildlife,heritage,winter,71412.0
+8,6,5638,559.1,7,wildlife hills,city,monsoon,284042.4
+4,1,2052,212.1,11,adventure,heritage,autumn,9056.4
+9,5,5917,504.3,6,heritage,mountain,monsoon,276351.0
+10,1,4826,539.6,11,beach sunset,city,autumn,50418.4
+12,3,7889,300.3,12,shopping tea,nature,autumn,287607.6
+7,6,4241,538.7,1,lake wildlife shopping,mountain,winter,191050.8
+1,2,5681,180.5,7,hills,beach,monsoon,12806.0
+4,3,3256,401.9,7,sunset,heritage,monsoon,43894.8
+12,2,1089,71.0,5,sunset,mountain,monsoon,26704.0
+8,5,1721,294.9,10,heritage,heritage,autumn,74738.0
+9,3,7042,146.1,5,lake hills,beach,monsoon,191887.2
+7,4,6114,56.4,1,adventure,heritage,winter,172094.4
+3,6,3425,22.2,7,sunset adventure,heritage,monsoon,62182.799999999996
+13,4,5824,208.4,3,beach shopping wildlife,nature,summer,306182.4
+11,5,831,361.9,5,wildlife tea food,heritage,monsoon,52943.0
+14,1,1067,284.0,7,hills food sunset,city,monsoon,16074.0
+12,2,4452,195.0,9,heritage sunset wildlife,city,monsoon,108408.0
+5,6,5299,594.9,4,food,nature,summer,173247.59999999998
+4,6,7546,564.9,5,hills tea,city,monsoon,194661.59999999998
+4,4,6269,92.9,1,hills,city,winter,101790.4
+13,3,2652,260.8,5,beach,beach,monsoon,106557.59999999999
+8,2,6668,396.3,7,heritage shopping,mountain,monsoon,109858.4
+7,6,4338,445.4,8,sunset tea,heritage,monsoon,192885.59999999998
+14,5,6747,232.5,4,sunset,nature,summer,476940.0
+9,2,2051,452.8,1,wildlife hills,beach,winter,40540.4
+13,4,988,92.0,7,hills sunset,nature,monsoon,52848.0
+14,4,1215,212.5,8,sunset shopping food,mountain,monsoon,71440.0
+2,3,7934,435.5,2,tea heritage wildlife,heritage,winter,52830.0
+6,6,1379,382.9,7,lake hills wildlife,nature,monsoon,58833.600000000006
+11,1,7563,505.6,2,sunset,beach,winter,85215.4
+12,2,6034,47.2,6,wildlife beach sunset,beach,monsoon,145193.6
+3,1,1851,121.1,8,heritage beach,mountain,monsoon,6037.4
+5,5,7021,48.1,9,sunset food,beach,monsoon,176487.0
+8,4,1838,131.4,9,wildlife beach adventure,city,monsoon,60918.4
+12,6,1831,22.5,10,shopping heritage,mountain,autumn,132372.0
+2,4,4943,312.4,3,sunset lake beach,heritage,summer,44542.4
+9,1,2875,326.4,11,food heritage shopping,beach,autumn,27180.6
+5,3,2893,401.6,5,wildlife lake,nature,monsoon,48214.2
+4,1,2204,243.2,5,wildlife tea,city,monsoon,9788.8
+8,5,5175,21.9,10,food,heritage,autumn,207438.0
+6,5,993,410.9,4,food heritage tea,mountain,summer,38008.0
+9,6,2564,51.5,1,shopping tea wildlife,heritage,winter,139692.0
+5,3,4784,522.4,9,food sunset wildlife,nature,monsoon,78028.79999999999
+12,2,4303,33.1,8,shopping hills adventure,mountain,monsoon,103536.8
+2,1,5839,327.7,7,adventure hills sunset,city,monsoon,12988.8
+13,3,2356,539.1,2,heritage,city,winter,98353.20000000001
+1,3,5464,352.0,8,lake,nature,monsoon,20616.0
+11,5,6271,372.9,3,sunset tea,beach,summer,352363.0
+5,5,3593,415.3,7,beach hills,nature,monsoon,98131.0
+6,1,2649,91.0,7,adventure,nature,monsoon,16258.0
+1,2,4796,411.5,10,food shopping sunset,city,autumn,12884.0
+10,4,4967,530.6,12,heritage beach food,heritage,autumn,207169.6
+3,3,1477,585.0,3,sunset food,mountain,summer,20313.0
+10,1,4868,277.0,2,wildlife adventure shopping,nature,winter,49788.0
+11,6,1910,219.8,7,shopping,beach,monsoon,131335.2
+12,5,4895,456.9,12,shopping heritage hills,nature,autumn,302838.0
+10,4,7508,334.9,2,shopping sunset,nature,winter,305678.4
+5,2,4666,169.2,6,food heritage,nature,monsoon,48013.6
+11,6,6282,119.9,5,sunset heritage food,nature,monsoon,417489.60000000003
+12,1,3029,118.7,4,wildlife shopping,nature,summer,36822.8
+5,3,7443,286.3,8,food shopping lake,heritage,monsoon,115080.59999999999
+2,5,6651,118.7,4,heritage lake,nature,summer,68884.0
+13,6,7400,31.4,6,tea,beach,monsoon,577953.6000000001
+3,2,6139,50.2,11,tea,heritage,autumn,37235.6
+9,4,5475,559.3,5,adventure,heritage,monsoon,206048.8
+4,2,4580,62.3,1,shopping lake,heritage,winter,37138.4
+2,1,7483,62.4,11,tea adventure,heritage,autumn,15215.6
+11,3,6906,281.7,4,beach hills lake,beach,summer,231278.40000000002
+3,6,3800,162.2,10,wildlife,city,autumn,72292.79999999999
+10,5,1416,578.4,10,lake sunset,city,autumn,82368.0
+10,3,826,548.4,7,beach lake sunset,beach,monsoon,31360.800000000003
+1,2,2481,254.8,2,food lake hills,mountain,winter,7000.4
+3,1,1250,280.3,12,tea lake,mountain,autumn,4871.2
+12,2,2322,237.6,9,lake heritage,city,monsoon,57628.8
+8,1,1588,42.0,6,heritage adventure,city,monsoon,12872.0
+2,2,7863,189.9,11,heritage tea beach,mountain,autumn,32971.2
+14,5,1486,91.2,10,hills tea,heritage,autumn,105844.0
+4,1,5313,79.4,10,heritage lake tea,mountain,autumn,21569.6
+1,1,3332,345.3,3,lake,beach,summer,4713.2
+13,4,2054,77.3,8,lake sunset,mountain,monsoon,108044.8
+1,2,5849,79.7,4,wildlife,beach,summer,12335.6
+8,3,7787,298.7,1,wildlife beach,city,winter,190472.40000000002
+14,1,6492,276.5,5,shopping,heritage,monsoon,91994.0
+9,2,7821,99.8,2,heritage shopping beach,beach,winter,141576.4
+9,3,5049,22.6,2,tea beach lake,nature,winter,136594.2
+6,5,5649,131.9,9,heritage shopping,mountain,monsoon,172108.0
+2,3,1854,156.8,7,adventure,nature,monsoon,13005.599999999999
+9,4,6937,484.1,5,hills,city,monsoon,257477.6
+13,4,6184,551.0,3,wildlife,city,summer,330384.0
+2,2,2628,255.4,10,adventure sunset,city,autumn,12555.2
+13,2,3354,254.9,8,lake hills,mountain,monsoon,89243.2
+6,3,5198,433.2,8,food sunset lake,beach,monsoon,98762.40000000001
+8,1,893,383.6,3,beach,beach,summer,8678.4
+3,5,6688,126.8,2,adventure shopping,beach,winter,102856.0
+9,4,2820,82.5,2,beach adventure,heritage,winter,102840.0
+3,2,1339,273.8,1,tea hills heritage,heritage,winter,10224.4
+4,3,3180,347.6,12,food wildlife hills,city,autumn,42331.2
+11,2,6817,100.5,5,tea shopping wildlife,beach,monsoon,150778.0
+1,4,2774,190.1,8,lake heritage,mountain,monsoon,14137.6
+7,5,4682,197.4,12,lake sunset hills,heritage,autumn,167818.0
+9,1,6645,171.6,12,beach,heritage,autumn,60491.4
+2,3,1042,287.2,4,adventure sunset,nature,summer,9698.400000000001
+5,1,6271,398.8,6,adventure shopping tea,beach,monsoon,32950.2
+5,3,2878,315.4,6,beach,nature,monsoon,46954.8
+10,2,5807,136.8,1,lake,beach,winter,117234.4
+14,3,2154,79.7,10,shopping,nature,autumn,91424.4
+12,3,1800,496.7,7,heritage shopping tea,city,monsoon,70760.4
+3,2,6475,298.0,5,wildlife sunset,beach,monsoon,41234.0
+1,3,6616,56.0,7,wildlife tea shopping,beach,monsoon,20520.0
+1,5,7865,169.7,9,sunset adventure food,heritage,monsoon,42719.0
+9,5,5675,486.3,1,beach sunset hills,beach,winter,265101.0
+3,1,4154,456.0,8,shopping adventure heritage,city,monsoon,14286.0
+4,3,2202,528.0,11,beach lake wildlife,heritage,autumn,32760.0
+12,6,2925,369.2,9,food,nature,monsoon,219460.80000000002
+13,4,5466,265.3,8,tea adventure,mountain,monsoon,288476.8
+12,2,3291,267.4,2,heritage,mountain,winter,81123.2
+4,4,4281,132.5,9,heritage sunset,mountain,monsoon,70616.0
+9,1,2010,397.5,10,shopping wildlife beach,city,autumn,19680.0
+9,1,3963,359.3,6,sunset tea,heritage,monsoon,37104.2
+3,4,2513,109.8,7,hills shopping,mountain,monsoon,31912.8
+8,4,1607,533.7,8,tea sunset wildlife,beach,monsoon,59963.2
+8,5,1750,233.7,2,sunset shopping adventure,nature,winter,74674.0
+6,3,4531,48.8,4,hills heritage shopping,heritage,summer,82143.6
+11,6,3438,210.2,10,wildlife adventure tea,heritage,autumn,231952.80000000002
+10,3,1519,524.5,12,shopping hills tea,mountain,autumn,51864.0
+8,5,4502,551.8,4,food,nature,summer,191116.0
+11,1,1982,304.4,5,sunset food,beach,monsoon,23019.6
+11,1,911,574.7,11,heritage,nature,autumn,12319.8
+8,5,1754,527.6,2,sunset hills adventure,heritage,winter,80712.0
+4,6,4029,498.6,4,tea food shopping,mountain,summer,108662.40000000001
+11,6,7669,518.6,1,food,mountain,winter,518600.39999999997
+11,2,2540,241.5,3,heritage shopping,nature,summer,57812.0
+14,1,2851,458.8,8,tea,city,monsoon,41749.2
+3,6,2547,354.9,5,lake,heritage,monsoon,54363.600000000006
+6,4,3357,437.4,12,beach,city,autumn,87566.4
+13,2,5964,123.1,11,adventure,beach,autumn,156048.8
+8,5,3118,444.2,11,tea sunset,city,autumn,133604.0
+14,6,5534,575.4,9,beach lake,beach,monsoon,478665.60000000003
+1,2,7267,195.5,9,sunset,mountain,monsoon,16098.0
+1,5,7612,592.0,7,wildlife lake,nature,monsoon,49900.0
+12,5,4853,239.5,12,sunset,mountain,autumn,295970.0
+6,4,5935,135.8,2,shopping lake hills,city,winter,144612.8
+8,4,7417,85.1,9,shopping hills sunset,city,monsoon,238705.6
+6,2,6464,475.3,2,lake,nature,winter,81370.4
+6,6,2959,341.8,5,food lake,nature,monsoon,114727.20000000001
+14,6,1750,198.1,4,lake wildlife,heritage,summer,151754.40000000002
+2,6,1626,372.9,8,adventure food,heritage,monsoon,28461.600000000002
+11,5,7150,212.6,10,wildlife shopping,nature,autumn,397502.0
+13,1,4804,280.0,1,tea,city,winter,63572.0
+10,3,2933,520.3,8,tea beach adventure,beach,monsoon,94233.6
+6,3,3287,407.5,3,adventure heritage,mountain,summer,64056.0
+3,6,2828,462.2,1,heritage,beach,winter,61996.799999999996
+10,4,6573,358.4,6,shopping,beach,monsoon,268654.4
+7,4,5209,595.0,7,shopping,beach,monsoon,155372.0
+3,1,7131,160.0,3,lake,heritage,summer,22033.0
+6,5,2972,172.1,5,hills lake,city,monsoon,92602.0
+14,3,4202,73.7,12,beach hills,nature,autumn,177368.40000000002
+4,1,1676,341.3,5,lake food,nature,monsoon,8069.2
+3,6,7793,375.7,12,beach adventure,mountain,autumn,149290.8
+10,2,4485,441.1,11,tea heritage hills,beach,autumn,93228.8
+3,1,4781,214.6,5,sunset,nature,monsoon,15201.4
+13,1,3778,27.1,7,adventure,beach,monsoon,49222.4
+13,3,2750,386.7,9,shopping wildlife,heritage,monsoon,111890.40000000001
+14,1,7628,599.2,6,sunset adventure,nature,monsoon,109188.8
+13,6,4320,190.8,5,beach heritage wildlife,mountain,monsoon,341539.19999999995
+4,4,5658,126.7,4,lake adventure sunset,beach,summer,92555.2
+3,2,1068,183.4,2,sunset lake hills,mountain,winter,7875.2
+5,1,2786,266.7,1,beach food,beach,winter,14996.8
+7,3,6588,165.5,5,wildlife,heritage,monsoon,140334.0
+13,1,1432,221.2,10,shopping,nature,autumn,19500.8
+11,6,1530,390.2,3,sunset beach,heritage,summer,110344.79999999999
+10,2,6630,220.1,3,wildlife heritage shopping,nature,summer,134360.8
+13,3,3022,249.7,4,lake food,city,summer,120854.40000000001
+10,1,2771,43.2,8,shopping,heritage,monsoon,27882.8
+6,1,4870,552.4,3,beach shopping hills,beach,summer,31429.6
+6,2,2203,256.0,3,shopping food,beach,summer,28484.0
+8,1,1109,210.3,2,lake adventure tea,city,winter,9713.2
+2,5,832,70.2,4,shopping,mountain,summer,9724.0
+11,6,1371,387.8,3,beach shopping,heritage,summer,99793.20000000001
+10,6,1941,521.0,10,sunset,heritage,autumn,128964.0
+11,2,5812,43.9,11,heritage sunset wildlife,heritage,autumn,128215.2
+8,5,2945,104.3,5,adventure sunset,mountain,monsoon,119886.0
+11,4,1316,104.9,2,sunset food,mountain,winter,59582.4
+14,1,903,369.3,2,wildlife,nature,winter,14119.2
+8,1,4234,554.3,4,heritage sunset wildlife,beach,summer,36089.2
+7,4,6848,273.9,6,tea,mountain,monsoon,196126.4
+2,3,3238,219.4,7,wildlife shopping,nature,monsoon,22060.800000000003
+11,1,1259,464.2,4,sunset,mountain,summer,15705.8
+13,6,2442,450.7,5,shopping hills,mountain,monsoon,201292.80000000002
+10,5,4395,163.1,4,shopping adventure tea,city,summer,223012.0
+13,4,2159,113.3,7,heritage wildlife hills,mountain,monsoon,114080.8
+13,6,7845,227.5,9,shopping food,city,monsoon,617370.0
+12,6,6296,469.8,1,adventure,city,winter,464587.19999999995
+8,6,3280,423.1,6,tea lake,heritage,monsoon,167594.40000000002
+2,2,7651,406.2,8,sunset tea,beach,monsoon,33853.6
+1,6,3140,501.1,9,hills,mountain,monsoon,30866.399999999998
+3,4,1809,180.7,7,adventure beach,city,monsoon,24599.2
+7,5,7555,217.0,7,tea adventure shopping,beach,monsoon,268765.0
+11,6,7709,44.6,9,sunset hills,nature,monsoon,509864.39999999997
+7,1,3051,523.9,5,heritage,nature,monsoon,23452.6
+1,3,5082,357.8,7,adventure,city,monsoon,19539.6
+3,1,2047,192.9,4,heritage beach,city,summer,6912.6
+14,2,5419,60.3,6,wildlife sunset heritage,mountain,monsoon,152214.4
+14,3,5768,439.6,2,shopping lake sunset,nature,winter,247531.19999999998
+6,6,5911,454.3,5,sunset,heritage,monsoon,223699.19999999998
+12,6,4894,406.4,2,heritage sunset shopping,city,winter,362121.6
+11,3,5869,138.2,3,food lake shopping,nature,summer,195335.40000000002
+14,2,4796,549.7,6,adventure hills beach,beach,monsoon,138685.6
+13,4,6702,456.8,7,heritage beach,city,monsoon,355812.8
+9,6,2093,401.5,12,adventure hills,nature,autumn,122658.0
+6,6,4280,397.5,1,adventure,beach,winter,163620.0
+9,2,3798,544.5,11,wildlife hills tea,beach,autumn,72720.0
+5,2,4640,558.4,4,hills food beach,mountain,summer,50867.2
+5,5,1822,365.5,9,heritage shopping food,heritage,monsoon,52860.0
+9,2,3131,261.7,9,sunset,city,monsoon,58451.6
+8,2,7669,231.0,12,heritage wildlife lake,nature,autumn,124552.0
+9,1,1557,495.1,2,shopping food,beach,winter,15993.4
+6,3,5374,393.9,12,food,city,autumn,101458.79999999999
+6,3,5585,64.8,1,beach shopping,heritage,winter,101307.59999999999
+1,4,4216,102.5,11,beach food,nature,autumn,18504.0
+9,2,1041,542.1,8,adventure tea,beach,monsoon,23074.8
+9,5,1047,533.0,6,hills lake wildlife,city,monsoon,57775.0
+14,5,2784,572.1,5,adventure,beach,monsoon,206322.0
+8,3,1538,268.2,2,shopping,heritage,winter,40130.399999999994
+7,2,1478,474.8,10,adventure,nature,autumn,24490.4
+1,4,1952,500.4,9,sunset,nature,monsoon,15814.4
+3,5,2173,203.1,12,food heritage,nature,autumn,36657.0
+5,3,6837,104.3,9,adventure,mountain,monsoon,103806.59999999999
+6,2,5398,598.3,12,tea adventure heritage,nature,autumn,69562.4
+6,4,1018,37.5,11,sunset wildlife,mountain,autumn,25032.0
+6,3,5325,366.5,6,adventure,nature,monsoon,100248.0
+11,3,1784,397.1,9,wildlife shopping,heritage,monsoon,63637.200000000004
+2,3,3831,415.4,4,shopping beach food,heritage,summer,27970.800000000003
+5,2,1073,168.3,10,sunset food shopping,beach,autumn,12076.4
+3,5,1449,438.5,8,sunset,city,monsoon,30505.0
+5,3,1754,145.5,6,sunset hills wildlife,beach,monsoon,28056.0
+10,3,3920,500.8,8,tea,mountain,monsoon,123609.59999999999
+1,4,4134,147.1,4,food heritage hills,mountain,summer,18889.6
+5,3,3339,424.1,8,heritage food,mountain,monsoon,55174.200000000004
+1,1,5265,474.4,6,lake shopping wildlife,mountain,monsoon,7162.6
+14,6,5987,129.6,4,hills lake,mountain,summer,506018.39999999997
+11,1,6046,158.0,12,hills lake,nature,autumn,67138.0
+4,4,4968,471.9,1,shopping,heritage,winter,87038.4
+3,2,4728,69.9,10,tea,city,autumn,28927.2
+2,2,4339,130.6,3,food tea,mountain,summer,18400.8
+7,1,2513,284.2,3,adventure hills,mountain,summer,18727.8
+11,6,4306,559.5,2,beach,heritage,winter,297624.0
+9,3,872,345.9,2,hills tea,beach,winter,27694.800000000003
+13,3,7757,244.9,2,shopping hills heritage,nature,winter,305461.80000000005
+5,5,3464,587.5,10,adventure heritage beach,mountain,autumn,98350.0
+4,1,6245,289.0,12,heritage,heritage,autumn,26136.0
+7,4,7688,271.6,8,shopping wildlife adventure,beach,monsoon,219609.6
+3,3,4378,258.8,1,hills lake sunset,city,winter,42507.600000000006
+14,4,7005,201.1,11,beach hills food,mountain,autumn,395497.6
+3,1,4250,208.9,8,lake beach hills,nature,monsoon,13585.6
+7,6,1752,418.9,7,sunset lake heritage,nature,monsoon,83637.6
+8,2,990,43.7,12,adventure food,nature,autumn,16189.6
+1,5,1776,415.5,5,wildlife,nature,monsoon,17190.0
+7,5,7586,136.7,5,lake,mountain,monsoon,268244.0
+7,3,4220,242.8,10,beach adventure,heritage,autumn,91533.6
+4,1,3098,105.0,7,beach food hills,nature,monsoon,12812.0
+2,2,4011,340.6,9,heritage food,mountain,monsoon,18768.8
+1,5,2642,443.0,9,tea,mountain,monsoon,22070.0
+1,6,7067,225.7,11,food tea,nature,autumn,47818.8
+7,6,7995,114.8,4,shopping sunset,city,summer,338545.19999999995
+2,2,1411,151.4,1,adventure food,city,winter,6855.2
+14,4,5974,494.5,6,adventure,mountain,monsoon,342456.0
+4,1,3216,175.2,8,shopping beach,mountain,monsoon,13564.8
+10,5,1141,469.3,10,shopping beach,beach,autumn,66436.0
+10,3,7439,212.1,4,tea,nature,summer,225715.19999999998
+7,5,1245,129.5,9,sunset tea lake,mountain,monsoon,46165.0
+13,5,2282,441.8,10,hills,city,autumn,157166.0
+2,6,983,291.8,10,adventure wildlife,nature,autumn,18799.199999999997
+4,3,4193,38.1,10,shopping,mountain,autumn,50773.200000000004
+4,3,5117,576.8,12,shopping wildlife,city,autumn,68325.6
+2,4,3108,105.7,8,lake sunset heritage,city,monsoon,26555.2
+5,1,1315,225.0,5,hills beach,mountain,monsoon,7475.0
+5,1,1636,243.2,6,shopping,beach,monsoon,9152.8
+11,4,7520,303.9,9,beach tea,mountain,monsoon,335742.4
+5,5,6602,475.6,3,beach tea adventure,mountain,summer,174562.0
+13,4,7545,23.5,8,food adventure tea,nature,monsoon,392716.0
+11,5,4621,560.8,7,tea,city,monsoon,265371.0
+13,2,4731,394.7,8,shopping tea beach,city,monsoon,126163.6
+2,3,6459,571.4,6,food wildlife beach,heritage,monsoon,45610.8
+14,4,5239,494.1,9,tea heritage,city,monsoon,301289.6
+9,3,3942,558.1,1,heritage,beach,winter,113131.20000000001
+14,1,2901,368.6,9,shopping,beach,monsoon,42088.4
+5,1,4295,227.2,10,adventure,city,autumn,22383.8
+14,6,1260,276.9,11,tea sunset,heritage,autumn,112485.59999999999
+9,4,2185,401.7,12,shopping,mountain,autumn,85087.2
+2,2,6109,267.6,5,shopping,heritage,monsoon,26576.8
+6,2,7049,444.4,1,heritage food hills,beach,winter,88143.2
+2,1,1532,73.3,8,sunset shopping,heritage,monsoon,3357.2
+14,6,1497,501.4,2,tea,city,winter,137781.59999999998
+5,1,1416,138.4,4,adventure heritage,nature,summer,7633.6
+4,5,6499,567.5,9,beach,heritage,monsoon,141330.0
+8,2,3040,110.2,8,beach,heritage,monsoon,49521.6
+6,3,3152,94.9,8,shopping,city,monsoon,57874.799999999996
+2,2,889,490.9,10,heritage adventure lake,nature,autumn,7483.2
+12,5,7802,494.8,2,food adventure,mountain,winter,478016.0
+12,1,3925,448.5,10,sunset tea,mountain,autumn,48894.0
+11,3,6541,577.1,8,tea,mountain,monsoon,222778.19999999998
+9,2,5895,176.9,6,lake hills wildlife,beach,monsoon,107525.2
+6,2,1820,499.5,6,beach tea sunset,heritage,monsoon,25836.0
+8,2,6569,224.2,7,wildlife shopping sunset,mountain,monsoon,106897.6
+8,6,4762,331.7,7,food,heritage,monsoon,236536.80000000002
+3,3,5151,278.4,5,hills shopping wildlife,beach,monsoon,49699.799999999996
+2,3,2242,23.4,3,tea beach lake,mountain,summer,13732.800000000001
+4,3,6897,353.2,3,heritage,mountain,summer,87002.4
+7,6,7508,453.6,5,shopping,beach,monsoon,326222.4
+3,3,3726,121.2,4,tea wildlife adventure,city,summer,34988.399999999994
+2,3,1465,560.4,7,lake beach,nature,monsoon,15514.800000000001
+12,2,6911,327.6,11,heritage hills wildlife,city,autumn,168484.8
+6,2,7189,123.4,2,lake heritage,city,winter,87255.2
+9,1,4446,394.6,4,beach,beach,summer,41592.4
+8,4,4969,131.3,1,food sunset beach,city,winter,161108.8
+11,1,2405,56.8,12,adventure lake tea,beach,autumn,26682.2
+11,2,1285,417.5,9,shopping,city,monsoon,31610.0
+5,2,7597,84.2,3,lake sunset food,heritage,summer,76643.6
+12,2,4277,81.6,5,wildlife food shopping,city,monsoon,103300.8
+6,5,2779,449.2,9,beach,nature,monsoon,92354.0
+12,4,5791,52.0,12,food,beach,autumn,278800.0
+6,6,988,489.7,7,adventure food hills,beach,monsoon,47320.8
+2,3,1375,481.8,4,tea hills food,beach,summer,14031.599999999999
+11,6,2547,102.0,9,sunset tea,city,monsoon,170550.0
+1,1,4044,320.7,9,tea lake hills,nature,monsoon,5326.8
+11,4,3440,76.0,8,shopping hills,mountain,monsoon,152576.0
+1,5,2148,386.9,1,wildlife sunset hills,beach,winter,18478.0
+3,4,3329,56.5,9,lake food,beach,monsoon,40852.0
+9,6,3204,567.8,1,lake,mountain,winter,186643.2
+14,2,4577,140.5,11,shopping,heritage,autumn,129280.0
+6,1,4851,416.1,11,lake,city,autumn,30770.4
+2,5,7158,94.4,7,wildlife lake heritage,heritage,monsoon,73468.0
+4,1,6608,141.6,8,lake,city,monsoon,26998.4
+13,5,2904,281.6,1,sunset shopping,mountain,winter,194392.0
+11,5,7299,352.4,11,tea heritage,mountain,autumn,408493.0
+2,6,4549,599.3,4,wildlife,heritage,summer,68971.20000000001
+6,3,2151,35.0,4,adventure wildlife shopping,beach,summer,39138.0
+4,6,3249,20.2,9,lake,city,monsoon,78460.79999999999
+3,2,6140,223.2,12,adventure lake beach,heritage,autumn,38625.6
+12,3,6716,232.4,6,heritage,beach,monsoon,244564.80000000002
+9,1,3493,532.6,7,wildlife sunset,beach,monsoon,33567.4
+3,5,1934,549.3,7,lake sunset hills,heritage,monsoon,39996.0
+10,5,2181,530.7,4,heritage hills shopping,heritage,summer,119664.0
+6,5,1545,103.0,8,sunset lake,mountain,monsoon,48410.0
+1,5,5830,259.0,12,wildlife beach,heritage,autumn,34330.0
+7,2,4421,452.6,5,sunset,nature,monsoon,65514.8
+3,1,4048,201.3,10,adventure heritage sunset,heritage,autumn,12949.2
+4,6,5637,404.7,10,adventure tea,nature,autumn,145000.8
+13,3,6766,157.5,11,hills wildlife food,nature,autumn,265764.0
+10,1,6527,207.6,9,wildlife,mountain,monsoon,66100.4
+2,6,1787,519.0,12,wildlife tea hills,beach,autumn,33900.0
+12,6,5045,165.3,9,sunset shopping,beach,monsoon,367207.19999999995
+9,3,7154,579.3,12,hills,beach,autumn,200109.59999999998
+13,5,6371,197.6,9,wildlife sunset,city,monsoon,418067.0
+11,1,3171,33.6,11,sunset food,nature,autumn,35015.4
+5,1,3627,167.8,11,lake food sunset,mountain,autumn,18806.2
+8,2,7209,119.3,12,adventure beach,city,autumn,116298.4
+8,4,1036,314.0,8,wildlife hills,city,monsoon,38176.0
+11,1,4583,85.4,9,food,mountain,monsoon,50754.6
+4,1,1635,383.1,12,lake,mountain,autumn,8072.4
+5,5,7241,527.4,5,sunset,nature,monsoon,191573.0
+4,5,1078,230.3,2,beach adventure,city,winter,26166.0
+5,5,968,117.7,11,lake,heritage,autumn,26554.0
+3,5,3168,252.0,8,food hills wildlife,nature,monsoon,52560.0
+1,5,2241,475.9,6,adventure food,mountain,monsoon,20723.0
+14,4,4367,363.1,9,sunset,mountain,monsoon,250361.6
+2,4,2956,78.7,1,food lake,beach,winter,24907.2
+13,6,3365,331.6,6,food adventure tea,heritage,monsoon,270428.4
+1,3,4867,291.5,4,food,city,summer,18099.0
+11,1,4836,209.7,4,sunset lake heritage,heritage,summer,54034.8
+5,5,7531,83.9,12,food heritage sunset,mountain,autumn,189953.0
+8,2,4260,589.0,7,lake adventure sunset,nature,monsoon,72872.0
+4,6,4862,122.1,2,food shopping,city,winter,119618.40000000001
+7,3,5681,131.8,5,heritage wildlife shopping,nature,monsoon,120882.59999999999
+7,6,2054,104.4,3,wildlife,city,summer,88773.6
+8,1,5602,350.7,11,tea shopping,nature,autumn,46218.8
+6,4,7005,277.3,4,sunset hills heritage,nature,summer,172556.8
+8,3,3090,164.7,5,lake heritage,nature,monsoon,76136.4
+12,3,2084,269.1,5,food,mountain,monsoon,78253.20000000001
+7,2,3292,410.6,3,adventure heritage,nature,summer,49372.8
+6,6,2780,183.4,10,wildlife,mountain,autumn,104481.59999999999
+2,3,5013,550.8,7,adventure,heritage,monsoon,36687.600000000006
+6,6,7018,197.7,6,tea,heritage,monsoon,257392.80000000002
+2,3,5094,134.9,5,heritage food sunset,mountain,monsoon,32182.800000000003
+3,1,1703,573.6,9,hills heritage,city,monsoon,7403.4
+14,6,3065,490.1,2,shopping hills tea,nature,winter,269222.4
+2,2,5763,219.0,12,sunset,city,autumn,24804.0
+7,2,3178,508.0,7,heritage wildlife,heritage,monsoon,48556.0
+12,6,5022,320.9,3,hills tea food,city,summer,369285.6
+14,6,5797,221.1,7,heritage sunset,city,monsoon,492254.39999999997
+3,6,3170,507.0,11,heritage,mountain,autumn,69228.0
+3,3,5461,456.3,3,food,mountain,summer,54624.600000000006
+6,5,3666,192.8,7,tea,city,monsoon,113836.0
+8,2,1772,371.9,8,wildlife tea,mountain,monsoon,31327.2
+14,5,3479,234.2,10,wildlife,heritage,autumn,248214.0
+3,4,3975,20.6,7,sunset,beach,monsoon,48029.6
+3,1,817,577.9,9,heritage wildlife tea,city,monsoon,4762.6
+4,3,7227,338.8,10,hills wildlife adventure,heritage,autumn,90789.6
+13,3,4600,367.1,11,tea shopping,nature,autumn,183805.2
+1,2,1061,367.9,5,sunset tea,nature,monsoon,5065.2
+6,3,7049,339.4,9,heritage beach tea,heritage,monsoon,130954.79999999999
+2,4,6957,188.2,3,shopping,mountain,summer,58667.2
+3,1,886,583.5,11,food hills shopping,mountain,autumn,4992.0
+13,1,1974,380.6,12,wildlife,mountain,autumn,27184.4
+1,5,3419,409.1,4,adventure lake hills,beach,summer,25277.0
+5,3,4452,283.8,7,adventure heritage,city,monsoon,70185.6
+13,4,6025,187.0,10,heritage adventure tea,heritage,autumn,316292.0
+9,4,3855,57.3,1,tea heritage beach,nature,winter,139696.8
+2,4,5204,223.1,9,beach,city,monsoon,45201.6
+7,3,872,122.1,10,heritage food hills,heritage,autumn,19777.199999999997
+14,3,5541,404.0,11,shopping heritage beach,nature,autumn,237570.0
+6,5,7390,529.8,3,sunset lake heritage,beach,summer,232296.0
+8,6,4588,195.6,10,adventure,nature,autumn,224918.40000000002
+8,2,4075,213.1,10,heritage,beach,autumn,66904.8
+10,5,2939,408.8,1,beach lake wildlife,heritage,winter,155126.0
+3,6,7670,106.6,9,shopping heritage hills,beach,monsoon,140618.40000000002
+12,1,1039,559.1,8,shopping,nature,monsoon,14704.4
+14,5,2864,231.0,12,heritage,mountain,autumn,205100.0
+2,3,1798,78.7,1,lake hills,beach,winter,11732.400000000001
+12,6,7037,121.3,12,heritage,nature,autumn,509575.19999999995
+12,4,4274,561.0,7,lake sunset food,mountain,monsoon,214128.0
+11,6,7441,163.3,4,shopping,mountain,summer,495025.19999999995
+6,1,5589,404.1,5,lake beach hills,city,monsoon,35150.4
+7,1,4809,110.6,10,wildlife,mountain,autumn,34105.4
+12,6,4525,132.6,12,tea,nature,autumn,328982.4
+3,4,2259,530.0,4,beach,beach,summer,35588.0
+12,4,4846,105.9,12,sunset tea shopping,mountain,autumn,234302.4
+13,2,5733,30.9,8,hills tea,mountain,monsoon,149305.2
+10,2,7750,310.7,3,adventure tea,heritage,summer,157485.6
+5,5,4752,520.4,8,lake shopping heritage,beach,monsoon,129208.0
+8,2,7559,209.1,10,hills,city,autumn,122616.8
+1,4,7600,94.3,1,tea lake beach,beach,winter,31908.8
+14,2,4562,589.7,1,beach,heritage,winter,132453.6
+5,2,3962,412.5,1,shopping hills wildlife,beach,winter,42920.0
+1,1,1827,513.4,7,beach hills tea,city,monsoon,3880.6
+12,6,2733,456.2,1,wildlife hills,heritage,winter,207724.80000000002
+10,6,7129,425.0,12,tea adventure,city,autumn,437940.0
+9,1,1795,243.0,2,hills beach lake,city,winter,17127.0
+1,3,3658,208.1,1,sunset,city,winter,13471.199999999999
+11,4,5830,435.8,4,wildlife hills,heritage,summer,263492.8
+9,3,2532,435.7,10,sunset adventure hills,city,autumn,73592.4
+12,5,7813,571.3,11,adventure heritage sunset,beach,autumn,480206.0
+12,2,5476,349.8,4,lake sunset beach,heritage,summer,134222.4
+3,1,1004,190.9,7,shopping adventure,city,monsoon,3775.6
+3,3,2579,303.9,10,shopping lake,mountain,autumn,26857.800000000003
+13,4,6131,376.0,10,adventure food sunset,city,autumn,324828.0
+8,2,7014,267.5,2,lake adventure wildlife,nature,winter,114364.0
+7,5,7473,478.9,11,hills heritage tea,nature,autumn,271133.0
+5,1,6928,359.1,11,food tea,mountain,autumn,36076.4
+9,1,1338,25.5,9,wildlife beach,beach,monsoon,12144.0
+11,4,6053,350.5,7,lake,city,monsoon,271940.0
+1,4,1593,387.5,5,food heritage,heritage,monsoon,12572.0
+8,2,1351,550.9,11,beach wildlife,nature,autumn,26023.2
+14,2,5782,260.0,11,hills adventure,city,autumn,163976.0
+4,1,4242,353.2,7,food,beach,monsoon,18380.8
+4,4,5465,295.5,9,shopping,heritage,monsoon,92168.0
+13,3,6930,328.4,5,shopping,nature,monsoon,274210.80000000005
+1,1,1295,59.0,9,beach,heritage,monsoon,1531.0
+6,3,4598,540.4,2,hills,beach,winter,89248.79999999999
+7,6,6807,548.0,11,tea hills,heritage,autumn,299046.0
+12,2,3970,337.9,7,food hills lake,heritage,monsoon,97983.2
+2,6,4568,342.8,8,lake hills wildlife,city,monsoon,63043.200000000004
+7,2,4384,53.4,3,food,mountain,summer,61803.2
+3,2,7331,366.8,7,shopping food sunset,beach,monsoon,46920.4
+12,2,1159,268.9,1,shopping,beach,winter,29967.2
+9,2,7121,431.2,11,wildlife shopping sunset,beach,autumn,131627.6
+7,1,6677,47.3,9,hills,mountain,monsoon,46928.2
+6,4,6650,432.3,6,wildlife beach sunset,city,monsoon,166516.8
+3,3,3768,186.4,11,heritage sunset,beach,autumn,36148.8
+13,5,4514,398.0,10,wildlife lake,beach,autumn,301370.0
+10,3,3456,383.7,2,shopping heritage beach,beach,winter,108284.40000000001
+5,3,2612,151.6,1,hills tea,mountain,winter,40999.2
+6,3,7103,275.5,4,food shopping hills,heritage,summer,131160.0
+11,1,4443,504.7,1,beach,mountain,winter,50891.8
+11,5,6008,371.2,7,lake,nature,monsoon,337864.0
+7,1,1525,59.9,7,beach lake,mountain,monsoon,10914.6
+5,5,6480,276.9,7,shopping hills,city,monsoon,167538.0
+10,6,5543,200.8,1,wildlife beach adventure,beach,winter,337399.19999999995
+10,5,7982,392.2,12,hills lake,mountain,autumn,406944.0
+9,3,1764,376.4,12,beach lake food,nature,autumn,52144.799999999996
+2,2,4688,26.0,8,hills shopping heritage,city,monsoon,18960.0
+7,6,4480,372.5,1,wildlife heritage tea,nature,winter,197100.0
+9,2,4676,446.2,5,heritage beach,beach,monsoon,87737.6
+14,3,1191,465.9,9,tea,nature,monsoon,55612.799999999996
+8,5,4206,54.2,9,shopping hills heritage,mountain,monsoon,169324.0
+5,6,2956,196.1,3,adventure wildlife hills,mountain,summer,93386.4
+8,6,5244,264.3,10,tea,city,autumn,258055.19999999998
+3,1,2470,124.3,12,heritage sunset shopping,city,autumn,7907.2
+2,6,3932,264.0,7,tea,mountain,monsoon,53520.0
+10,1,5264,61.3,5,beach wildlife hills,nature,monsoon,52885.2
+14,4,1261,85.7,7,tea shopping,nature,monsoon,71987.2
+12,6,6464,407.8,1,wildlife hills,city,winter,475195.19999999995
+9,4,5953,172.3,7,hills lake tea,city,monsoon,217064.8
+1,6,1212,432.6,1,sunset beach,mountain,winter,17654.4
+14,3,1266,47.9,1,heritage lake hills,beach,winter,53746.799999999996
+7,2,6922,346.4,7,beach shopping tea,beach,monsoon,99679.2
+5,2,2839,247.0,7,shopping heritage,beach,monsoon,30366.0
+13,3,6997,482.2,12,shopping tea sunset,heritage,autumn,278669.4
+11,5,4394,474.7,7,sunset heritage adventure,heritage,monsoon,251164.0
+11,3,3264,237.8,12,sunset,city,autumn,110565.59999999999
+4,5,2769,381.2,10,wildlife,beach,autumn,63004.0
+14,3,5544,152.0,5,food hills lake,beach,monsoon,234672.0
+7,2,1590,356.6,12,adventure lake,beach,autumn,25112.8
+8,2,3698,67.1,6,lake sunset adventure,heritage,monsoon,59704.8
+11,4,3290,272.1,8,food,beach,monsoon,149113.6
+10,6,1910,126.0,2,sunset food,heritage,winter,117624.0
+3,6,3340,532.4,3,adventure hills shopping,city,summer,72897.6
+5,2,4606,278.0,7,tea lake,beach,monsoon,48284.0
+6,3,5678,362.6,4,hills beach,heritage,summer,106555.20000000001
+14,5,1421,229.0,8,wildlife beach food,nature,monsoon,104050.0
+11,4,7081,187.5,1,sunset hills,city,winter,314564.0
+6,1,7124,137.7,4,sunset wildlife hills,mountain,summer,43294.8
+11,4,5782,548.9,8,shopping,mountain,monsoon,263190.4
+11,1,7454,483.7,8,wildlife hills food,beach,monsoon,83928.8
+6,1,3881,97.3,12,lake heritage sunset,heritage,autumn,23675.2
+6,4,6715,453.1,11,wildlife,city,autumn,168409.6
+13,1,6036,262.7,10,shopping,beach,autumn,79518.8
+8,3,4850,28.9,1,beach heritage,nature,winter,116746.79999999999
+3,4,2092,326.5,8,adventure sunset shopping,heritage,monsoon,30328.0
+11,4,4814,95.4,3,lake wildlife,heritage,summer,213342.4
+9,3,7289,141.8,4,hills,city,summer,198504.59999999998
+8,1,7889,423.7,3,hills beach,heritage,summer,64806.8
+11,5,4026,169.1,6,heritage food,city,monsoon,224812.0
+13,6,2584,537.3,2,heritage shopping hills,city,winter,214447.19999999998
+5,6,6182,401.2,7,wildlife,city,monsoon,195088.8
+6,5,1346,502.7,2,hills,nature,winter,50434.0
+3,3,1887,376.8,7,shopping,nature,monsoon,21504.6
+10,6,4845,523.9,8,beach adventure heritage,nature,monsoon,303273.6
+6,3,7929,229.8,3,wildlife lake,city,summer,145479.59999999998
+5,1,3167,338.5,2,beach,mountain,winter,17189.0
+10,6,3991,319.2,10,sunset wildlife,heritage,autumn,247120.80000000002
+6,2,3120,544.2,9,beach hills,heritage,monsoon,41793.6
+7,6,3971,115.7,4,hills food adventure,beach,summer,169558.8
+7,3,851,355.3,11,tea,nature,autumn,22134.6
+4,6,5082,457.6,3,adventure beach sunset,beach,summer,132950.40000000002
+2,4,5092,234.6,12,hills adventure,heritage,autumn,44489.6
+12,3,3072,523.2,2,food shopping,nature,winter,116870.40000000001
+2,2,2701,236.3,8,hills lake,mountain,monsoon,12694.4
+5,6,6283,120.5,1,food lake,beach,winter,191382.0
+10,1,2152,358.7,3,hills,beach,summer,22954.8
+2,3,1138,263.9,5,hills adventure wildlife,heritage,monsoon,9994.8
+10,3,1091,28.8,2,lake adventure beach,city,winter,33075.600000000006
+11,4,7148,60.5,6,wildlife,mountain,monsoon,315480.0
+10,2,3423,133.3,3,food,city,summer,69526.4
+5,4,1533,466.2,2,tea,nature,winter,38119.2
+1,3,7128,537.4,12,shopping,mountain,autumn,27832.800000000003
+13,2,1870,336.5,12,heritage hills,nature,autumn,51312.0
+5,2,3224,81.2,12,wildlife heritage,heritage,autumn,32889.6
+12,5,948,330.0,2,tea sunset hills,city,winter,63480.0
+3,2,5689,516.3,5,heritage hills tea,nature,monsoon,38264.4
+3,2,5834,454.7,4,heritage adventure,mountain,summer,38641.6
+11,4,6247,188.8,4,wildlife sunset adventure,heritage,summer,277888.8
+14,2,2693,91.9,5,adventure shopping tea,nature,monsoon,76139.2
+13,3,3162,542.4,7,sunset lake,mountain,monsoon,129826.79999999999
+11,2,7554,515.4,6,shopping hills heritage,nature,monsoon,170311.2
+4,3,6715,51.2,4,heritage lake sunset,nature,summer,81194.4
+13,5,1067,497.7,12,wildlife lake,beach,autumn,79309.0
+10,4,5781,76.4,12,hills,beach,autumn,232462.4
+3,6,6651,56.7,4,hills,heritage,summer,121078.79999999999
+2,5,4826,460.0,3,beach,beach,summer,57460.0
+13,1,5407,331.1,7,sunset,nature,monsoon,71615.4
+4,3,807,260.4,5,food,heritage,monsoon,12808.800000000001
+11,2,1016,544.2,12,lake,mountain,autumn,26705.6
+2,4,1052,506.8,6,adventure,mountain,monsoon,16524.8
+4,2,1944,53.4,1,shopping lake,city,winter,15979.2
+4,6,7934,377.3,2,shopping wildlife lake,beach,winter,199471.19999999998
+4,2,5367,467.9,1,heritage beach shopping,heritage,winter,46679.2
+10,4,6432,339.3,5,shopping wildlife beach,beach,monsoon,262708.8
+13,1,2928,590.1,4,hills tea beach,city,summer,40424.4
+13,6,7550,417.9,11,lake hills,nature,autumn,598929.6000000001
+11,6,2232,80.4,11,shopping hills,beach,autumn,149241.59999999998
+3,5,7296,135.0,2,food,heritage,winter,112140.0
+14,3,1021,499.2,12,wildlife heritage sunset,beach,autumn,48872.399999999994
+8,1,947,598.1,8,adventure,mountain,monsoon,9968.4
+8,5,1368,77.0,4,tea wildlife shopping,nature,summer,56260.0
+10,3,6501,78.2,5,adventure tea,heritage,monsoon,195968.40000000002
+11,6,2653,462.8,6,heritage tea,nature,monsoon,186205.2
+14,5,4048,57.3,3,sunset adventure,city,summer,284506.0
+9,4,4193,59.8,11,shopping heritage,nature,autumn,151904.8
+9,6,6484,535.5,1,adventure shopping,mountain,winter,362988.0
+11,5,3310,484.3,1,tea beach sunset,mountain,winter,191736.0
+4,3,848,531.3,4,sunset beach,city,summer,16551.6
+5,1,3582,397.3,2,beach lake,heritage,winter,19499.2
+9,1,2875,207.1,1,sunset beach heritage,beach,winter,26703.4
+1,3,6062,545.7,5,food sunset tea,heritage,monsoon,24734.399999999998
+5,4,6209,193.3,5,adventure,nature,monsoon,127272.8
+11,1,1462,179.8,2,lake shopping wildlife,mountain,winter,16801.2
+14,1,6509,534.1,10,adventure,beach,autumn,93262.4
+8,5,1307,414.9,11,wildlife,city,autumn,60578.0
+6,5,5261,539.5,9,adventure beach tea,beach,monsoon,168620.0
+7,1,3602,110.4,7,beach,city,monsoon,25655.6
+10,4,2969,572.3,12,adventure beach,beach,autumn,127916.8
+8,1,4278,375.4,5,shopping sunset adventure,nature,monsoon,35725.6
+1,5,3034,407.5,6,food heritage,beach,monsoon,23320.0
+8,6,6515,550.2,1,hills lake,nature,winter,325924.80000000005
+6,6,7760,240.8,9,food shopping tea,city,monsoon,285139.19999999995
+10,4,6673,437.4,2,tea heritage shopping,nature,winter,273918.4
+13,4,3962,391.4,8,shopping beach lake,nature,monsoon,212286.4
+14,6,4423,476.9,10,wildlife hills shopping,beach,autumn,382977.6
+9,4,4019,540.2,3,lake heritage beach,city,summer,153327.2
+6,3,6513,414.4,8,wildlife adventure,mountain,monsoon,122206.79999999999
+7,5,4776,59.2,4,heritage sunset lake,nature,summer,168344.0
+3,4,4170,126.2,5,tea wildlife adventure,city,monsoon,52059.2
+14,6,3748,573.3,7,beach sunset,heritage,monsoon,328591.19999999995
+12,4,3500,581.8,3,sunset tea,heritage,summer,177308.8
+12,6,4779,581.1,10,lake,beach,autumn,358034.4
+5,1,5760,41.3,5,hills heritage lake,nature,monsoon,28965.2
+5,1,3912,241.8,6,lake tea heritage,nature,monsoon,20527.2
+12,1,6607,460.6,10,tea food,beach,autumn,81126.4
+8,4,6752,456.7,3,heritage,mountain,summer,223371.2
+10,5,3889,69.8,6,beach lake,city,monsoon,195846.0
+7,2,7345,373.5,12,beach food,city,autumn,105818.0
+7,1,2045,102.9,5,adventure,city,monsoon,14726.6
+9,6,7511,306.1,2,beach tea adventure,city,winter,412940.39999999997
+12,5,2917,159.0,4,food lake,city,summer,178200.0
+5,4,4862,50.8,12,beach hills lake,beach,autumn,98052.8
+12,3,2841,66.4,10,hills,city,autumn,103072.79999999999
+4,3,3983,548.3,10,tea,heritage,autumn,54375.600000000006
+6,1,3248,451.9,4,wildlife heritage,city,summer,21295.6
+13,2,5877,560.5,11,adventure shopping,heritage,autumn,157286.0
+14,6,1384,292.6,5,beach shopping food,beach,monsoon,123278.40000000001
+13,3,6835,259.7,10,shopping food wildlife,nature,autumn,269681.4
+5,5,7307,227.9,11,wildlife heritage food,heritage,autumn,187233.0
+12,5,4853,377.5,3,shopping,beach,summer,298730.0
+14,2,4740,223.9,12,hills beach,nature,autumn,134511.2
+14,2,5839,452.8,8,lake food,heritage,monsoon,167114.4
+1,5,2233,484.8,9,sunset food heritage,nature,monsoon,20861.0
+11,1,6198,528.0,10,lake,heritage,autumn,70290.0
+14,3,2374,160.8,3,adventure,beach,summer,101637.59999999999
+11,6,5670,325.7,9,heritage tea sunset,mountain,monsoon,382036.80000000005
+4,5,3000,149.6,3,heritage,city,summer,62992.0
+11,5,6172,41.8,4,heritage hills,nature,summer,340296.0
+2,1,6495,430.5,2,wildlife shopping heritage,beach,winter,14712.0
+7,2,2302,338.4,3,heritage,beach,summer,34935.2
+9,2,5245,439.9,12,sunset hills heritage,nature,autumn,97929.2
+7,2,4388,70.8,4,tea lake hills,city,summer,61998.4
+10,2,2917,597.4,5,shopping beach wildlife,beach,monsoon,63119.2
+4,6,5035,596.7,6,shopping,beach,monsoon,135160.8
+9,1,7947,289.7,9,tea heritage,mountain,monsoon,72681.8
+10,5,817,522.3,7,sunset shopping wildlife,mountain,monsoon,51296.0
+9,4,7689,161.3,7,shopping lake hills,beach,monsoon,279384.8
+5,4,6962,447.8,11,lake hills,mountain,autumn,146404.8
+5,2,4611,530.0,6,adventure heritage hills,heritage,monsoon,50350.0
+4,2,5192,492.5,10,lake,city,autumn,45476.0
+7,4,3458,490.8,11,sunset food heritage,mountain,autumn,104676.8
+9,2,1729,288.6,9,wildlife sunset heritage,heritage,monsoon,33430.8
+6,5,4914,495.6,1,hills beach sunset,city,winter,157332.0
+6,1,6677,420.6,4,lake tea sunset,beach,summer,41744.4
+5,1,2463,96.8,8,wildlife shopping beach,city,monsoon,12702.2
+4,5,5962,86.2,6,lake beach wildlife,beach,monsoon,120964.0
+10,4,6185,467.7,4,food,heritage,summer,254883.2
+12,1,6259,382.8,5,tea,heritage,monsoon,76639.2
+5,6,3248,321.2,1,sunset shopping beach,city,winter,105148.79999999999
+13,1,3622,546.2,3,sunset tea hills,nature,summer,49270.8
+8,6,3796,402.6,10,tea sunset,heritage,autumn,191870.40000000002
+3,5,6950,249.8,1,shopping wildlife,beach,winter,109246.0
+6,6,7283,260.1,11,beach sunset food,nature,autumn,268430.4
+1,6,3780,371.0,5,hills lake,city,monsoon,31584.0
+1,2,7783,461.0,10,wildlife,beach,autumn,19254.0
+5,5,4907,347.3,4,shopping food,beach,summer,129621.0
+7,2,3572,315.1,10,food,heritage,autumn,52528.8
+12,3,804,441.6,7,tea,nature,monsoon,34243.2
+2,2,5199,429.1,11,hills beach heritage,nature,autumn,24228.8
+12,3,5443,501.6,1,adventure,mountain,winter,201967.19999999998
+4,6,7772,56.3,10,shopping tea,beach,autumn,187879.2
+2,3,5970,457.9,4,lake,heritage,summer,41314.8
+10,1,1013,318.0,5,food shopping,mountain,monsoon,11402.0
+11,2,4883,63.3,1,heritage,heritage,winter,107932.4
+9,5,6148,413.8,12,shopping,nature,autumn,284936.0
+2,4,4375,435.6,8,food,mountain,monsoon,41969.6
+2,4,3891,323.7,12,hills,mountain,autumn,36307.2
+6,3,6631,480.4,7,wildlife food,heritage,monsoon,125122.79999999999
+7,2,5201,194.1,2,wildlife heritage,mountain,winter,74366.8
+14,4,5705,137.1,5,wildlife adventure,city,monsoon,321673.6
+5,4,4141,223.4,6,hills heritage food,nature,monsoon,86394.4
+3,6,2802,257.8,2,food,city,winter,56623.200000000004
+14,4,4537,423.6,12,shopping tea heritage,nature,autumn,260849.6
+3,6,7705,510.4,12,sunset lake,nature,autumn,150939.59999999998
+1,5,5139,438.1,7,heritage,nature,monsoon,34457.0
+6,1,5892,120.9,8,wildlife,nature,monsoon,35835.6
+6,3,1693,232.4,9,wildlife hills adventure,nature,monsoon,33262.8
+9,3,7913,111.9,9,sunset lake food,city,monsoon,214993.80000000002
+13,1,2561,418.3,1,heritage shopping,heritage,winter,34966.2
+14,2,7793,163.9,7,shopping,beach,monsoon,219515.2
+5,5,4009,324.7,10,heritage,beach,autumn,106719.0
+14,3,7416,479.3,10,heritage shopping,beach,autumn,317223.6
+9,1,7221,409.1,8,wildlife hills,heritage,monsoon,66625.4
+1,2,6238,193.1,11,lake,mountain,autumn,14020.8
+14,2,7398,213.1,8,food,mountain,monsoon,208848.8
+2,2,5187,399.0,5,sunset tea heritage,city,monsoon,23940.0
+9,1,6911,338.7,6,sunset,beach,monsoon,63553.8
+12,5,2039,75.9,9,adventure sunset hills,beach,monsoon,123858.0
+4,5,1306,526.9,11,tea wildlife hills,beach,autumn,36658.0
+4,3,4712,317.3,3,shopping food,mountain,summer,60351.600000000006
+7,4,6630,294.5,4,adventure,beach,summer,190352.0
+13,6,6310,135.1,8,hills,heritage,monsoon,495422.39999999997
+4,6,4600,238.7,10,hills tea,heritage,autumn,116128.79999999999
+10,1,4550,213.0,5,adventure lake,beach,monsoon,46352.0
+7,6,5190,177.0,8,sunset wildlife heritage,nature,monsoon,222228.0
+2,1,7051,349.1,1,food wildlife adventure,mountain,winter,15498.4
+10,1,6861,288.1,4,beach heritage hills,beach,summer,69762.4
+12,3,1589,535.7,12,food,nature,autumn,63632.399999999994
+9,5,5089,566.0,7,wildlife beach,heritage,monsoon,240325.0
+3,1,3542,147.3,11,beach food shopping,mountain,autumn,11215.2
+3,2,6555,78.1,3,beach food wildlife,heritage,summer,39954.8
+6,2,4442,475.5,4,shopping wildlife adventure,city,summer,57108.0
+8,3,7937,597.0,12,food,beach,autumn,197652.0
+8,6,3912,520.9,12,beach sunset,beach,autumn,200277.59999999998
+4,2,5689,33.7,11,food,mountain,autumn,45781.6
+8,2,1581,165.7,4,tea food,city,summer,26621.6
+5,1,7512,45.1,10,adventure beach,beach,autumn,37740.4
+10,2,1905,496.1,6,wildlife shopping sunset,nature,monsoon,42068.8
+12,1,3524,357.2,11,hills,nature,autumn,43716.8
+10,4,6830,318.0,11,sunset adventure,beach,autumn,278288.0
+1,3,7765,341.6,6,lake,beach,monsoon,27394.199999999997
+14,3,4287,166.4,4,hills tea,beach,summer,182050.8
+1,5,4289,369.0,12,sunset beach adventure,beach,autumn,28825.0
+14,4,1150,37.8,6,adventure hills tea,nature,monsoon,65004.8
+1,1,7847,394.7,6,heritage,city,monsoon,9425.8
+8,3,918,446.0,8,wildlife adventure tea,mountain,monsoon,27384.0
+2,2,987,410.4,12,lake,mountain,autumn,7231.2
+2,5,4209,212.6,2,lake tea hills,mountain,winter,46342.0
+10,2,826,499.2,12,shopping beach,city,autumn,20513.6
+11,1,1983,435.0,6,hills,city,monsoon,23553.0
+2,5,5319,94.4,1,heritage food sunset,heritage,winter,55078.0
+14,3,5876,133.2,4,wildlife lake food,nature,summer,248390.40000000002
+5,1,2946,389.5,6,tea,beach,monsoon,16288.0
+5,5,6526,187.9,9,food,city,monsoon,166908.0
+5,2,5175,89.3,7,heritage wildlife sunset,beach,monsoon,52464.4
+7,6,2443,109.9,2,lake hills sunset,beach,winter,105243.59999999999
+3,5,5929,116.1,6,food beach,heritage,monsoon,91257.0
+6,3,5063,297.1,3,food beach tea,beach,summer,94699.20000000001
+3,4,6647,372.3,4,food,beach,summer,85720.8
+1,4,1912,122.3,9,wildlife sunset,nature,monsoon,9604.8
+6,4,2462,433.2,10,food tea,beach,autumn,66019.2
+10,1,2985,183.0,2,shopping beach wildlife,mountain,winter,30582.0
+11,2,3258,200.7,8,lake,heritage,monsoon,73281.6
+5,2,7199,149.6,6,beach sunset food,beach,monsoon,73186.8
+5,5,6074,475.4,5,shopping,heritage,monsoon,161358.0
+12,1,4717,576.7,9,wildlife food,beach,monsoon,58910.8
+10,4,4691,305.6,3,shopping,heritage,summer,192529.6
+12,5,7178,44.4,10,tea beach,beach,autumn,431568.0
+13,6,4016,171.1,5,hills,heritage,monsoon,317354.4
+12,2,2421,111.7,2,shopping lake,heritage,winter,58997.6
+14,1,1785,508.8,10,hills adventure food,heritage,autumn,27025.2
+6,5,3176,69.2,11,wildlife heritage food,mountain,autumn,96664.0
+6,1,5503,580.6,7,hills tea heritage,mountain,monsoon,35340.4
+5,1,4190,361.3,9,wildlife adventure lake,city,monsoon,22395.2
+4,6,3836,320.3,2,shopping wildlife,heritage,winter,99751.20000000001
+11,6,4256,511.5,5,beach heritage food,beach,monsoon,293172.0
+11,5,7819,36.0,5,heritage shopping lake,beach,monsoon,430765.0
+12,6,7983,470.7,10,beach lake adventure,mountain,autumn,586072.8
+3,1,1961,87.6,5,tea shopping food,heritage,monsoon,6233.4
+7,1,1624,507.7,9,heritage sunset beach,mountain,monsoon,13398.8
+4,2,2559,326.9,4,wildlife,city,summer,23087.2
+13,1,6934,55.5,8,adventure,nature,monsoon,90364.0
+4,6,4108,503.3,3,food beach,city,summer,110671.20000000001
+3,1,7018,35.8,7,adventure tea heritage,city,monsoon,21197.2
+8,4,5456,100.3,1,food beach hills,nature,winter,176196.8
+13,6,4783,482.7,9,adventure food hills,city,monsoon,384658.80000000005
+13,5,2826,289.6,1,tea shopping,nature,winter,189482.0
+2,2,3277,531.2,12,lake sunset heritage,beach,autumn,17357.6
+5,3,1863,388.5,11,lake food beach,mountain,autumn,32607.0
+3,4,4538,381.6,7,lake food sunset,nature,monsoon,60561.6
+5,5,2818,189.5,11,heritage sunset,city,autumn,74240.0
+8,3,2905,97.5,10,tea heritage,city,autumn,70890.0
+4,2,1084,577.5,2,sunset beach,beach,winter,13292.0
+1,5,6553,80.8,9,tea,beach,monsoon,34381.0
+8,6,7562,326.8,5,wildlife,nature,monsoon,370819.19999999995
+1,3,4387,178.1,11,tea adventure hills,nature,autumn,15298.199999999999
+4,1,4659,173.2,11,hills food wildlife,heritage,autumn,19328.8
+1,4,7466,364.9,12,heritage sunset lake,mountain,autumn,35702.4
+2,6,4482,482.8,6,sunset,city,monsoon,65371.200000000004
+7,6,5283,470.8,3,shopping sunset wildlife,nature,summer,233185.19999999998
+12,3,3882,523.9,2,shopping tea adventure,mountain,winter,146038.8
+11,1,4503,189.9,2,beach sunset hills,nature,winter,50292.6
+2,4,4557,290.1,12,heritage shopping,city,autumn,41097.6
+1,5,5919,25.4,8,food heritage,mountain,monsoon,30103.0
+5,6,5150,453.2,5,hills beach shopping,nature,monsoon,165376.8
+10,1,4428,195.4,6,heritage sunset food,city,monsoon,45061.6
+11,2,1346,345.7,3,food lake,beach,summer,32377.6
+12,3,7312,118.2,7,tea adventure wildlife,nature,monsoon,264650.4
+5,1,7195,495.3,6,hills adventure beach,heritage,monsoon,37956.2
+3,6,2128,494.0,10,heritage,city,autumn,50160.0
+1,1,2911,528.9,1,hills,beach,winter,5026.6
+3,4,7808,46.6,12,food lake,heritage,autumn,94441.6
+1,6,3111,595.6,1,hills beach shopping,city,winter,32960.399999999994
+13,5,6647,163.7,6,tea sunset wildlife,mountain,monsoon,435329.0
+4,5,6457,199.5,5,adventure beach,heritage,monsoon,133130.0
+12,2,6997,164.6,9,tea heritage,nature,monsoon,169244.8
+8,5,915,175.2,8,adventure heritage tea,heritage,monsoon,40104.0
+8,3,4276,340.5,3,heritage beach shopping,mountain,summer,106710.0
+7,1,4871,159.1,6,sunset,beach,monsoon,34733.4
+12,3,6827,248.4,7,sunset,city,monsoon,248752.80000000002
+1,3,2416,400.3,6,hills sunset,mountain,monsoon,12051.599999999999
+2,4,3008,504.9,1,sunset adventure,beach,winter,32142.4
+6,2,2095,421.8,3,adventure shopping,city,summer,28514.4
+6,3,6286,364.7,7,adventure heritage food,city,monsoon,117524.40000000001
+8,3,7991,105.7,4,food sunset adventure,heritage,summer,193052.40000000002
+11,2,1811,493.3,7,sunset hills wildlife,nature,monsoon,43788.4
+9,5,2478,41.6,2,shopping food,mountain,winter,112342.0
+4,2,3010,173.2,9,sunset,heritage,monsoon,25465.6
+5,5,7201,53.1,3,adventure tea,heritage,summer,181087.0
+11,2,4009,407.1,8,hills heritage,nature,monsoon,91454.8
+3,6,2829,233.7,11,shopping wildlife adventure,heritage,autumn,56530.799999999996
+8,3,3120,398.2,5,adventure heritage wildlife,nature,monsoon,79658.4
+8,1,5106,221.3,2,food,city,winter,41733.2
+11,1,3586,284.3,1,wildlife heritage,heritage,winter,40583.2
+11,5,1810,285.6,5,wildlife tea,mountain,monsoon,105262.0
+7,6,6704,46.4,2,wildlife food,heritage,winter,282681.6
+5,2,3840,269.5,11,lake wildlife food,mountain,autumn,40556.0
+6,4,2648,391.8,12,heritage shopping sunset,mountain,autumn,69820.8
+6,4,6044,336.7,12,sunset tea,city,autumn,150443.2
+4,1,6166,63.7,12,sunset adventure food,nature,autumn,24918.8
+9,3,1916,407.5,8,adventure,beach,monsoon,56622.0
+3,5,1330,199.1,4,beach hills,mountain,summer,23932.0
+10,6,1126,28.4,6,hills beach,city,monsoon,68241.6
+11,6,6313,110.2,4,tea hills heritage,heritage,summer,419302.80000000005
+14,1,5305,308.6,11,food sunset tea,city,autumn,75504.4
+2,2,6502,200.0,6,wildlife,nature,monsoon,27608.0
+11,3,5310,422.7,5,shopping tea sunset,beach,monsoon,180302.40000000002
+2,1,3692,159.6,9,wildlife,beach,monsoon,8022.4
+5,4,5044,468.2,5,hills,beach,monsoon,108371.2
+3,1,6001,186.2,5,sunset hills beach,heritage,monsoon,18747.8
+3,1,3671,380.1,3,tea food sunset,heritage,summer,12533.4
+3,1,7388,483.5,1,tea,nature,winter,24098.0
+1,2,7277,243.6,1,beach heritage,heritage,winter,16502.8
+12,5,6565,47.1,5,food hills,nature,monsoon,394842.0
+1,2,7944,330.6,12,hills,heritage,autumn,18532.8
+6,6,3611,597.3,4,hills shopping,heritage,summer,144331.2
+10,2,1621,582.0,8,adventure food lake,nature,monsoon,37076.0
+14,1,4286,148.2,4,shopping adventure,heritage,summer,60596.8
+12,3,6170,458.3,4,hills,mountain,summer,227619.59999999998
+2,5,6411,220.1,2,food adventure,heritage,winter,68512.0
+14,1,3597,113.0,7,wildlife lake sunset,city,monsoon,50810.0
+10,1,2906,406.2,8,food heritage wildlife,mountain,monsoon,30684.8
+3,6,4007,310.5,5,lake,heritage,monsoon,79578.0
+7,4,6587,332.8,7,heritage hills,beach,monsoon,189760.8
+13,3,1236,499.9,6,tea wildlife,mountain,monsoon,54202.799999999996
+6,5,3162,215.2,4,adventure,heritage,summer,99164.0
+3,6,2455,406.9,9,heritage,mountain,monsoon,53955.600000000006
+13,3,6603,232.4,7,adventure tea beach,mountain,monsoon,260305.80000000002
+14,4,4181,44.8,1,food beach,mountain,winter,234852.8
+14,1,1424,239.2,6,beach wildlife,beach,monsoon,20892.8
+14,2,2684,571.0,5,lake,heritage,monsoon,79720.0
+13,4,1119,300.3,10,lake food,beach,autumn,62992.8
+7,2,4224,82.8,4,heritage tea wildlife,mountain,summer,59798.4
+3,6,7983,418.9,12,beach shopping food,mountain,autumn,153747.59999999998
+9,6,4884,578.8,8,heritage adventure hills,city,monsoon,277627.19999999995
+4,2,7060,546.6,2,heritage hills food,city,winter,60852.8
+7,3,6146,351.7,5,hills shopping,beach,monsoon,133286.40000000002
+10,2,7156,238.2,11,tea sunset,beach,autumn,145025.6
+14,4,3039,356.8,4,heritage tea,heritage,summer,175892.8
+5,1,7649,493.2,9,lake food sunset,mountain,monsoon,40217.8
+4,3,2518,519.5,10,heritage lake shopping,heritage,autumn,36450.0
+11,4,3955,494.9,9,hills beach,city,monsoon,181938.4

@@ -67,6 +67,46 @@ const mockRoutes = [
     fromPoint: "Kamalapur", toPoint: "Sylhet Station", duration: "6-7 hours", durationMin: 390,
     distance: 260, fare: { min: 250, max: 1000 }, comfort: "standard", schedule: "Daily 7:00 AM",
   },
+  {
+    id: "9", mode: "bus", operator: "Shyamoli Paribahan", from: "Dhaka", to: "Khulna",
+    fromPoint: "Gabtoli", toPoint: "Khulna Terminal", duration: "6-7 hours", durationMin: 390,
+    distance: 330, fare: { min: 600, max: 1000 }, comfort: "standard", schedule: "Every 1 hour",
+  },
+  {
+    id: "10", mode: "train", operator: "Sundarban Express", from: "Dhaka", to: "Khulna",
+    fromPoint: "Kamalapur", toPoint: "Khulna Station", duration: "7-8 hours", durationMin: 450,
+    distance: 340, fare: { min: 350, max: 1400 }, comfort: "standard", schedule: "Daily 6:30 AM",
+  },
+  {
+    id: "11", mode: "bus", operator: "Nabil Paribahan", from: "Dhaka", to: "Rajshahi",
+    fromPoint: "Gabtoli", toPoint: "Rajshahi Terminal", duration: "5-6 hours", durationMin: 330,
+    distance: 290, fare: { min: 500, max: 900 }, comfort: "standard", schedule: "Every 45 mins",
+  },
+  {
+    id: "12", mode: "train", operator: "Padma Express", from: "Dhaka", to: "Rajshahi",
+    fromPoint: "Kamalapur", toPoint: "Rajshahi Station", duration: "6-7 hours", durationMin: 390,
+    distance: 300, fare: { min: 300, max: 1100 }, comfort: "standard", schedule: "Daily 5:30 PM",
+  },
+  {
+    id: "13", mode: "bus", operator: "Sakura Paribahan", from: "Dhaka", to: "Barishal",
+    fromPoint: "Gabtoli", toPoint: "Barishal Terminal", duration: "6-8 hours", durationMin: 420,
+    distance: 320, fare: { min: 550, max: 950 }, comfort: "standard", schedule: "Every 1 hour",
+  },
+  {
+    id: "14", mode: "launch", operator: "Green Line Launch", from: "Dhaka", to: "Barishal",
+    fromPoint: "Sadarghat", toPoint: "Barishal Ghat", duration: "7-8 hours", durationMin: 450,
+    distance: 300, fare: { min: 400, max: 1200 }, comfort: "standard", schedule: "Daily 7:00 PM",
+  },
+  {
+    id: "15", mode: "bus", operator: "Sikder Travels", from: "Dhaka", to: "Rangpur",
+    fromPoint: "Gabtoli", toPoint: "Rangpur Terminal", duration: "6-7 hours", durationMin: 390,
+    distance: 340, fare: { min: 600, max: 1000 }, comfort: "standard", schedule: "Every 1 hour",
+  },
+  {
+    id: "16", mode: "train", operator: "Rangpur Express", from: "Dhaka", to: "Rangpur",
+    fromPoint: "Kamalapur", toPoint: "Rangpur Station", duration: "7-8 hours", durationMin: 450,
+    distance: 350, fare: { min: 350, max: 1300 }, comfort: "standard", schedule: "Daily 7:30 PM",
+  },
 ];
 
 export default function TransportPage() {

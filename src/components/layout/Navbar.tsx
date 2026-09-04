@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const navItems = [
+  { href: "/smart", label: "ML & IoT", icon: "📡" },
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/plan", label: "Plan Trip", icon: "🗺️" },
   { href: "/destinations", label: "Explore", icon: "🏖️" },

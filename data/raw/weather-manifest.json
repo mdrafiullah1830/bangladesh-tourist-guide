@@ -1,0 +1,10 @@
+{
+  "url": "https://archive-api.open-meteo.com/v1/archive?latitude=21.4272&longitude=92.0058&start_date=2022-01-01&end_date=2025-12-31&daily=temperature_2m_max%2Cprecipitation_sum&timezone=Asia%2FDhaka",
+  "retrieved_at": "2026-08-30T20:30:51.759534+00:00",
+  "sha256": "869911d509979f4327b656d54aeb4c306de6aacb604b1d587035e77463eb3470",
+  "rows": 1461,
+  "license": "CC-BY-4.0",
+  "attribution": "Weather data by Open-Meteo, based on reanalysis models; not ground-station observations",
+  "terms": "https://open-meteo.com/en/terms",
+  "documentation": "https://open-meteo.com/en/docs/historical-weather-api"
+}

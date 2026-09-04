@@ -26,14 +26,38 @@ export default function RegisterPage() {
     setIsLoading(true);
     setError("");
 
-    setTimeout(() => {
+    if (formData.password !== formData.confirmPassword) {
+      setError("Passwords do not match");
       setIsLoading(false);
-      if (formData.password !== formData.confirmPassword) {
-        setError("Passwords do not match");
-        return;
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/auth/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+          country: formData.country,
+          travelStyle: formData.travelStyle,
+          interests: formData.interests,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        window.location.href = "/";
+      } else {
+        setError(data.error || "Registration failed");
       }
-      window.location.href = "/";
-    }, 1000);
+    } catch {
+      setError("Network error. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

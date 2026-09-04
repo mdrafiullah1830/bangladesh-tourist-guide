@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 interface ChatMessage {
@@ -59,15 +59,27 @@ export function ChatAssistant() {
       return "**Budget Guide for Bangladesh:**\n\n💰 **Per person/day:**\n• Budget: ৳1,500-2,500 ($14-23)\n• Mid-range: ৳3,000-5,000 ($28-46)\n• Comfort: ৳6,000-10,000 ($55-92)\n\n$500 for 7 days = ~৳54,000\nThis is a **comfortable mid-range budget!**\n\n📊 *Data: ESTIMATED*";
     }
     if (msg.includes("food") || msg.includes("eat") || msg.includes("cuisine")) {
-      return "**Bangladesh Food Guide:** 🍛\n\n**Must-Try:**\n1. Biryani - Dhaka's layered rice dish\n2. Hilsha Fish - National fish\n3. Fuchka - Tangy street snack\n4. Panta Bhat - Traditional fermented rice\n5. Tea - World-class tea gardens!\n\n**Budget:** Street ৳50-150, Restaurants ৳300-800\n\n📊 *Data: VERIFIED*";
+      return "**Bangladesh Food Guide:** 🍛\n\n**Must-Try:**\n1. Biryani - Dhaka's layered rice dish\n2. Hilsha Fish - National fish\n3. Fuchka - Tangy street snack\n4. Panta Bhat - Traditional fermented rice\n5. Tea - World-class tea gardens!\n\n**Regional Specialties:**\n• Dhaka: Biryani, Fuchka, Roshogolla\n• Chattogram: Mezbani Beef, Kala Bhuna\n• Sylhet: Seven-layer tea, Pitha\n• Cox's Bazar: Fresh seafood\n• Rajshahi: Mangoes, Fuska\n\n**Budget:** Street ৳50-150, Restaurants ৳300-800\n\n📊 *Data: VERIFIED*";
     }
-    if (msg.includes("safe") || msg.includes("emergency") || msg.includes("help")) {
-      return "**Safety Information:** 🆘\n\n**Emergency Numbers:**\n• Police/Fire/Ambulance: 999\n• Tourist Police: +880 2 8901555\n\n**Tips:**\n• Use Uber/Pathao for transport\n• Drink bottled water\n• Dress modestly at religious sites\n• Keep copies of documents\n\n📊 *Data: VERIFIED*";
+    if (msg.includes("safe") || msg.includes("emergency") || msg.includes("help") || msg.includes("sos")) {
+      return "**Safety Information:** 🆘\n\n**Emergency Numbers:**\n• Police/Fire/Ambulance: 999\n• Tourist Police: +880 2 8901555\n• Fire Service: 199\n• Child Helpline: 1098\n\n**Tips:**\n• Use Uber/Pathao for transport\n• Drink bottled water\n• Dress modestly at religious sites\n• Keep copies of documents\n• Women: use women-only compartments\n\n📊 *Data: VERIFIED*";
     }
-    if (msg.includes("transport") || msg.includes("bus") || msg.includes("train")) {
-      return "**Transport Options:** 🚌\n\n**Dhaka → Chattogram:**\n• Bus: ৳600-1500 (5-7 hrs)\n• Train: ৳300-1200 (6-8 hrs)\n• Flight: ৳3500-6000 (45 min)\n\n**Dhaka → Cox's Bazar:**\n• Bus: ৳800-1600 (8-10 hrs)\n• Flight: ৳4000-7000 (55 min)\n\n📊 *Data: ESTIMATED*";
+    if (msg.includes("transport") || msg.includes("bus") || msg.includes("train") || msg.includes("flight")) {
+      return "**Transport Options:** 🚌\n\n**Dhaka → Chattogram:**\n• Bus: ৳600-1500 (5-7 hrs)\n• Train: ৳300-1200 (6-8 hrs)\n• Flight: ৳3500-6000 (45 min)\n\n**Dhaka → Cox's Bazar:**\n• Bus: ৳800-1600 (8-10 hrs)\n• Flight: ৳4000-7000 (55 min)\n\n**Dhaka → Sylhet:**\n• Bus: ৳500-900 (5-6 hrs)\n• Train: ৳250-1000 (6-7 hrs)\n\n**Dhaka → Khulna:**\n• Bus: ৳600-1000 (6-7 hrs)\n• Train: ৳350-1400 (7-8 hrs)\n\n📊 *Data: ESTIMATED*";
     }
-    return "I can help you with:\n\n🗺️ Trip Planning\n🚌 Transport Options\n🏨 Hotels & Stay\n🍛 Food & Cuisine\n💰 Budget Planning\n🆘 Safety & Emergency\n🗣️ Bangla Translation\n\nTry asking:\n• \"Plan a 5-day trip with ৳20,000\"\n• \"How to travel Dhaka to Cox's Bazar?\"\n• \"Best food to try?\"";
+    if (msg.includes("hotel") || msg.includes("stay") || msg.includes("accommodation")) {
+      return "**Accommodation Guide:** 🏨\n\n**By Budget:**\n• Budget: ৳800-1500/night\n• Mid-range: ৳2000-4000/night\n• Premium: ৳5000-15000/night\n\n**Popular Areas:**\n• Dhaka: Gulshan, Dhanmondi, Banani\n• Cox's Bazar: Beachside hotels\n• Sylhet: Tea garden resorts\n• Sreemangal: Eco-lodges\n\n💡 **Tip:** Book during off-season!\n\n📊 *Data: ESTIMATED*";
+    }
+    if (msg.includes("beach") || msg.includes("coxs") || msg.includes("kuakata") || msg.includes("sea")) {
+      return "**Beach Destinations:** 🏖️\n\n**Cox's Bazar** - World's longest beach\n• Best time: Nov-Mar\n• Stay: 2-4 days, Cost: ৳2000/day\n\n**Kuakata** - Sunrise & sunset beach\n• Best time: Oct-Mar\n• Stay: 1-2 days, Cost: ৳1800/day\n\n**Saint Martin's Island** - Coral island\n• Best time: Nov-Apr\n• Stay: 1-2 days, Cost: ৳3000/day\n\n📊 *Data: ESTIMATED*";
+    }
+    if (msg.includes("hill") || msg.includes("mountain") || msg.includes("bandarban") || msg.includes("rangamati")) {
+      return "**Hill Destinations:** ⛰️\n\n**Bandarban** - Highest peaks\n• Highlights: Nilgiri, Nafakhum\n\n**Rangamati** - Lake district\n• Highlights: Kaptai Lake, Shuvolong\n\n**Sajek Valley** - Cloud valley\n• Highlights: Sunrise views\n\n⚠️ **Note:** Permits needed for some areas\n\n📊 *Data: ESTIMATED*";
+    }
+    if (msg.includes("heritage") || msg.includes("temple") || msg.includes("mosque") || msg.includes("historical")) {
+      return "**Heritage Sites:** 🏛️\n\n• Lalbagh Fort (Dhaka)\n• Ahsan Manzil (Dhaka)\n• Somapura Mahavihara (Paharpur, UNESCO)\n• Sixty Dome Mosque (Bagerhat, UNESCO)\n• Puthia Temple Complex (Rajshahi)\n\n📊 *Data: VERIFIED*";
+    }
+    return "I can help you with:\n\n🗺️ Trip Planning\n🚌 Transport Options\n🏨 Hotels & Stay\n🍛 Food & Cuisine\n💰 Budget Planning\n🆘 Safety & Emergency\n🏖️ Beaches & Islands\n⛰️ Hills & Mountains\n🏛️ Heritage Sites\n🗣️ Bangla Translation\n🛂 Visa Information\n\nTry asking:\n• \"Plan a 5-day trip with ৳20,000\"\n• \"How to travel Dhaka to Cox's Bazar?\"\n• \"Best food to try?\"\n• \"Best time to visit?\"";
   };
 
   if (!isOpen) {

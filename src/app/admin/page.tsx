@@ -1,20 +1,109 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge } from "@/components/ui/Card";
 import { Input, Select, Textarea } from "@/components/ui/Input";
-import { Tabs } from "@/components/ui/Input";
-import { bangladeshDestinations } from "@/lib/data/bangladesh";
+import { bangladeshDestinations as staticDestinations } from "@/lib/data/bangladesh";
 
 type AdminSection = "overview" | "destinations" | "transport" | "hotels" | "alerts" | "users";
+
+interface DestinationForm {
+  name: string;
+  division: string;
+  category: string;
+  latitude: number;
+  longitude: number;
+  description: string;
+  estimatedCost: number;
+  bestTimeToVisit: string;
+}
 
 export default function AdminPage() {
   const [section, setSection] = useState<AdminSection>("overview");
   const [isEditing, setIsEditing] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [destinations, setDestinations] = useState<any[]>([]);
+  const [users, setUsers] = useState<any[]>([]);
+  const [feedback, setFeedback] = useState("");
+  const [destinationForm, setDestinationForm] = useState<DestinationForm>({
+    name: "",
+    division: "",
+    category: "city",
+    latitude: 0,
+    longitude: 0,
+    description: "",
+    estimatedCost: 2000,
+    bestTimeToVisit: "",
+  });
+
+  // Fetch data from APIs
+  useEffect(() => {
+    fetchAll();
+  }, []);
+
+  const fetchAll = async () => {
+    try {
+      // Fetch destinations
+      const destResponse = await fetch("/api/destinations");
+      if (destResponse.ok) {
+        const destData = await destResponse.json();
+        setDestinations(destData.destinations?.length ? destData.destinations : requireStaticDestinations());
+      } else {
+        setDestinations(requireStaticDestinations());
+      }
+    } catch {
+      setDestinations(requireStaticDestinations());
+    }
+  };
+
+  const requireStaticDestinations = () => {
+    return staticDestinations;
+  };
+
+  const handleSaveDestination = async () => {
+    if (!destinationForm.name) {
+      setFeedback("Destination name is required");
+      return;
+    }
+    setIsSaving(true);
+    setFeedback("");
+    // For demo, add to local state
+    const newDest = {
+      slug: destinationForm.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
+      name: destinationForm.name,
+      division: destinationForm.division,
+      category: destinationForm.category,
+      latitude: destinationForm.latitude,
+      longitude: destinationForm.longitude,
+      description: destinationForm.description,
+      estimatedCost: destinationForm.estimatedCost,
+      bestTimeToVisit: destinationForm.bestTimeToVisit,
+      stayDuration: "2-3 days",
+      safetyRating: 4.0,
+      isHiddenGem: false,
+      tags: [destinationForm.category],
+    };
+    setDestinations(prev => [...prev, newDest]);
+    setIsEditing(false);
+    setFeedback(`✅ "${destinationForm.name}" added successfully!`);
+    setDestinationForm({
+      name: "", division: "", category: "city",
+      latitude: 0, longitude: 0, description: "",
+      estimatedCost: 2000, bestTimeToVisit: "",
+    });
+    setIsSaving(false);
+  };
+
+  const handleDeleteDestination = (slug: string) => {
+    if (window.confirm(`Delete "${slug}"?`)) {
+      setDestinations(prev => prev.filter(d => d.slug !== slug));
+      setFeedback(`✅ "${slug}" deleted`);
+    }
+  };
 
   const stats = [
-    { label: "Total Destinations", value: bangladeshDestinations.length, icon: "🏖️" },
+    { label: "Total Destinations", value: destinations.length, icon: "🏖️" },
     { label: "Transport Routes", value: 12, icon: "🚌" },
     { label: "Hotels Listed", value: 45, icon: "🏨" },
     { label: "Active Alerts", value: 2, icon: "⚠️" },
@@ -55,6 +144,13 @@ export default function AdminPage() {
           </button>
         ))}
       </div>
+
+      {/* Feedback */}
+      {feedback && (
+        <div className="mb-6 p-3 bg-green-50 border border-green-200 text-green-800 rounded-lg text-sm">
+          {feedback}
+        </div>
+      )}
 
       {/* Overview */}
       {section === "overview" && (
@@ -125,33 +221,87 @@ export default function AdminPage() {
             <Card className="border-bangladesh-green/30">
               <h3 className="font-semibold mb-4">Add New Destination</h3>
               <div className="grid md:grid-cols-2 gap-4">
-                <Input label="Name" placeholder="Destination name" />
+                <Input
+                  label="Name"
+                  placeholder="Destination name"
+                  value={destinationForm.name}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, name: e.target.value })}
+                  required
+                />
                 <Select
                   label="Division"
+                  value={destinationForm.division}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, division: e.target.value })}
                   options={[
                     { value: "", label: "Select division" },
-                    { value: "dhaka", label: "Dhaka" },
-                    { value: "chattogram", label: "Chattogram" },
-                    { value: "sylhet", label: "Sylhet" },
-                    { value: "khulna", label: "Khulna" },
-                    { value: "rajshahi", label: "Rajshahi" },
+                    { value: "Dhaka", label: "Dhaka" },
+                    { value: "Chattogram", label: "Chattogram" },
+                    { value: "Sylhet", label: "Sylhet" },
+                    { value: "Khulna", label: "Khulna" },
+                    { value: "Rajshahi", label: "Rajshahi" },
+                    { value: "Barishal", label: "Barishal" },
+                    { value: "Rangpur", label: "Rangpur" },
+                    { value: "Mymensingh", label: "Mymensingh" },
                   ]}
                 />
-                <Input label="Latitude" type="number" placeholder="23.8103" />
-                <Input label="Longitude" type="number" placeholder="90.4125" />
-                <Textarea label="Description" placeholder="Describe the destination..." className="md:col-span-2" />
-                <Input label="Estimated Cost/Day (BDT)" type="number" placeholder="2000" />
-                <Input label="Best Time to Visit" placeholder="October to March" />
+                <Select
+                  label="Category"
+                  value={destinationForm.category}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, category: e.target.value })}
+                  options={[
+                    { value: "city", label: "City" },
+                    { value: "beach", label: "Beach" },
+                    { value: "nature", label: "Nature" },
+                    { value: "heritage", label: "Heritage" },
+                    { value: "mountain", label: "Mountain" },
+                  ]}
+                />
+                <Input
+                  label="Latitude"
+                  type="number"
+                  placeholder="23.8103"
+                  value={destinationForm.latitude || ""}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, latitude: parseFloat(e.target.value) || 0 })}
+                />
+                <Input
+                  label="Longitude"
+                  type="number"
+                  placeholder="90.4125"
+                  value={destinationForm.longitude || ""}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, longitude: parseFloat(e.target.value) || 0 })}
+                />
+                <Textarea
+                  label="Description"
+                  placeholder="Describe the destination..."
+                  className="md:col-span-2"
+                  value={destinationForm.description}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, description: e.target.value })}
+                />
+                <Input
+                  label="Estimated Cost/Day (BDT)"
+                  type="number"
+                  placeholder="2000"
+                  value={destinationForm.estimatedCost || ""}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, estimatedCost: parseInt(e.target.value) || 0 })}
+                />
+                <Input
+                  label="Best Time to Visit"
+                  placeholder="October to March"
+                  value={destinationForm.bestTimeToVisit}
+                  onChange={(e) => setDestinationForm({ ...destinationForm, bestTimeToVisit: e.target.value })}
+                />
               </div>
               <div className="flex gap-3 mt-4">
-                <Button>Save Destination</Button>
+                <Button onClick={handleSaveDestination} disabled={isSaving} isLoading={isSaving}>
+                  Save Destination
+                </Button>
                 <Button variant="outline" onClick={() => setIsEditing(false)}>Cancel</Button>
               </div>
             </Card>
           )}
 
           <div className="space-y-3">
-            {bangladeshDestinations.map((dest) => (
+            {destinations.map((dest) => (
               <Card key={dest.slug}>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -165,7 +315,9 @@ export default function AdminPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     {dest.isHiddenGem && <Badge variant="warning">💎 Gem</Badge>}
-                    <Button variant="ghost" size="sm">Edit</Button>
+                    <Button variant="ghost" size="sm" onClick={() => handleDeleteDestination(dest.slug)}>
+                      Delete
+                    </Button>
                   </div>
                 </div>
               </Card>

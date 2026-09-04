@@ -49,28 +49,49 @@ export default function PlanTripPage() {
     arrivalAirport: "DAC",
   });
 
+  const [errors, setErrors] = useState<{ days?: string; budget?: string; travellers?: string }>({});
+
+  const validate = () => {
+    const newErrors: typeof errors = {};
+    if (!data.days || data.days < 1) newErrors.days = "At least 1 day required";
+    if (!data.days || data.days > 30) newErrors.days = "Maximum 30 days allowed";
+    if (!data.budget || data.budget < 1000) newErrors.budget = "Minimum budget ৳1,000";
+    if (!data.travellers || data.travellers < 1) newErrors.travellers = "At least 1 traveller";
+    if (!data.travellers || data.travellers > 10) newErrors.travellers = "Maximum 10 travellers";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const generatePlan = () => {
+    if (!validate()) return;
     setIsGenerating(true);
     setTimeout(() => {
       const dailyBudget = data.budget / data.days;
       const days = Array.from({ length: data.days }, (_, i) => ({
         dayNumber: i + 1,
         activities: [
-          { title: i === 0 ? "Arrival & Check-in" : "Morning Exploration", type: "attraction", time: "09:00", cost: dailyBudget * 0.2 },
+          { title: i === 0 ? "Arrival & Check-in" : `Day ${i + 1} Morning: ${data.interests[0] || 'Exploration'}`, type: "attraction", time: "09:00", cost: dailyBudget * 0.2 },
           { title: "Local Lunch", type: "food", time: "12:30", cost: dailyBudget * 0.15 },
-          { title: i === data.days - 1 ? "Departure Prep" : "Afternoon Activity", type: "attraction", time: "14:30", cost: dailyBudget * 0.25 },
+          { title: i === data.days - 1 ? "Departure Prep" : `Afternoon: ${data.interests[1] || 'Sightseeing'}`, type: "attraction", time: "14:30", cost: dailyBudget * 0.25 },
           { title: "Dinner & Rest", type: "food", time: "19:00", cost: dailyBudget * 0.2 },
         ],
       }));
 
+      // Use user's interests and travel style for personalized suggestions
+      const destinationOptions = [
+        { mode: "bus", from: "Dhaka", to: "Chattogram", duration: "5-6 hours", fare: 900, recommendation: "recommended" },
+        { mode: "train", from: "Dhaka", to: "Chattogram", duration: "6-7 hours", fare: 600, recommendation: "cheapest" },
+        { mode: "flight", from: "Dhaka", to: "Chattogram", duration: "45 mins", fare: 4500, recommendation: "fastest" },
+        { mode: "bus", from: "Dhaka", to: "Sylhet", duration: "5-6 hours", fare: 600, recommendation: "scenic" },
+        { mode: "bus", from: "Dhaka", to: "Cox's Bazar", duration: "8-10 hours", fare: 1200, recommendation: "popular" },
+      ];
+
       setPlan({
         days,
         totalCost: data.budget * 0.85,
-        transportOptions: [
-          { mode: "bus", from: "Dhaka", to: "Chattogram", duration: "5-6 hours", fare: 900, recommendation: "recommended" },
-          { mode: "train", from: "Dhaka", to: "Chattogram", duration: "6-7 hours", fare: 600, recommendation: "cheapest" },
-          { mode: "flight", from: "Dhaka", to: "Chattogram", duration: "45 mins", fare: 4500, recommendation: "fastest" },
-        ],
+        transportOptions: data.travellers > 2 
+          ? destinationOptions.filter(t => t.mode !== "flight") // Groups: avoid flights for cost
+          : destinationOptions,
       });
       setIsGenerating(false);
       setStep("result");
@@ -110,6 +131,7 @@ export default function PlanTripPage() {
                 max={30}
                 value={data.days}
                 onChange={(e) => setData({ ...data, days: parseInt(e.target.value) || 1 })}
+                error={errors.days}
               />
               <Input
                 label="Number of Travellers"
@@ -118,6 +140,7 @@ export default function PlanTripPage() {
                 max={20}
                 value={data.travellers}
                 onChange={(e) => setData({ ...data, travellers: parseInt(e.target.value) || 1 })}
+                error={errors.travellers}
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -217,10 +240,11 @@ export default function PlanTripPage() {
                     ৳{data.budget.toLocaleString()}
                   </span>
                   <p className="text-xs text-gray-500">
-                    ~৳{Math.round(data.budget / data.days).toLocaleString()}/day
+                    ~৳{data.days > 0 ? Math.round(data.budget / data.days).toLocaleString() : 0}/day
                   </p>
                 </div>
               </div>
+              {errors.budget && <p className="text-xs text-red-500 mt-1">{errors.budget}</p>}
             </div>
 
             <div className="bg-gray-50 rounded-lg p-4">
@@ -337,7 +361,34 @@ export default function PlanTripPage() {
             <Button variant="outline" onClick={() => setStep("budget")} className="flex-1">
               ← Modify
             </Button>
-            <Button className="flex-1" size="lg">
+            <Button className="flex-1" size="lg" onClick={async () => {
+              if (!plan) return;
+              try {
+                const response = await fetch("/api/trips", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    title: `${data.days}-Day Bangladesh Trip`,
+                    description: `AI-generated ${data.days}-day trip for ${data.travellers} traveller(s)`,
+                    totalBudget: data.budget,
+                    travellers: data.travellers,
+                    interests: data.interests,
+                    travelStyle: data.travelStyle,
+                    days: plan.days.map((day: any) => ({
+                      dayNumber: day.dayNumber,
+                      activities: day.activities,
+                    })),
+                  }),
+                });
+                if (response.ok) {
+                  alert("Trip saved successfully!");
+                } else {
+                  alert("Failed to save trip. Please try again.");
+                }
+              } catch {
+                alert("Network error. Please try again.");
+              }
+            }}>
               Save Trip
             </Button>
           </div>

@@ -1,5 +1,19 @@
 # 🇧🇩 AI-Powered Smart Tourist Guide System for Bangladesh
 
+## ML & IoT extension (runnable local prototype)
+
+The existing app is preserved. A trained recommendation/cost/crowd pipeline and authenticated ESP32 GPS/SOS backend are now connected at **`/smart`**.
+
+```bash
+bash scripts/setup.sh
+bash scripts/run.sh
+```
+
+Open http://localhost:3000/smart and use the operator token from `.env.safety`.
+See **[ML & IoT setup, architecture, dataset provenance, API and hardware guide](docs/ML-IOT.md)** and **[verification results](docs/VERIFICATION.md)**.
+
+**Scope warning:** Cost/crowd labels are synthetic; emergency dispatch is not implemented. The original features described below include demo login, sample hotel/transport data, rule-based planning and static maps. They are not all production integrations. The new safety area uses its own operator/device authentication and separate SQLite database.
+
 A comprehensive, intelligent travel companion for tourists exploring Bangladesh — from planning to departure.
 
 ## 🌟 Features

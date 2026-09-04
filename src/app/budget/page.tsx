@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge, DataStatusBadge } from "@/components/ui/Card";
 import { Input, Select } from "@/components/ui/Input";
@@ -21,29 +21,79 @@ const expenseCategories = [
   { id: "other", label: "Miscellaneous", icon: "📦", defaultPct: 5 },
 ];
 
+interface Expense {
+  id: string;
+  category: string;
+  amount: number;
+  note: string;
+  date: string;
+}
+
 export default function BudgetPage() {
   const [totalBudget, setTotalBudget] = useState(20000);
   const [currency, setCurrency] = useState("BDT");
   const [days, setDays] = useState(5);
   const [travellers, setTravellers] = useState(1);
   const [selectedTier, setSelectedTier] = useState("mid");
-  const [expenses, setExpenses] = useState<{ id: number; category: string; amount: number; note: string }[]>([]);
+  const [expenses, setExpenses] = useState<Expense[]>([]);
   const [newExpense, setNewExpense] = useState({ category: "food", amount: 0, note: "" });
+  const [isLoading, setIsLoading] = useState(true);
 
-  const dailyBudget = totalBudget / days;
-  const perPersonBudget = totalBudget / travellers;
-  const totalExpenses = expenses.reduce((sum, e) => sum + e.amount, 0);
-  const remaining = totalBudget - totalExpenses;
+  // Fetch expenses from API
+  useEffect(() => {
+    fetchExpenses();
+  }, []);
 
-  const addExpense = () => {
-    if (newExpense.amount > 0) {
-      setExpenses([...expenses, { ...newExpense, id: Date.now() }]);
-      setNewExpense({ category: "food", amount: 0, note: "" });
+  const fetchExpenses = async () => {
+    try {
+      const response = await fetch("/api/budget");
+      if (response.ok) {
+        const data = await response.json();
+        setExpenses(data.expenses.map((e: any) => ({ ...e, note: e.notes || "" })));
+      }
+    } catch (error) {
+      console.error("Failed to fetch expenses:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const removeExpense = (idx: number) => {
-    setExpenses(expenses.filter((_, i) => i !== idx));
+  const dailyBudget = days > 0 ? totalBudget / days : 0;
+  const perPersonBudget = travellers > 0 ? totalBudget / travellers : 0;
+  const totalExpenses = expenses.reduce((sum, e) => sum + e.amount, 0);
+  const remaining = totalBudget - totalExpenses;
+
+  const addExpense = async () => {
+    if (newExpense.amount <= 0) return;
+    try {
+      const response = await fetch("/api/budget", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: expenseCategories.find(c => c.id === newExpense.category)?.label || "Expense",
+          amount: newExpense.amount,
+          category: newExpense.category,
+          notes: newExpense.note,
+        }),
+      });
+      if (response.ok) {
+        await fetchExpenses();
+        setNewExpense({ category: "food", amount: 0, note: "" });
+      }
+    } catch (error) {
+      console.error("Failed to add expense:", error);
+    }
+  };
+
+  const removeExpense = async (id: string) => {
+    try {
+      const response = await fetch(`/api/budget?id=${id}`, { method: "DELETE" });
+      if (response.ok) {
+        await fetchExpenses();
+      }
+    } catch (error) {
+      console.error("Failed to remove expense:", error);
+    }
   };
 
   return (
@@ -149,15 +199,20 @@ export default function BudgetPage() {
             </div>
 
             {/* Expense List */}
-            {expenses.length === 0 ? (
+            {isLoading ? (
+              <div className="text-center py-6 text-gray-400">
+                <div className="text-2xl mb-2">⏳</div>
+                <p className="text-sm">Loading expenses...</p>
+              </div>
+            ) : expenses.length === 0 ? (
               <div className="text-center py-6 text-gray-400">
                 <div className="text-2xl mb-2">📋</div>
                 <p className="text-sm">No expenses added yet</p>
               </div>
             ) : (
               <div className="space-y-2">
-                {expenses.map((exp, idx) => (
-                  <div key={idx} className="flex items-center justify-between p-2 rounded-lg bg-gray-50">
+                {expenses.map((exp) => (
+                  <div key={exp.id} className="flex items-center justify-between p-2 rounded-lg bg-gray-50">
                     <div className="flex items-center gap-2">
                       <span>{expenseCategories.find((c) => c.id === exp.category)?.icon}</span>
                       <span className="text-sm font-medium">
@@ -168,7 +223,7 @@ export default function BudgetPage() {
                     <div className="flex items-center gap-2">
                       <span className="font-medium text-sm">{formatCurrency(exp.amount)}</span>
                       <button
-                        onClick={() => removeExpense(idx)}
+                        onClick={() => removeExpense(exp.id)}
                         className="text-red-400 hover:text-red-600 text-sm"
                       >
                         ✕
@@ -190,12 +245,12 @@ export default function BudgetPage() {
               <div>
                 <div className="flex justify-between text-sm mb-1">
                   <span className="text-green-100">Spent</span>
-                  <span>{Math.round((totalExpenses / totalBudget) * 100)}%</span>
+                  <span>{totalBudget > 0 ? Math.round((totalExpenses / totalBudget) * 100) : 0}%</span>
                 </div>
                 <div className="h-2 bg-white/20 rounded-full overflow-hidden">
                   <div
                     className="h-full bg-white rounded-full transition-all"
-                    style={{ width: `${Math.min((totalExpenses / totalBudget) * 100, 100)}%` }}
+                    style={{ width: `${totalBudget > 0 ? Math.min((totalExpenses / totalBudget) * 100, 100) : 0}%` }}
                   />
                 </div>
               </div>
