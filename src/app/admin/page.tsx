@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/Button";
-import { Card, Badge } from "@/components/ui/Card";
+import { Card, Badge, Skeleton } from "@/components/ui/Card";
 import { Input, Select, Textarea } from "@/components/ui/Input";
 import { ConfirmDialog } from "@/components/ui/ConfirmDialog";
 import { useToast } from "@/components/ui/Toast";
@@ -57,6 +57,7 @@ export default function AdminPage() {
     { name: "Admin User", email: "admin@bdguide.com", role: "admin", joined: "2026-01-01" },
   ]);
   const [feedback, setFeedback] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const [destinationForm, setDestinationForm] = useState<DestinationForm>({
     name: "",
     division: "",
@@ -74,6 +75,7 @@ export default function AdminPage() {
   }, []);
 
   const fetchAll = async () => {
+    setIsLoading(true);
     try {
       // Fetch destinations
       const destResponse = await fetch("/api/destinations");
@@ -85,6 +87,8 @@ export default function AdminPage() {
       }
     } catch {
       setDestinations(requireStaticDestinations());
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -156,6 +160,8 @@ export default function AdminPage() {
         <Badge variant="success">Admin Access</Badge>
       </div>
 
+      {!isLoading && (
+      <>
       {/* Navigation */}
       <div className="flex gap-2 mb-6 overflow-x-auto pb-2">
         {[
@@ -489,6 +495,15 @@ export default function AdminPage() {
             </div>
           </Card>
         </div>
+      )}
+
+      </>
+      )}
+
+      {isLoading && (
+        <Card>
+          <Skeleton lines={8} />
+        </Card>
       )}
 
       <ConfirmDialog
