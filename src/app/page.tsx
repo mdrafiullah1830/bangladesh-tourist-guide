@@ -239,7 +239,7 @@ export default function HomePage() {
             Ready to Explore Bangladesh?
           </h2>
           <p className="text-green-100 mb-8 max-w-2xl mx-auto">
-            Start planning your perfect trip with AI assistance. From Cox's Bazar beaches 
+            Start planning your perfect trip with AI assistance. From Cox&apos;s Bazar beaches
             to Sundarbans mangroves — we&apos;ve got you covered.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

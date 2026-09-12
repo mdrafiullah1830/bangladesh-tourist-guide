@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge, Skeleton } from "@/components/ui/Card";
 import { Input, Select, Textarea } from "@/components/ui/Input";
@@ -51,7 +51,7 @@ export default function AdminPage() {
   const [isSaving, setIsSaving] = useState(false);
   const [destinations, setDestinations] = useState<AdminDestination[]>([]);
   const [deleteTarget, setDeleteTarget] = useState<string | null>(null);
-  const [users, setUsers] = useState<AdminUser[]>([
+  const [users] = useState<AdminUser[]>([
     { name: "John Smith", email: "john@example.com", role: "traveller", joined: "2026-08-15" },
     { name: "Sarah Johnson", email: "sarah@example.com", role: "traveller", joined: "2026-08-20" },
     { name: "Admin User", email: "admin@bdguide.com", role: "admin", joined: "2026-01-01" },
@@ -69,32 +69,27 @@ export default function AdminPage() {
     bestTimeToVisit: "",
   });
 
-  // Fetch data from APIs
-  useEffect(() => {
-    fetchAll();
-  }, []);
-
-  const fetchAll = async () => {
+  const fetchAll = useCallback(async () => {
     setIsLoading(true);
     try {
       // Fetch destinations
       const destResponse = await fetch("/api/destinations");
       if (destResponse.ok) {
         const destData = await destResponse.json();
-        setDestinations(destData.destinations?.length ? destData.destinations : requireStaticDestinations());
+        setDestinations(destData.destinations?.length ? destData.destinations : staticDestinations);
       } else {
-        setDestinations(requireStaticDestinations());
+        setDestinations(staticDestinations);
       }
     } catch {
-      setDestinations(requireStaticDestinations());
+      setDestinations(staticDestinations);
     } finally {
       setIsLoading(false);
     }
-  };
+  }, []);
 
-  const requireStaticDestinations = () => {
-    return staticDestinations;
-  };
+  useEffect(() => {
+    fetchAll();
+  }, [fetchAll]);
 
   const handleSaveDestination = async () => {
     if (!destinationForm.name) {
@@ -103,42 +98,46 @@ export default function AdminPage() {
     }
     setIsSaving(true);
     setFeedback("");
-    // For demo, add to local state
-    const newDest = {
-      slug: destinationForm.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'),
-      name: destinationForm.name,
-      division: destinationForm.division,
-      category: destinationForm.category,
-      latitude: destinationForm.latitude,
-      longitude: destinationForm.longitude,
-      description: destinationForm.description,
-      estimatedCost: destinationForm.estimatedCost,
-      bestTimeToVisit: destinationForm.bestTimeToVisit,
-      stayDuration: "2-3 days",
-      safetyRating: 4.0,
-      isHiddenGem: false,
-      tags: [destinationForm.category],
-    };
-    setDestinations(prev => [...prev, newDest]);
-    setIsEditing(false);
-    showToast(`"${destinationForm.name}" added successfully!`, "success");
-    setDestinationForm({
-      name: "", division: "", category: "city",
-      latitude: 0, longitude: 0, description: "",
-      estimatedCost: 2000, bestTimeToVisit: "",
-    });
-    setIsSaving(false);
+    try {
+      const response = await fetch('/api/destinations', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(destinationForm),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Unable to save destination');
+      setDestinations(prev => [...prev, result.destination]);
+      setIsEditing(false);
+      showToast(`"${destinationForm.name}" added successfully!`, "success");
+      setDestinationForm({
+        name: "", division: "", category: "city",
+        latitude: 0, longitude: 0, description: "",
+        estimatedCost: 2000, bestTimeToVisit: "",
+      });
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : 'Unable to save destination', 'error');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const handleDeleteDestination = (slug: string) => {
     setDeleteTarget(slug);
   };
 
-  const confirmDelete = () => {
+  const confirmDelete = async () => {
     if (!deleteTarget) return;
-    setDestinations(prev => prev.filter(d => d.slug !== deleteTarget));
-    showToast(`"${deleteTarget}" deleted`, "success");
-    setDeleteTarget(null);
+    const slug = deleteTarget;
+    try {
+      const response = await fetch(`/api/destinations?slug=${encodeURIComponent(slug)}`, { method: 'DELETE' });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Unable to delete destination');
+      setDestinations(prev => prev.filter(d => d.slug !== slug));
+      showToast(`"${slug}" deleted`, "success");
+      setDeleteTarget(null);
+    } catch (error) {
+      showToast(error instanceof Error ? error.message : 'Unable to delete destination', 'error');
+    }
   };
 
   const stats = [

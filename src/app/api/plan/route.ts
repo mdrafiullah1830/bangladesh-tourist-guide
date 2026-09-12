@@ -5,6 +5,11 @@ import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
 
+const optionalDate = z.preprocess(
+  (value) => value === "" ? undefined : value,
+  z.string().date().optional(),
+);
+
 const inputSchema = z.object({
   days: z.number().int().min(1).max(30),
   travellers: z.number().int().min(1).max(10),
@@ -12,6 +17,12 @@ const inputSchema = z.object({
   interests: z.array(z.string().max(30)).max(12).default([]),
   travelStyle: z.string().max(30).default("solo"),
   arrivalAirport: z.enum(["DAC", "CGP", "ZYL", "CXB"]),
+  arrivalDate: optionalDate,
+  departureDate: optionalDate,
+}).superRefine((value, context) => {
+  if (value.arrivalDate && value.departureDate && value.departureDate < value.arrivalDate) {
+    context.addIssue({ code: z.ZodIssueCode.custom, path: ["departureDate"], message: "Departure must be on or after arrival" });
+  }
 });
 
 const AIRPORTS = {
@@ -97,6 +108,7 @@ export async function POST(request: NextRequest) {
       const lunch = rankedRestaurants[index % Math.max(rankedRestaurants.length, 1)];
       return {
         dayNumber: index + 1,
+        date: input.arrivalDate ? dateAtOffset(input.arrivalDate, index) : undefined,
         location: airport.city,
         activities: [
           {
@@ -118,13 +130,19 @@ export async function POST(request: NextRequest) {
             title: "Dinner & rest", type: "food", time: "19:00", startTime: "19:00",
             cost: Math.round(dailyBudget * 0.2), location: airport.city,
           },
+          {
+            title: recommendedHotelName(rankedHotels[0]), type: "hotel", time: "21:00", startTime: "21:00",
+            cost: Math.round(dailyBudget * 0.12), location: rankedHotels[0]?.address || airport.city,
+          },
         ],
       };
     });
 
-    const totalCost = days.reduce(
+    const activityCost = days.reduce(
       (total, day) => total + day.activities.reduce((sum, activity) => sum + activity.cost, 0), 0,
     );
+    const transportFare = Math.round(input.budget * 0.08);
+    const totalCost = activityCost + transportFare;
     const recommendedHotel = rankedHotels[0];
     const nearbyTransport = rankedTransport[0];
     return NextResponse.json({
@@ -133,7 +151,7 @@ export async function POST(request: NextRequest) {
       transportOptions: [{
         mode: nearbyTransport?.subtype === "station" ? "train" : "bus",
         from: `${input.arrivalAirport} Airport`, to: airport.city,
-        duration: "Verify locally", fare: Math.round(dailyBudget * 0.08), recommendation: "nearest public-data option",
+        duration: "Verify locally", fare: transportFare, recommendation: "nearest public-data option",
       }],
       recommendations: [recommendedHotel, ...rankedHotels.slice(1, 3)]
         .filter((place): place is PublicPlace => Boolean(place))
@@ -142,10 +160,23 @@ export async function POST(request: NextRequest) {
         })),
       sourceCount: attractions.length + restaurants.length + hotels.length + transport.length,
       baseCity: airport.city,
+      perPersonCost: Math.round(totalCost / input.travellers),
+      startDate: input.arrivalDate,
+      endDate: input.departureDate,
       dataStatus: "LAST_UPDATED",
     });
   } catch (error) {
     console.error("Trip plan generation error:", error);
     return NextResponse.json({ error: "Unable to generate trip plan" }, { status: 500 });
   }
+}
+
+function recommendedHotelName(hotel: PublicPlace | undefined) {
+  return hotel ? `Stay at ${hotel.name}` : "Accommodation";
+}
+
+function dateAtOffset(startDate: string, offset: number) {
+  const date = new Date(`${startDate}T00:00:00.000Z`);
+  date.setUTCDate(date.getUTCDate() + offset);
+  return date.toISOString().slice(0, 10);
 }

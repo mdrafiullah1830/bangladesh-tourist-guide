@@ -1,12 +1,16 @@
 import { SignJWT, jwtVerify } from 'jose';
 import { cookies } from 'next/headers';
 
-const SECRET = new TextEncoder().encode(
-  process.env.NEXTAUTH_SECRET || 'fallback-secret-key-change-in-production'
-);
-
 const SESSION_COOKIE = 'bd_session';
-const SESSION_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 days
+const SESSION_DURATION_SECONDS = 7 * 24 * 60 * 60;
+
+function getSecret(): Uint8Array {
+  const secret = process.env.NEXTAUTH_SECRET;
+  if (!secret || secret.length < 32) {
+    throw new Error('NEXTAUTH_SECRET must be set to at least 32 characters');
+  }
+  return new TextEncoder().encode(secret);
+}
 
 export interface SessionUser {
   id: string;
@@ -20,13 +24,13 @@ export async function createSession(user: SessionUser): Promise<void> {
     .setProtectedHeader({ alg: 'HS256' })
     .setIssuedAt()
     .setExpirationTime('7d')
-    .sign(SECRET);
+    .sign(getSecret());
 
   cookies().set(SESSION_COOKIE, token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === 'production',
     sameSite: 'lax',
-    maxAge: SESSION_DURATION,
+    maxAge: SESSION_DURATION_SECONDS,
     path: '/',
   });
 }
@@ -36,7 +40,7 @@ export async function getSession(): Promise<SessionUser | null> {
   if (!token) return null;
 
   try {
-    const { payload } = await jwtVerify(token, SECRET);
+    const { payload } = await jwtVerify(token, getSecret());
     return {
       id: payload.id as string,
       email: payload.email as string,

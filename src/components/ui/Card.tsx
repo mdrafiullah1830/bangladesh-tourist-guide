@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: "default" | "elevated" | "bordered" | "gradient";
@@ -80,9 +81,11 @@ export function Avatar({ src, name, size = "md" }: AvatarProps) {
 
   if (src) {
     return (
-      <img
+      <Image
         src={src}
         alt={name}
+        width={size === "lg" ? 48 : size === "sm" ? 32 : 40}
+        height={size === "lg" ? 48 : size === "sm" ? 32 : 40}
         className={cn("rounded-full object-cover", sizes[size])}
       />
     );

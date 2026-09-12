@@ -35,12 +35,15 @@ export default function PlanTripPage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
   const [plan, setPlan] = useState<{
-    days: { dayNumber: number; location?: string; activities: { title: string; type: string; time: string; startTime?: string; cost: number; location?: string; latitude?: number; longitude?: number; sourceUrl?: string }[] }[];
+    days: { dayNumber: number; date?: string; location?: string; activities: { title: string; type: string; time: string; startTime?: string; cost: number; location?: string; latitude?: number; longitude?: number; sourceUrl?: string }[] }[];
     totalCost: number;
+    perPersonCost: number;
     transportOptions: { mode: string; from: string; to: string; duration: string; fare: number; recommendation: string }[];
     recommendations: { id: string; name: string; type: string; sourceUrl: string; qualityScore: number }[];
     sourceCount: number;
     baseCity: string;
+    startDate?: string;
+    endDate?: string;
     dataStatus: "LAST_UPDATED";
   } | null>(null);
 
@@ -128,7 +131,7 @@ export default function PlanTripPage() {
                 label="Number of Travellers"
                 type="number"
                 min={1}
-                max={20}
+                max={10}
                 value={data.travellers}
                 onChange={(e) => setData({ ...data, travellers: parseInt(e.target.value) || 1 })}
                 error={errors.travellers}
@@ -298,7 +301,7 @@ export default function PlanTripPage() {
               </div>
               <div>
                 <div className="text-2xl font-bold">{data.travellers}</div>
-                <div className="text-green-200 text-xs">Travellers</div>
+                <div className="text-green-200 text-xs">Travellers · {formatCurrency(plan.perPersonCost)} each</div>
               </div>
             </div>
           </Card>
@@ -324,7 +327,7 @@ export default function PlanTripPage() {
           {/* Day-by-day */}
           {plan.days.map((day) => (
             <Card key={day.dayNumber}>
-              <h3 className="font-bold text-gray-900 mb-3">Day {day.dayNumber}</h3>
+              <h3 className="font-bold text-gray-900 mb-3">Day {day.dayNumber}{day.date ? ` · ${day.date}` : ""}</h3>
               <div className="space-y-2">
                 {day.activities.map((act, i) => (
                   <div key={i} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50">
@@ -385,8 +388,12 @@ export default function PlanTripPage() {
                     travellers: data.travellers,
                     interests: data.interests,
                     travelStyle: data.travelStyle,
-                    days: plan.days.map((day: { dayNumber: number; activities: { title: string; type: string; cost?: number; time?: string }[] }) => ({
+                    startDate: plan.startDate,
+                    endDate: plan.endDate,
+                    days: plan.days.map((day: { dayNumber: number; date?: string; location?: string; activities: { title: string; type: string; cost?: number; time?: string }[] }) => ({
                       dayNumber: day.dayNumber,
+                      date: day.date,
+                      location: day.location,
                       activities: day.activities,
                     })),
                   }),

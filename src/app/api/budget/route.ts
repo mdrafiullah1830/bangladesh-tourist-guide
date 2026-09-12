@@ -1,7 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { z } from 'zod';
 import { prisma } from '@/lib/prisma';
 import { getSession } from '@/lib/auth/session';
 import { assertSameOrigin } from '@/lib/api/csrf';
+
+const expenseSchema = z.object({
+  title: z.string().trim().min(1).max(120),
+  amount: z.coerce.number().positive().finite().max(10_000_000),
+  category: z.enum(['transport', 'food', 'accommodation', 'shopping', 'activity', 'activities', 'other']),
+  tripId: z.string().min(1).optional(),
+  date: z.coerce.date().optional(),
+  notes: z.string().trim().max(1_000).optional(),
+});
 
 export async function GET() {
   try {
@@ -32,14 +42,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const { title, amount, category, tripId, date, notes } = await request.json();
-
-    if (!title || !amount || !category) {
-      return NextResponse.json({ error: 'Title, amount and category are required' }, { status: 400 });
+    const parsed = expenseSchema.safeParse(await request.json());
+    if (!parsed.success) {
+      return NextResponse.json({ error: 'Invalid expense', details: parsed.error.flatten() }, { status: 400 });
     }
+    const { title, amount, category, tripId, date, notes } = parsed.data;
 
     // Ensure a valid trip exists for the expense
     let validTripId = tripId;
+    if (validTripId) {
+      const ownedTrip = await prisma.trip.findFirst({ where: { id: validTripId, userId: session.id } });
+      if (!ownedTrip) return NextResponse.json({ error: 'Trip not found' }, { status: 404 });
+    }
     if (!validTripId) {
       // Find or create a default trip for this user
       const defaultTrip = await prisma.trip.findFirst({
@@ -64,9 +78,9 @@ export async function POST(request: NextRequest) {
         userId: session.id,
         tripId: validTripId,
         title,
-        amount: parseFloat(amount),
+        amount,
         category,
-        date: date ? new Date(date) : new Date(),
+        date: date || new Date(),
         notes: notes || null,
       },
     });
