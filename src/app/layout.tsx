@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { ChatAssistant } from "@/components/layout/ChatAssistant";
 import { ToastProvider } from "@/components/ui/Toast";
+import { PWARegister } from "@/components/pwa/PWARegister";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -33,6 +34,7 @@ export default function RootLayout({
             {children}
           </main>
           <ChatAssistant />
+          <PWARegister />
         </ToastProvider>
       </body>
     </html>

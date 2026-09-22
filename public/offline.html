@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline — Bangladesh Tourist Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+    .card { max-width: 420px; }
+    .icon { font-size: 64px; margin-bottom: 16px; }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    p { color: #d1fae5; margin-bottom: 24px; line-height: 1.6; }
+    ul {
+      text-align: left;
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      list-style: none;
+      font-size: 14px;
+    }
+    li { padding: 6px 0; }
+    a.btn {
+      display: inline-block;
+      background: #fbbf24;
+      color: #78350f;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📴</div>
+    <h1>You are offline</h1>
+    <p>No internet connection right now. Your saved pages still work below.</p>
+    <ul>
+      <li>🆘 Emergency: <strong>999</strong> (Police/Ambulance/Fire)</li>
+      <li>🏥 Tourist Police: <strong>+880 2 8901555</strong></li>
+      <li>📞 Your previously viewed pages are cached</li>
+    </ul>
+    <a class="btn" href="/">Try Again</a>
+  </div>
+</body>
+</html>

@@ -6,6 +6,7 @@ import { Card, Badge, DataStatusBadge } from "@/components/ui/Card";
 import { Input, Select } from "@/components/ui/Input";
 import { formatCurrency } from "@/lib/utils";
 import { convertCurrency } from "@/lib/services/budget";
+import { LiveCurrencyConverter } from "@/components/budget/LiveCurrencyConverter";
 
 const budgetTiers = [
   { id: "budget", label: "Budget Traveler", desc: "Hostels, street food, public transport", dailyRange: "৳1,500-2,500", color: "bg-green-100 text-green-700" },
@@ -269,24 +270,8 @@ export default function BudgetPage() {
             </div>
           </Card>
 
-          {/* Currency Converter */}
-          <Card>
-            <h3 className="font-semibold text-gray-900 mb-3">💱 Currency Converter</h3>
-            <div className="space-y-3">
-              <div className="text-center p-3 bg-gray-50 rounded-lg">
-                <div className="text-2xl font-bold text-bangladesh-green">
-                  {formatCurrency(totalBudget)}
-                </div>
-                <div className="text-xs text-gray-500 mt-1">
-                  ≈ ${convertCurrency(totalBudget, "BDT", "USD").toLocaleString()} USD
-                </div>
-                <div className="text-xs text-gray-500">
-                  ≈ €{convertCurrency(totalBudget, "BDT", "EUR").toLocaleString()} EUR
-                </div>
-              </div>
-              <DataStatusBadge status="ESTIMATED" />
-            </div>
-          </Card>
+          {/* Currency Converter (live rates) */}
+          <LiveCurrencyConverter defaultAmount={totalBudget} />
 
           {/* Tips */}
           <Card className="bg-yellow-50 border-yellow-200">

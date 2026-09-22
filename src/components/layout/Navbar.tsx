@@ -13,6 +13,9 @@ const navItems = [
   { href: "/transport", label: "Transport", icon: "🚌" },
   { href: "/budget", label: "Budget", icon: "💰" },
   { href: "/map", label: "Map", icon: "📍" },
+  { href: "/nearby", label: "Nearby", icon: "🧭" },
+  { href: "/diary", label: "Diary", icon: "📖" },
+  { href: "/achievements", label: "Achievements", icon: "🏆" },
   { href: "/emergency", label: "Emergency", icon: "🆘" },
 ];
 
@@ -20,6 +23,7 @@ const mobileNavItems = [
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/plan", label: "Plan", icon: "🗺️" },
   { href: "/destinations", label: "Explore", icon: "🏖️" },
+  { href: "/nearby", label: "Nearby", icon: "🧭" },
   { href: "/map", label: "Map", icon: "📍" },
   { href: "/emergency", label: "SOS", icon: "🆘" },
 ];

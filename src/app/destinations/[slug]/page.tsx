@@ -1,16 +1,19 @@
-"use client";
-
-import { useState } from "react";
-import { useParams } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card, Badge, DataStatusBadge } from "@/components/ui/Card";
 import { bangladeshDestinations } from "@/lib/data/bangladesh";
 import { formatCurrency } from "@/lib/utils";
+import { ReviewsSection } from "@/components/reviews/ReviewsSection";
+import { FavouriteButton } from "@/components/favourites/FavouriteButton";
+import { getSession } from "@/lib/auth/session";
 
-export default function DestinationDetailPage() {
-  const params = useParams();
-  const slug = params?.slug as string;
+export default async function DestinationDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const session = await getSession();
   const destination = bangladeshDestinations.find((d) => d.slug === slug);
 
   if (!destination) {
@@ -47,6 +50,9 @@ export default function DestinationDetailPage() {
           <DataStatusBadge status="ESTIMATED" />
         </div>
         <div className="relative">
+          <div className="absolute top-0 right-0 z-10">
+            <FavouriteButton itemType="destination" itemId={destination.slug} currentUserId={session?.id ?? null} />
+          </div>
           <div className="flex items-center gap-2 mb-2">
             <Badge variant="warning">{destination.division} Division</Badge>
             {destination.isHiddenGem && <Badge variant="error">💎 Hidden Gem</Badge>}
@@ -137,6 +143,13 @@ export default function DestinationDetailPage() {
               ))}
             </div>
           </Card>
+
+          {/* Reviews & Ratings */}
+          <ReviewsSection
+            itemType="destination"
+            itemId={destination.slug}
+            currentUserId={session?.id ?? null}
+          />
         </div>
 
         {/* Sidebar */}
