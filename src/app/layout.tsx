@@ -9,13 +9,13 @@ import { PWARegister } from "@/components/pwa/PWARegister";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Bangladesh Tourist Guide | AI-Powered Travel Companion",
-  description: "Your intelligent travel companion for exploring Bangladesh. AI trip planning, transport booking, budget tracking, and safety assistance.",
+  title: "Bangladesh Travel Guide | Travel Deeper",
+  description: "A practical, local-first guide for foreign visitors exploring Bangladesh — destinations, itineraries, transport, culture and safety.",
   manifest: "/manifest.json",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#047857",
+  themeColor: "#073c32",
   width: "device-width",
   initialScale: 1,
 };
@@ -27,10 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans bg-gray-50 min-h-screen`}>
+      <body className={`${inter.variable} font-sans bg-[#f6f3eb] min-h-screen`}>
         <ToastProvider>
           <Navbar />
-          <main className="pt-14 md:pt-16 pb-16 md:pb-0 min-h-screen">
+          <main className="pt-16 min-h-screen">
             {children}
           </main>
           <ChatAssistant />
